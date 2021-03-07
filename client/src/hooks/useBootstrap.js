@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 const useBootstrap = () => {
   const [subdomain, setSubdomain] = useState("");
 
@@ -9,30 +8,19 @@ const useBootstrap = () => {
   }, []);
 
   const getSubdomain = () => {
-    const domain = "";
-    // console.log(domain);
+    const domain = process.env.REACT_APP_PLATFORM_DOMAIN;
     if (!domain) {
-      // return alert("You must add the PLATFORM_DOMAIN env var");
+      return alert("You must add the PLATFORM_DOMAIN env var");
     }
     const { hostname } = window.location;
-    let subdomainIndex;
 
-    switch (process.env.NODE_ENV) {
-      case "development":
-        subdomainIndex = hostname.split(".").indexOf(domain) - 1;
-
-        if (subdomainIndex < 0) {
-          break;
-        }
-        setSubdomain(hostname.split(".")[subdomainIndex]);
-      case "production":
-        subdomainIndex = hostname.split(".").indexOf(domain.split(".")[0]) - 1;
-
-        if (subdomainIndex < 0) {
-          break;
-        }
-        setSubdomain(hostname.split(".")[subdomainIndex]);
-        break;
+    let parts = hostname.split("." + domain);
+    if (parts.length == 1) {
+      return;
+    } else {
+      parts[0].split(".").length == 2
+        ? (window.location.hostname = domain)
+        : setSubdomain(parts[0]);
     }
   };
 

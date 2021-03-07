@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
-
 const App = () => {
-
   console.log(process.env);
   const { subdomain } = useBootstrap();
   return (
@@ -19,9 +17,9 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
-        {subdomain != "" && (
+        {subdomain != "" && subdomain != "admin" && (
           <Switch>
-            <div>teacher</div>
+            <div>{subdomain}</div>
           </Switch>
         )}
       </Router>
