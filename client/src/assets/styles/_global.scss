@@ -1,0 +1,112 @@
+//Colors
+$white: #ffffff;
+$green: #2ecc71;
+$darkBlue: #12699e;
+$lightBlue: #3498db;
+$darkYellow: #ffc850;
+$lightYellow: #ffdc64;
+$black: #2e5361;
+$lightBlack: #305f72;
+$primary: #f18c8e;
+$lightPrimary: #f19895;
+$midPrimary: #ec8689;
+$darkPrimary: #bb7f87;
+$gray: #a5b1c2;
+$darkGray: #a7a6a6;
+$lightGray: #f1f2f6;
+
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"); //Tajawal => font-family: 'Tajawal', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"); //Cairo => font-family: 'Cairo', sans-serif;
+
+//Media Queries
+@mixin media($breakpoint) {
+  @if $breakpoint == phone-sm {
+    @media only screen and (max-width: 360px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-lg {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-sm {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-lg {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-sm {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media only screen and (max-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+// Global Styles
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+//scrollbar style
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background-color: $white;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $black;
+  border-radius: 10px;
+}
+/********************************************************/
+
+//Globals
+
+//display flex
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/******************************/
+
+@mixin dashLine {
+  margin-top: 70px;
+  background-image: linear-gradient(
+    to right,
+    $gray 55%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-position: bottom;
+  background-size: 8% 2px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 2px;
+}
+/******************************/

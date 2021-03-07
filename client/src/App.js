@@ -1,11 +1,17 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
+
+//Routes
+import { Home as TeacherHome } from "./teacher/routes";
+
+//Style
+import "./style.scss";
+
 const App = () => {
-  console.log(process.env);
   const { subdomain } = useBootstrap();
   return (
-    <div className="App">
+    <div className="app-container">
       <Router>
         {subdomain == "" && (
           <Switch>
@@ -19,7 +25,7 @@ const App = () => {
         )}
         {subdomain != "" && subdomain != "admin" && (
           <Switch>
-            <div>{subdomain}</div>
+            <Route path="/" component={TeacherHome}/>
           </Switch>
         )}
       </Router>
