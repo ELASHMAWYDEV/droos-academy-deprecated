@@ -48,15 +48,16 @@ const CoursesSlider = () => {
         <CourseItem />
       </div>
       <div className="nav-btns">
-        <button>
+        <button className="next-btn">
+          <BsArrowRight />
           <p>التالي</p>
+        </button>
+        <button className="prev-btn not-active">
+          <p>السابق</p>
           <BsArrowLeft />
         </button>
-        <button>
-          <p>السابق</p>
-          <BsArrowRight />
-        </button>
       </div>
+      <div className="dash-line"></div>
     </div>
   );
 };

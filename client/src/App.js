@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
-
 //Routes
 import { Home as TeacherHome } from "./teacher/routes";
 
@@ -15,7 +14,22 @@ const App = () => {
       <Router>
         {subdomain == "" && (
           <Switch>
-            <div>platform</div>
+            <div
+              style={{
+                backgroundColor: "#ec8689",
+                minHeight: "100vh",
+                minWidth: "100%",
+                color: "white",
+                fontSize: 26,
+                fontWeight: 600,
+                textAlign: "center",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              منصة دروس أكاديمي | قريبا...
+            </div>
           </Switch>
         )}
         {subdomain == "admin" && (
@@ -25,7 +39,7 @@ const App = () => {
         )}
         {subdomain != "" && subdomain != "admin" && (
           <Switch>
-            <Route path="/" component={TeacherHome}/>
+            <Route path="/" component={TeacherHome} />
           </Switch>
         )}
       </Router>

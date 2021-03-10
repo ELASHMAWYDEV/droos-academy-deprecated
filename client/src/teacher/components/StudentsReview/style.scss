@@ -1,0 +1,18 @@
+@import "../../../assets/styles/global";
+
+.students-review-container {
+  & > h2 {
+    color: $black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .reviews-slider {
+    margin: 30px auto;
+    padding: 10px 80px;
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

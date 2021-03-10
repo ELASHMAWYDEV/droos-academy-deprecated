@@ -96,7 +96,7 @@ body {
 /******************************/
 
 @mixin dashLine {
-  margin-top: 70px;
+  margin: 50px auto;
   background-image: linear-gradient(
     to right,
     $gray 55%,
