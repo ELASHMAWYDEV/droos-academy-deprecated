@@ -3,6 +3,7 @@ import { useBootstrap } from "./hooks";
 
 //Routes
 import { Home as TeacherHome } from "./teacher/routes";
+import { LandingPage, StudentLandingPage } from "./platform/routes";
 
 //Style
 import "./style.scss";
@@ -14,22 +15,8 @@ const App = () => {
       <Router>
         {subdomain == "" && (
           <Switch>
-            <div
-              style={{
-                backgroundColor: "#ec8689",
-                minHeight: "100vh",
-                minWidth: "100%",
-                color: "white",
-                fontSize: 26,
-                fontWeight: 600,
-                textAlign: "center",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              منصة دروس أكاديمي | قريبا...
-            </div>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/StudentLandingPage" component={StudentLandingPage} />
           </Switch>
         )}
         {subdomain == "admin" && (

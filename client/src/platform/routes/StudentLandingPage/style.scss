@@ -1,0 +1,13 @@
+@import "../../../assets/styles/global";
+
+.student-landing-page-container{
+    .pink-color{
+        background-image: url(../../../assets/img/pink-bg-left.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -80px;
+        min-height: 100vh;  
+        width: 100%;
+        position: absolute;
+    }
+}
