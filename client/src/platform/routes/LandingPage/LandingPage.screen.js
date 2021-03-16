@@ -1,7 +1,7 @@
 import React from "react";
-import { NavBar } from "../../components";
 import { Link } from "react-router-dom";
 
+import { NavBar } from "../../components";
 //Styles
 import "./style.scss";
 
