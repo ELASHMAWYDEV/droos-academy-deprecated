@@ -35,7 +35,7 @@ function LandingPage() {
         </div>
         <div className="btns-container">
           <Link to="/StudentLandingPage">طالب</Link>
-          <Link to="">معلم</Link>
+          <Link to="/TeacherLandingPage">معلم</Link>
           <Link to="/ParentLandingPage">ولي الأمر</Link>
         </div>
       </div>

@@ -1,0 +1,106 @@
+@import "../../../assets/styles/global";
+
+.teacher-landing-page-container {
+  padding: 30px 40px;
+  .pink-color {
+    background-image: url(../../../assets/img/teacher-landing-page-pink-shape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -213px;
+    background-position-x: -71px;
+    min-height: 100vh;
+    width: 79%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .logo-container {
+    max-height: 80px;
+    img {
+      width: 200px;
+    }
+  }
+  .content-container {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      color: $midPrimary;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      color: $midPrimary;
+    }
+    h5 {
+      font-size: 25px;
+      font-weight: 400;
+      color: $lightBlack;
+      span {
+        color: $midPrimary;
+      }
+      a {
+        font-weight: bold;
+        color: $darkBlue;
+        text-decoration: underline;
+      }
+    }
+  }
+  .auth-btns-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    padding-right: 40px;
+  }
+  .img-container {
+    width: 85%;
+    height: 250px;
+    position: absolute;
+    top: 7%;
+    .parent-landing-page-shape {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .shapes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50vh;
+    svg {
+      width: 45%;
+      padding: 15px;
+    }
+    .first-shape {
+      position: absolute;
+      left: 19%;
+    }
+    .second-shape {
+      position: absolute;
+      left: 5%;
+      top: 45%;
+    }
+    .third-shape {
+      position: absolute;
+      right: 10%;
+      top: 70%;
+    }
+    .fourth-shape {
+      position: absolute;
+      top: 100%;
+      left: 5%;
+    }
+    .fifth-shape {
+      position: absolute;
+      top: 120%;
+      right: 1%;
+    }
+  }
+}

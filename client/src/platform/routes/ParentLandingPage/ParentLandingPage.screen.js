@@ -12,7 +12,7 @@ import { ReactComponent as ParentLandingPageIllustration } from "../../../assets
 
 function ParentLandingPage() {
   return (
-    <div className="student-landing-page-container">
+    <div className="parent-landing-page-container">
       <div className="pink-color"></div>
       <div className="logo-container">
         <img src={Logo} alt="Droos Academy Logo" />
@@ -39,7 +39,7 @@ function ParentLandingPage() {
           </div>
         </div>
         <div className="shape-container">
-          <ParentLandingPageIllustration className="student-landing-page-shape" />
+          <ParentLandingPageIllustration className="parent-landing-page-shape" />
         </div>
       </div>
       <div className="auth-btns-container">
