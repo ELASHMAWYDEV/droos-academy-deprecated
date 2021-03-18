@@ -1,7 +1,7 @@
 import React from "react";
-import { NavBar } from "../../components";
 import { Link } from "react-router-dom";
 
+import { NavBar } from "../../components";
 //Styles
 import "./style.scss";
 
@@ -35,8 +35,8 @@ function LandingPage() {
         </div>
         <div className="btns-container">
           <Link to="/StudentLandingPage">طالب</Link>
-          <Link to="">معلم</Link>
-          <Link to="">ولي الأمر</Link>
+          <Link to="/TeacherLandingPage">معلم</Link>
+          <Link to="/ParentLandingPage">ولي الأمر</Link>
         </div>
       </div>
       <div className="terms-of-use-container">

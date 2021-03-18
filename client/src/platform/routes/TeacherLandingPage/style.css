@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.teacher-landing-page-container {
+  padding: 30px 40px;
+}
+
+.teacher-landing-page-container .pink-color {
+  background-image: url(../../../assets/img/teacher-landing-page-pink-shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -213px;
+  background-position-x: -71px;
+  min-height: 100vh;
+  width: 79%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.teacher-landing-page-container .logo-container {
+  max-height: 80px;
+}
+
+.teacher-landing-page-container .logo-container img {
+  width: 200px;
+}
+
+.teacher-landing-page-container .content-container {
+  width: 50%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+}
+
+.teacher-landing-page-container .content-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ec8689;
+}
+
+.teacher-landing-page-container .content-container h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #ec8689;
+}
+
+.teacher-landing-page-container .content-container h5 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #305f72;
+}
+
+.teacher-landing-page-container .content-container h5 span {
+  color: #ec8689;
+}
+
+.teacher-landing-page-container .content-container h5 a {
+  font-weight: bold;
+  color: #12699e;
+  text-decoration: underline;
+}
+
+.teacher-landing-page-container .auth-btns-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15px;
+  padding-right: 40px;
+}
+
+.teacher-landing-page-container .img-container {
+  width: 85%;
+  height: 250px;
+  position: absolute;
+  top: 7%;
+}
+
+.teacher-landing-page-container .img-container .parent-landing-page-shape {
+  width: 100%;
+  height: 100%;
+}
+
+.teacher-landing-page-container .shapes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50vh;
+}
+
+.teacher-landing-page-container .shapes-container svg {
+  width: 45%;
+  padding: 15px;
+}
+
+.teacher-landing-page-container .shapes-container .first-shape {
+  position: absolute;
+  left: 19%;
+}
+
+.teacher-landing-page-container .shapes-container .second-shape {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+
+.teacher-landing-page-container .shapes-container .third-shape {
+  position: absolute;
+  right: 10%;
+  top: 70%;
+}
+
+.teacher-landing-page-container .shapes-container .fourth-shape {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+}
+
+.teacher-landing-page-container .shapes-container .fifth-shape {
+  position: absolute;
+  top: 120%;
+  right: 1%;
+}
+/*# sourceMappingURL=style.css.map */

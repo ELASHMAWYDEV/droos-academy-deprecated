@@ -3,7 +3,12 @@ import { useBootstrap } from "./hooks";
 
 //Routes
 import { Home as TeacherHome } from "./teacher/routes";
-import { LandingPage, StudentLandingPage } from "./platform/routes";
+import {
+  LandingPage,
+  StudentLandingPage,
+  ParentLandingPage,
+  TeacherLandingPage,
+} from "./platform/routes";
 
 //Style
 import "./style.scss";
@@ -17,6 +22,8 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/StudentLandingPage" component={StudentLandingPage} />
+            <Route path="/ParentLandingPage" component={ParentLandingPage} />
+            <Route path="/TeacherLandingPage" component={TeacherLandingPage} />
           </Switch>
         )}
         {subdomain == "admin" && (

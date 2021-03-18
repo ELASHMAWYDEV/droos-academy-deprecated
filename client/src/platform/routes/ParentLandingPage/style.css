@@ -40,12 +40,12 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.student-landing-page-container {
+.parent-landing-page-container {
   padding: 30px 40px;
 }
 
-.student-landing-page-container .pink-color {
-  background-image: url(../../../assets/img/pink-bg-left-with-shapes.png);
+.parent-landing-page-container .pink-color {
+  background-image: url(../../../assets/img/pink-bg-left-no-shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
@@ -56,15 +56,15 @@ body {
   left: 0;
 }
 
-.student-landing-page-container .logo-container {
+.parent-landing-page-container .logo-container {
   max-height: 80px;
 }
 
-.student-landing-page-container .logo-container img {
+.parent-landing-page-container .logo-container img {
   width: 200px;
 }
 
-.student-landing-page-container .flex-wrapper {
+.parent-landing-page-container .flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,49 +74,49 @@ body {
   margin-top: 30px;
 }
 
-.student-landing-page-container .flex-wrapper .content-container {
+.parent-landing-page-container .flex-wrapper .content-container {
   width: 70%;
 }
 
-.student-landing-page-container .flex-wrapper .content-container h1 {
+.parent-landing-page-container .flex-wrapper .content-container h1 {
   font-size: 26px !important;
   font-weight: bold;
   margin-bottom: 10px;
   color: #305f72;
 }
 
-.student-landing-page-container .flex-wrapper .content-container h2 {
+.parent-landing-page-container .flex-wrapper .content-container h2 {
   font-size: 24px !important;
   font-weight: bold;
   color: #305f72;
   margin-bottom: 10px;
 }
 
-.student-landing-page-container .flex-wrapper .content-container h2 span {
+.parent-landing-page-container .flex-wrapper .content-container h2 span {
   color: #ec8689;
 }
 
-.student-landing-page-container .flex-wrapper .content-container h5 {
+.parent-landing-page-container .flex-wrapper .content-container h5 {
   font-size: 18px !important;
   color: #305f72;
   font-weight: 500;
 }
 
-.student-landing-page-container .flex-wrapper .content-container .upper-content {
+.parent-landing-page-container .flex-wrapper .content-container .upper-content {
   margin-bottom: 30px;
 }
 
-.student-landing-page-container .flex-wrapper .shape-container {
+.parent-landing-page-container .flex-wrapper .shape-container {
   width: 80%;
   height: 300px;
 }
 
-.student-landing-page-container .flex-wrapper .student-landing-page-shape {
+.parent-landing-page-container .flex-wrapper .parent-landing-page-shape {
   width: 100%;
   height: 100%;
 }
 
-.student-landing-page-container .auth-btns-container {
+.parent-landing-page-container .auth-btns-container {
   position: absolute;
   bottom: 0;
   left: 0;
