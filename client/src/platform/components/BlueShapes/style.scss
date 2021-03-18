@@ -1,0 +1,48 @@
+@import "../../../assets/styles/global";
+
+.blue-shapes-container {
+  width: 311px;
+  height: 161px;
+  background-image: url(../../../assets/img/teacher-landing-page-small-shapes/blue-shape.svg);
+  background-size: cover;
+  .icon-container {
+    position: relative;
+    text-align: center;
+    top: 8%;
+    right: 3%;
+  }
+  .main-text-container {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    color: $white;
+    .main-text {
+      font-size: 18px !important;
+      font-weight: 400;
+      align-items: center;
+    }
+  }
+  .secondary-text-container {
+    width: 58%;
+    position: relative;
+    top: 5%;
+    right: 26%;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    .secondary-text {
+      font-size: 13px !important;
+      font-weight: 400;
+      align-items: center;
+    }
+  }
+  &:hover {
+    .icon,
+    .main-text-container {
+      visibility: hidden;
+    }
+    .secondary-text-container {
+      visibility: visible;
+    }
+  }
+}

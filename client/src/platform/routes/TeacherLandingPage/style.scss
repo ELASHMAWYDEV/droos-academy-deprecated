@@ -2,6 +2,7 @@
 
 .teacher-landing-page-container {
   padding: 30px 40px;
+
   .pink-color {
     background-image: url(../../../assets/img/teacher-landing-page-pink-shape.png);
     background-size: cover;
@@ -53,6 +54,7 @@
   }
   .auth-btns-container {
     position: absolute;
+    z-index: 1;
     bottom: 0;
     right: 0;
     margin-bottom: 15px;
@@ -70,37 +72,41 @@
   }
   .shapes-container {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50vh;
-    svg {
-      width: 45%;
-      padding: 15px;
-    }
-    .first-shape {
-      position: absolute;
-      left: 19%;
-    }
-    .second-shape {
+    width: 100%;
+    height: 100%;
+    .first-shape-container {
       position: absolute;
       left: 5%;
-      top: 45%;
+      top: 2%;
     }
-    .third-shape {
+    .second-shape-container {
       position: absolute;
-      right: 10%;
+      left: 1%;
+      top: 27%;
+      .secondary-text-container {
+        top: -10% !important;
+      }
+    }
+    .third-shape-container {
+      position: absolute;
+      left: 20%;
+      top: 42%;
+    }
+    .fourth-shape-container {
+      position: absolute;
+      top: 55%;
+      left: 2%;
+    }
+    .fifth-shape-container {
+      position: absolute;
       top: 70%;
-    }
-    .fourth-shape {
-      position: absolute;
-      top: 100%;
-      left: 5%;
-    }
-    .fifth-shape {
-      position: absolute;
-      top: 120%;
-      right: 1%;
+      left: 25%;
+      .secondary-text-container {
+        top: 5% !important;
+      }
     }
   }
 }
