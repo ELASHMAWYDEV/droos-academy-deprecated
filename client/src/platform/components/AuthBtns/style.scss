@@ -1,0 +1,42 @@
+@import "../../../assets/styles/global";
+
+.auth-btns-container {
+  @include flex;
+  .sign-up-container {
+    margin-right: 50px;
+  }
+  .instruction-text {
+    width: 100%;
+    h3 {
+      font-size: 26px !important;
+      font-weight: 300 !important;
+      color: $lightBlack;
+      text-align: center;
+    }
+  }
+  .btn-container {
+    @include flex;
+    margin-top: 30px;
+    width: 100%;
+    a {
+      width: 250px;
+      background: $lightBlue;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      color: $white;
+      border-radius: 30px;
+      padding: 5px 10px;
+      transition: 0.2s ease;
+      text-align: center;
+      font-size: 25px;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: -2px 5px 8px rgba(0, 0, 0, 0.3);
+      }
+      &:active {
+        transition: none;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        transform: scale(0.95);
+      }
+    }
+  }
+}
