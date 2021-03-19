@@ -22,17 +22,27 @@ $lightGray: #f1f2f6;
 //Media Queries
 @mixin media($breakpoint) {
   @if $breakpoint == phone-sm {
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 320px) {
       @content;
     }
   }
-  @if $breakpoint == phone-lg {
+  @if $breakpoint == phone-md {
     @media only screen and (max-width: 480px) {
       @content;
     }
   }
+  @if $breakpoint == phone-lg {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
   @if $breakpoint == tablet-sm {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 798px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-md {
+    @media only screen and (max-width: 900px) {
       @content;
     }
   }
@@ -46,12 +56,45 @@ $lightGray: #f1f2f6;
       @content;
     }
   }
+  @if $breakpoint == desktop-md {
+    @media only screen and (max-width: 1366px) {
+      @content;
+    }
+  }
   @if $breakpoint == desktop-lg {
-    @media only screen and (max-width: 1920px) {
+    @media only screen and (max-width: 1680px) {
       @content;
     }
   }
 }
+
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+
+/*****************************************/
 
 // Global Styles
 

@@ -48,6 +48,12 @@
     column-gap: 50px;
     row-gap: 60px;
     padding: 10px 40px;
+    @include media(desktop-sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media(tablet-sm) {
+      grid-template-columns: 1fr;
+    }
   }
   .nav-btns {
     display: flex;
@@ -102,3 +108,4 @@
     @include dashLine;
   }
 }
+
