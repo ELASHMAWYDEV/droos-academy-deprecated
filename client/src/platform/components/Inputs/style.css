@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.inputs-container {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.inputs-container .title-container {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.inputs-container .input-items-container {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.inputs-container .input-items-container .input-item {
+  width: 90%;
+  margin: auto;
+}
+
+.inputs-container .input-items-container .input-item label {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.inputs-container .input-items-container .input-item .input-feild-container {
+  margin: 1% 0 5% 2%;
+}
+
+.inputs-container .input-items-container .input-item .input-feild-container input {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.inputs-container .btn-container {
+  width: 50%;
+  margin: 10% auto;
+}
+
+.inputs-container .btn-container button {
+  width: 100%;
+  background-color: #2e5361;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
