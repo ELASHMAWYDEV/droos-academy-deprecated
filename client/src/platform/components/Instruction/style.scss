@@ -1,0 +1,24 @@
+@import "../../../assets/styles/global";
+
+.instruction-container {
+  margin: 5% 0;
+  width: 100%;
+  display: flex;
+  .number-container {
+    margin: 0px 1px;
+    background-color: $midPrimary;
+    border-radius: 50%;
+    padding: 1% 3%;
+    h3 {
+      color: $white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .text-container {
+    color: $lightPrimary;
+    padding: 1% 3%;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

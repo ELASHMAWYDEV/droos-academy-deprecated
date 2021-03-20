@@ -13,11 +13,6 @@ import Star from "../../../assets/img/teacher-landing-page-small-shapes/star.png
 import Download from "../../../assets/img/teacher-landing-page-small-shapes/download.png";
 import Live from "../../../assets/img/teacher-landing-page-small-shapes/live.png";
 import Sheild from "../../../assets/img/teacher-landing-page-small-shapes/shield.png";
-// import { ReactComponent as FirstShape } from "../../../assets/img/teacher-landing-page-small-shapes/1.svg";
-// import { ReactComponent as SecondShape } from "../../../assets/img/teacher-landing-page-small-shapes/2.svg";
-// import { ReactComponent as ThirdShape } from "../../../assets/img/teacher-landing-page-small-shapes/3.svg";
-// import { ReactComponent as FourthShape } from "../../../assets/img/teacher-landing-page-small-shapes/4.svg";
-// import { ReactComponent as FifthShape } from "../../../assets/img/teacher-landing-page-small-shapes/5.svg";
 import { ReactComponent as TeacherLandingPageIllustration } from "../../../assets/img/teacher-landing-page-shape.svg";
 
 const TeacherLandingPage = () => {

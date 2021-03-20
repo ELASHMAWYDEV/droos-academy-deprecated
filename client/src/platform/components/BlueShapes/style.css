@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
 body {
   margin: 0;
   padding: 0;
@@ -77,6 +103,8 @@ body {
   color: white;
   text-align: center;
   visibility: hidden;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
 }
 
 .blue-shapes-container .secondary-text-container .secondary-text {
@@ -85,14 +113,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
 }
 
 .blue-shapes-container:hover .icon,
 .blue-shapes-container:hover .main-text-container {
   visibility: hidden;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .blue-shapes-container:hover .secondary-text-container {
   visibility: visible;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 /*# sourceMappingURL=style.css.map */

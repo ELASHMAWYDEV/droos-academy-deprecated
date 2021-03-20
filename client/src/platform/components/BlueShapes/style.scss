@@ -30,19 +30,24 @@
     color: white;
     text-align: center;
     visibility: hidden;
+    transition: all 0.01s;
+
     .secondary-text {
       font-size: 13px !important;
       font-weight: 400;
       align-items: center;
+      transition: all 0.01s;
     }
   }
   &:hover {
     .icon,
     .main-text-container {
       visibility: hidden;
+      transition: all 0.1s;
     }
     .secondary-text-container {
       visibility: visible;
+      transition: all 0.2s;
     }
   }
 }
