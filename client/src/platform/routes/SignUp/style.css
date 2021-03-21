@@ -66,12 +66,11 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.login-container {
-  width: 100%;
+.signup-container {
   padding: 30px 40px;
 }
 
-.login-container .nav-container {
+.signup-container .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,15 +79,15 @@ body {
           justify-content: space-between;
 }
 
-.login-container .nav-container .logo-container {
+.signup-container .nav-container .logo-container {
   max-height: 80px;
 }
 
-.login-container .nav-container .logo-container img {
+.signup-container .nav-container .logo-container img {
   width: 200px;
 }
 
-.login-container .nav-container .back-button-container {
+.signup-container .nav-container .back-button-container {
   width: 10%;
   height: 40px;
   border-top-left-radius: 20px;
@@ -98,7 +97,7 @@ body {
   background-color: #ec8689;
 }
 
-.login-container .nav-container .back-button-container a {
+.signup-container .nav-container .back-button-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,29 +115,35 @@ body {
   padding: 20px;
 }
 
-.login-container .nav-container .back-button-container a .icon svg {
+.signup-container .nav-container .back-button-container a .icon svg {
   font-size: 20px;
   margin-top: 5px;
 }
 
-.login-container .content-container {
+.signup-container .content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 80vh;
+  margin-top: 2%;
 }
 
-.login-container .content-container .img-container svg {
-  width: 90%;
-  height: 80%;
+.signup-container .content-container .instructions-container {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
 }
 
-.login-container .content-container .form-container {
+.signup-container .content-container .instructions-container .title-container {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f19895;
+  margin-bottom: 20px;
+}
+
+.signup-container .content-container .form-container {
   width: 30%;
   background-color: #f19895;
   border-radius: 15px;
@@ -146,21 +151,21 @@ body {
           box-shadow: 0px 3px 10px #2e5361;
 }
 
-.login-container .content-container .form-container .sign-up-btn-container {
+.signup-container .content-container .form-container .sign-up-btn-container {
   text-align: center;
 }
 
-.login-container .content-container .form-container .sign-up-btn-container .text h4 {
+.signup-container .content-container .form-container .sign-up-btn-container .text h4 {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
 }
 
-.login-container .content-container .form-container .sign-up-btn-container .btn {
+.signup-container .content-container .form-container .sign-up-btn-container .btn {
   margin: 5% 0;
 }
 
-.login-container .content-container .form-container .sign-up-btn-container .btn a {
+.signup-container .content-container .form-container .sign-up-btn-container .btn a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -172,11 +177,11 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .login-container .nav-container .back-button-container {
-    width: 15%;
+  .signup-container .nav-container .back-button-container {
+    width: 10% !important;
     height: 35px;
   }
-  .login-container .nav-container .back-button-container a {
+  .signup-container .nav-container .back-button-container a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -193,102 +198,119 @@ body {
     font-weight: bold;
     padding: 10px !important;
   }
-  .login-container .nav-container .back-button-container a .icon svg {
+  .signup-container .nav-container .back-button-container a .icon svg {
     font-size: 20px;
     margin: 5px 5px 0 0;
   }
-  .login-container .content-container .img-container svg {
-    width: 75%;
-    height: 70%;
+  .signup-container .content-container .instructions-container {
+    width: 30% !important;
   }
-  .login-container .content-container .form-container {
-    width: 35% !important;
+  .signup-container .content-container .form-container {
+    width: 40% !important;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .login-container .content-container {
+  .signup-container .content-container {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 80vh;
   }
-  .login-container .content-container .img-container svg {
-    width: 0;
-  }
-  .login-container .content-container .form-container {
+  .signup-container .content-container .instructions-container {
     width: 50% !important;
+  }
+  .signup-container .content-container .instructions-container .title-container h2 {
+    font-size: 20px !important;
+  }
+  .signup-container .content-container .form-container {
+    width: 40% !important;
   }
 }
 
 @media only screen and (max-width: 798px) {
-  .login-container .nav-container .back-button-container a {
+  .signup-container .nav-container .back-button-container a {
     padding: 5px !important;
   }
-  .login-container .nav-container .logo-container {
+  .signup-container .nav-container .logo-container {
     max-height: 80px;
   }
-  .login-container .nav-container .logo-container img {
+  .signup-container .nav-container .logo-container img {
     width: 170px !important;
+  }
+  .signup-container .instructions-container {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 !important;
+            flex: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    display: none;
+  }
+  .signup-container .form-container {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .login-container .nav-container .logo-container {
+  .signup-container .nav-container .back-button-container {
+    width: 20% !important;
+  }
+  .signup-container .nav-container .logo-container {
     max-height: 80px;
   }
-  .login-container .nav-container .logo-container img {
+  .signup-container .nav-container .logo-container img {
     width: 150px !important;
   }
-  .login-container .content-container .form-container {
+  .signup-container .content-container {
+    margin-top: 30px;
+  }
+  .signup-container .content-container .form-container {
     width: 70% !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .login-container .login-container {
+  .signup-container .login-container {
     padding: 30px 20px !important;
   }
-  .login-container .nav-container .back-button-container {
+  .signup-container .nav-container .back-button-container {
     width: 30% !important;
     height: 35px;
   }
-  .login-container .content-container {
+  .signup-container .content-container {
     width: 100% !important;
   }
-  .login-container .content-container .form-container {
+  .signup-container .content-container .form-container {
     width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .login-container .nav-container .logo-container {
+  .signup-container .nav-container .logo-container {
     max-height: 80px;
   }
-  .login-container .nav-container .logo-container img {
+  .signup-container .nav-container .logo-container img {
     width: 120px !important;
   }
-  .login-container .nav-container .back-button-container {
-    width: 25%;
+  .signup-container .nav-container .back-button-container {
     height: 25px;
   }
-  .login-container .nav-container .back-button-container a {
+  .signup-container .nav-container .back-button-container a {
     font-size: 9px !important;
   }
-  .login-container .content-container {
+  .signup-container .content-container {
     width: 100% !important;
   }
-  .login-container .content-container .form-container {
+  .signup-container .content-container .form-container {
     width: 100% !important;
   }
-  .login-container .content-container .form-container .sign-up-btn-container {
+  .signup-container .content-container .form-container .sign-up-btn-container {
     text-align: center;
   }
-  .login-container .content-container .form-container .sign-up-btn-container .text h4 {
+  .signup-container .content-container .form-container .sign-up-btn-container .text h4 {
     font-size: 13px;
   }
-  .login-container .content-container .form-container .sign-up-btn-container .btn a {
+  .signup-container .content-container .form-container .sign-up-btn-container .btn a {
     font-size: 10px;
   }
 }

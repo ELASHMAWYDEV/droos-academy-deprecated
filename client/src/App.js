@@ -9,6 +9,7 @@ import {
   ParentLandingPage,
   TeacherLandingPage,
   Login,
+  SignUp,
 } from "./platform/routes";
 
 //Style
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/ParentLandingPage" component={ParentLandingPage} />
             <Route path="/TeacherLandingPage" component={TeacherLandingPage} />
             <Route path="/Login" component={Login} />
+            <Route path="/SignUp" component={SignUp} />
           </Switch>
         )}
         {subdomain == "admin" && (

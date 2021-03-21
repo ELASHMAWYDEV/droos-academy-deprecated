@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsArrowLeft } from "react-icons/bs";
 
 import { Inputs } from "../../components";
 
@@ -23,7 +24,7 @@ function Login() {
               <h3>العودة</h3>
             </div>
             <div className="icon">
-              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <BsArrowLeft />
             </div>
           </Link>
         </div>
@@ -34,6 +35,7 @@ function Login() {
         </div>
         <div className="form-container">
           <Inputs
+            signup="false"
             title="تسجيل الدخول"
             btnName="تسجيل الدخول"
             inputs={[
@@ -63,6 +65,14 @@ function Login() {
               },
             ]}
           />
+          <div className="sign-up-btn-container">
+            <div className="text">
+              <h4>ليس لديك حساب ؟</h4>
+            </div>
+            <div className="btn">
+              <Link to="/SignUp">تسجيل حساب جديد</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

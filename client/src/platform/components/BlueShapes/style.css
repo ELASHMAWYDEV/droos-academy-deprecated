@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
 body {
   margin: 0;
   padding: 0;
@@ -51,7 +77,8 @@ body {
   position: relative;
   text-align: center;
   top: 8%;
-  right: 3%;
+  right: 2%;
+  margin: 0 auto;
 }
 
 .blue-shapes-container .main-text-container {
@@ -62,7 +89,7 @@ body {
 }
 
 .blue-shapes-container .main-text-container .main-text {
-  font-size: 18px !important;
+  font-size: 18px;
   font-weight: 400;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -70,29 +97,114 @@ body {
 }
 
 .blue-shapes-container .secondary-text-container {
-  width: 58%;
+  width: 100%;
   position: relative;
-  top: 5%;
-  right: 26%;
+  bottom: 5%;
   color: white;
   text-align: center;
   visibility: hidden;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
 }
 
 .blue-shapes-container .secondary-text-container .secondary-text {
-  font-size: 13px !important;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 13px;
   font-weight: 400;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.01s;
+  transition: all 0.01s;
 }
 
 .blue-shapes-container:hover .icon,
 .blue-shapes-container:hover .main-text-container {
   visibility: hidden;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .blue-shapes-container:hover .secondary-text-container {
   visibility: visible;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .blue-shapes-container {
+    width: 280px;
+    height: 150px;
+  }
+  .blue-shapes-container .secondary-text {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blue-shapes-container {
+    width: 240px;
+    height: 120px;
+  }
+  .blue-shapes-container .secondary-text-container {
+    top: 8%;
+  }
+  .blue-shapes-container .secondary-text-container .secondary-text {
+    font-size: 10px !important;
+  }
+  .blue-shapes-container .main-text-container {
+    top: 30%;
+  }
+  .blue-shapes-container .main-text-container .main-text {
+    font-size: 14px !important;
+  }
+  .blue-shapes-container .icon-container img {
+    width: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .blue-shapes-container {
+    width: 240px;
+    height: 120px;
+  }
+  .blue-shapes-container .secondary-text-container {
+    top: 8%;
+  }
+  .blue-shapes-container .secondary-text-container .secondary-text {
+    font-size: 10px !important;
+  }
+  .blue-shapes-container .main-text-container {
+    top: 30%;
+  }
+  .blue-shapes-container .main-text-container .main-text {
+    font-size: 14px !important;
+  }
+  .blue-shapes-container .icon-container img {
+    width: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .blue-shapes-container {
+    width: 240px;
+    height: 120px;
+  }
+  .blue-shapes-container .secondary-text-container {
+    top: 8%;
+  }
+  .blue-shapes-container .secondary-text-container .secondary-text {
+    font-size: 10px !important;
+  }
+  .blue-shapes-container .main-text-container {
+    top: 30%;
+  }
+  .blue-shapes-container .main-text-container .main-text {
+    font-size: 14px !important;
+  }
+  .blue-shapes-container .icon-container img {
+    width: 40px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

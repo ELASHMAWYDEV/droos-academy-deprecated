@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
 body {
   margin: 0;
   padding: 0;
@@ -42,16 +68,18 @@ body {
 /******************************/
 .teacher-landing-page-container {
   padding: 30px 40px;
+  width: 100%;
+  height: 100vh;
 }
 
 .teacher-landing-page-container .pink-color {
   background-image: url(../../../assets/img/teacher-landing-page-pink-shape.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -213px;
-  background-position-x: -71px;
-  min-height: 100vh;
-  width: 79%;
+  background-position-y: -200px;
+  background-position-x: -60px;
+  height: 100vh;
+  width: 80%;
   position: absolute;
   top: 0;
   left: 0;
@@ -106,13 +134,44 @@ body {
   text-decoration: underline;
 }
 
-.teacher-landing-page-container .auth-btns-container {
-  position: absolute;
+.teacher-landing-page-container .content-container .img-container-hidden {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.teacher-landing-page-container .content-container .img-container-hidden .parent-landing-page-shape {
+  width: 0%;
+  height: 0%;
+}
+
+.teacher-landing-page-container .shapes-container-hidden {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
   z-index: 1;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 15px;
-  padding-right: 40px;
+  visibility: hidden;
+  width: 50%;
+  height: 0;
+  overflow-x: hidden;
+}
+
+.teacher-landing-page-container .auth-btns-container {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
 .teacher-landing-page-container .img-container {
@@ -170,7 +229,450 @@ body {
   left: 25%;
 }
 
-.teacher-landing-page-container .shapes-container .fifth-shape-container .secondary-text-container {
-  top: 5% !important;
+@media only screen and (max-width: 1200px) {
+  .teacher-landing-page-container .content-container {
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
+  .teacher-landing-page-container .img-container {
+    width: 75%;
+    height: 200px;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+  }
+  .teacher-landing-page-container .img-container .parent-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .teacher-landing-page-container .pink-color {
+    background-position-y: -150px;
+    background-position-x: -65px;
+  }
+  .teacher-landing-page-container .logo-container img {
+    width: 170px;
+  }
+  .teacher-landing-page-container .content-container {
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
+  .teacher-landing-page-container .img-container {
+    width: 75%;
+    height: 200px;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+  }
+  .teacher-landing-page-container .img-container .parent-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .teacher-landing-page-container .shapes-container .second-shape-container .secondary-text-container {
+    top: -25% !important;
+  }
+  .teacher-landing-page-container .shapes-container .second-shape-container .main-text-container {
+    top: 10%;
+  }
+  .teacher-landing-page-container .auth-btns-container {
+    height: 3vh !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .teacher-landing-page-container .pink-color {
+    background-position-y: -50px;
+    background-position-x: -100px;
+    height: 120vh;
+  }
+  .teacher-landing-page-container .logo-container img {
+    width: 170px;
+  }
+  .teacher-landing-page-container .content-container {
+    width: 50%;
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
+  .teacher-landing-page-container .img-container {
+    width: 90% !important;
+  }
+  .teacher-landing-page-container .img-container .parent-landing-page-shape {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+  .teacher-landing-page-container .shapes-container {
+    width: 0 !important;
+    height: 0 !important;
+    display: none;
+  }
+  .teacher-landing-page-container .shapes-container-hidden {
+    visibility: visible;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+    gap: 20px;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .secondary-text-container .secondary-text {
+    margin: 0 auto;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .secondary-text-container {
+    top: -25% !important;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .main-text-container {
+    top: 10% !important;
+  }
+  .teacher-landing-page-container .auth-btns-container {
+    height: 20vh !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .teacher-landing-page-container .pink-color {
+    background-position-y: -50px;
+    background-position-x: -100px;
+    height: 150vh;
+    width: 100%;
+  }
+  .teacher-landing-page-container .logo-container img {
+    width: 170px;
+  }
+  .teacher-landing-page-container .content-container {
+    width: 60%;
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
+  .teacher-landing-page-container .img-container {
+    width: 90% !important;
+  }
+  .teacher-landing-page-container .img-container .parent-landing-page-shape {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  }
+  .teacher-landing-page-container .shapes-container {
+    width: 0 !important;
+    height: 0 !important;
+    display: none;
+  }
+  .teacher-landing-page-container .shapes-container-hidden {
+    visibility: visible;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+    gap: 20px;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .secondary-text-container .secondary-text {
+    margin: 0 auto;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .secondary-text-container {
+    top: -25% !important;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .main-text-container {
+    top: 10% !important;
+  }
+  .teacher-landing-page-container .auth-btns-container {
+    height: 20vh !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .teacher-landing-page-container .pink-color {
+    background-position-y: -50px;
+    background-position-x: 50%;
+    height: 240vh;
+    width: 100%;
+  }
+  .teacher-landing-page-container .logo-container img {
+    width: 150px;
+  }
+  .teacher-landing-page-container .content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container .img-container-hidden {
+    width: 80% !important;
+    height: 70% !important;
+  }
+  .teacher-landing-page-container .content-container .img-container-hidden .parent-landing-page-shape {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
+  .teacher-landing-page-container .img-container {
+    width: 0 !important;
+  }
+  .teacher-landing-page-container .img-container .parent-landing-page-shape {
+    width: 0px !important;
+    visibility: hidden;
+  }
+  .teacher-landing-page-container .shapes-container {
+    width: 0 !important;
+    height: 0 !important;
+    display: none;
+  }
+  .teacher-landing-page-container .shapes-container-hidden {
+    visibility: visible;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+    gap: 20px;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .secondary-text-container .secondary-text {
+    margin: 0 auto;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .secondary-text-container {
+    top: -25% !important;
+  }
+  .teacher-landing-page-container .shapes-container-hidden .second-shape-container .main-text-container {
+    top: 10% !important;
+  }
+  .teacher-landing-page-container .auth-btns-container {
+    height: 20vh !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .teacher-landing-page-container .content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-y: hidden;
+  }
+  .teacher-landing-page-container .content-container .img-container-hidden {
+    width: 80% !important;
+    height: 60% !important;
+  }
+  .teacher-landing-page-container .content-container .img-container-hidden .parent-landing-page-shape {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .teacher-landing-page-container .content-container h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #305f72;
+  }
+  .teacher-landing-page-container .content-container h5 span {
+    color: #ec8689;
+  }
+  .teacher-landing-page-container .content-container h5 a {
+    font-weight: bold;
+    color: #12699e;
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=style.css.map */

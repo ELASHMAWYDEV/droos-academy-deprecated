@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
 body {
   margin: 0;
   padding: 0;
@@ -48,8 +74,7 @@ body {
   background-image: url(../../../assets/img/pink-bg-left-with-shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -50px;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -79,14 +104,14 @@ body {
 }
 
 .student-landing-page-container .flex-wrapper .content-container h1 {
-  font-size: 26px !important;
+  font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #305f72;
 }
 
 .student-landing-page-container .flex-wrapper .content-container h2 {
-  font-size: 24px !important;
+  font-size: 24px;
   font-weight: bold;
   color: #305f72;
   margin-bottom: 10px;
@@ -97,7 +122,7 @@ body {
 }
 
 .student-landing-page-container .flex-wrapper .content-container h5 {
-  font-size: 18px !important;
+  font-size: 18px;
   color: #305f72;
   font-weight: 500;
 }
@@ -111,15 +136,370 @@ body {
   height: 300px;
 }
 
-.student-landing-page-container .flex-wrapper .student-landing-page-shape {
+.student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
   width: 100%;
   height: 100%;
 }
 
 .student-landing-page-container .auth-btns-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 25px;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .student-landing-page-container .auth-btns-container {
+    height: 15vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .student-landing-page-container .pink-color {
+    height: 100vh;
+    background-position-x: 20%;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 150px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 50% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 50% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .student-landing-page-container .pink-color {
+    height: 100vh;
+    background-position-x: 20%;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 150px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 50% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 50% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .student-landing-page-container .pink-color {
+    height: 125vh;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 150px;
+  }
+  .student-landing-page-container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 100% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 100% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 15vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .student-landing-page-container .pink-color {
+    height: 140vh;
+    background-position-x: 20%;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 150px;
+  }
+  .student-landing-page-container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 100% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 100% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 20vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .student-landing-page-container .pink-color {
+    height: 135vh;
+    background-position-x: 20%;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 130px;
+  }
+  .student-landing-page-container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 100% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 100% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 15vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .student-landing-page-container .pink-color {
+    height: 160vh;
+    background-position-x: 20%;
+  }
+  .student-landing-page-container .logo-container {
+    max-height: 80px;
+  }
+  .student-landing-page-container .logo-container img {
+    width: 100px;
+  }
+  .student-landing-page-container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-landing-page-container .flex-wrapper .content-container {
+    width: 100% !important;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h1 {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #305f72;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #305f72;
+    margin-bottom: 10px;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h2 span {
+    color: #ec8689;
+  }
+  .student-landing-page-container .flex-wrapper .content-container h5 {
+    font-size: 15px !important;
+    color: #305f72;
+    font-weight: 500;
+  }
+  .student-landing-page-container .flex-wrapper .content-container .upper-content {
+    margin-bottom: 25px !important;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container {
+    width: 100% !important;
+    height: 250px !important;
+    margin-top: 30px;
+  }
+  .student-landing-page-container .flex-wrapper .shape-container .student-landing-page-shape {
+    width: 100%;
+    height: 100%;
+  }
+  .student-landing-page-container .auth-btns-container {
+    height: 15vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
