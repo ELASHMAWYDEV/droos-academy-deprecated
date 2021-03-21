@@ -150,6 +150,7 @@ function SignUp() {
                 selectTitle: "اختر السنة الدراسية",
                 props: {
                   required: true,
+                  placeholder: "اختر",
                 },
                 options: [
                   {

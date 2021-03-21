@@ -18,6 +18,11 @@ const NavBar = () => {
         <Link to="">المميزات</Link>
         <Link to="">عن الموقع</Link>
       </div>
+      <div className="humburger-menu">
+        <span></span>
+        <span className="mid-burger"></span>
+        <span></span>
+      </div>
     </div>
   );
 };

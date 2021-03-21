@@ -1,14 +1,14 @@
 @import "../../../assets/styles/global";
 
 .auth-btns-container {
-  @include flex;
+  display: flex;
   .sign-up-container {
     margin-right: 50px;
   }
   .instruction-text {
     width: 100%;
     h3 {
-      font-size: 26px !important;
+      font-size: 26px;
       font-weight: 300 !important;
       color: $lightBlack;
       text-align: center;
@@ -36,6 +36,99 @@
         transition: none;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
         transform: scale(0.95);
+      }
+    }
+  }
+
+  @include media(desktop-sm) {
+    .auth-btns-container {
+      .instruction-text {
+        width: 100%;
+        h3 {
+          font-size: 23px !important;
+        }
+      }
+      .btn-container {
+        a {
+          width: 200px !important;
+          padding: 4px 10px;
+          font-size: 22px !important;
+        }
+      }
+    }
+  }
+
+  @include media(tablet-lg) {
+    .auth-btns-container {
+      .instruction-text {
+        width: 100%;
+        h3 {
+          font-size: 23px !important;
+        }
+      }
+      .btn-container {
+        a {
+          width: 200px !important;
+          padding: 4px 10px;
+          font-size: 22px !important;
+        }
+      }
+    }
+  }
+
+  @include media(tablet-md) {
+    .auth-btns-container {
+      .instruction-text {
+        width: 100%;
+        h3 {
+          font-size: 18px !important;
+        }
+      }
+      .btn-container {
+        a {
+          width: 190px !important;
+          padding: 4px 10px;
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+
+  @include media(phone-md) {
+    .auth-btns-container {
+      .instruction-text {
+        width: 100%;
+        h3 {
+          font-size: 15px !important;
+        }
+      }
+      .btn-container {
+        a {
+          width: 100% !important;
+          padding: 4px 10px;
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+
+  @include media(phone-sm) {
+    .auth-btns-container {
+      .sign-up-container {
+        margin-right: 25px !important;
+      }
+      .instruction-text {
+        width: 100%;
+        h3 {
+          font-size: 13px !important;
+        }
+      }
+      .btn-container {
+        a {
+          width: 100% !important;
+          padding: 4px 10px;
+          font-size: 12px !important;
+        }
       }
     }
   }

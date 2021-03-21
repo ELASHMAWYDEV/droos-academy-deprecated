@@ -9,7 +9,8 @@
     position: relative;
     text-align: center;
     top: 8%;
-    right: 3%;
+    right: 2%;
+    margin: 0 auto;
   }
   .main-text-container {
     text-align: center;
@@ -17,23 +18,26 @@
     top: 20%;
     color: $white;
     .main-text {
-      font-size: 18px !important;
+      font-size: 18px;
       font-weight: 400;
       align-items: center;
     }
   }
   .secondary-text-container {
-    width: 58%;
+    width: 100%;
     position: relative;
-    top: 5%;
-    right: 26%;
+    // top: 5%;
+    // right: 26%;
+    bottom: 5%;
     color: white;
     text-align: center;
     visibility: hidden;
     transition: all 0.01s;
 
     .secondary-text {
-      font-size: 13px !important;
+      width: 60%;
+      margin: 0 auto;
+      font-size: 13px;
       font-weight: 400;
       align-items: center;
       transition: all 0.01s;
@@ -48,6 +52,79 @@
     .secondary-text-container {
       visibility: visible;
       transition: all 0.2s;
+    }
+  }
+
+  @include media(desktop-sm) {
+    width: 280px;
+    height: 150px;
+    .secondary-text {
+      font-size: 10px !important;
+    }
+  }
+
+  @include media(tablet-lg) {
+    width: 240px;
+    height: 120px;
+    .secondary-text-container {
+      top: 8%;
+      .secondary-text {
+        font-size: 10px !important;
+      }
+    }
+    .main-text-container {
+      top: 30%;
+      .main-text {
+        font-size: 14px !important;
+      }
+    }
+    .icon-container {
+      img {
+        width: 40px !important;
+      }
+    }
+  }
+
+  @include media(tablet-md) {
+    width: 240px;
+    height: 120px;
+    .secondary-text-container {
+      top: 8%;
+      .secondary-text {
+        font-size: 10px !important;
+      }
+    }
+    .main-text-container {
+      top: 30%;
+      .main-text {
+        font-size: 14px !important;
+      }
+    }
+    .icon-container {
+      img {
+        width: 40px !important;
+      }
+    }
+  }
+  @include media(tablet-sm) {
+    width: 240px;
+    height: 120px;
+    .secondary-text-container {
+      top: 8%;
+      .secondary-text {
+        font-size: 10px !important;
+      }
+    }
+    .main-text-container {
+      top: 30%;
+      .main-text {
+        font-size: 14px !important;
+      }
+    }
+    .icon-container {
+      img {
+        width: 40px !important;
+      }
     }
   }
 }

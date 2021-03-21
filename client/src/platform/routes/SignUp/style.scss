@@ -82,4 +82,156 @@
       }
     }
   }
+
+  @include media(tablet-lg) {
+    .nav-container {
+      .back-button-container {
+        width: 10% !important;
+        height: 35px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: $white;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 10px !important;
+          .icon {
+            svg {
+              font-size: 20px;
+              margin: 5px 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .content-container {
+      .instructions-container {
+        width: 30% !important;
+      }
+      .form-container {
+        width: 40% !important;
+      }
+    }
+  }
+
+  @include media(tablet-md) {
+    .content-container {
+      .instructions-container {
+        width: 50% !important;
+        .title-container {
+          h2 {
+            font-size: 20px !important;
+          }
+        }
+      }
+
+      width: 100%;
+      justify-content: center;
+      .form-container {
+        width: 40% !important;
+      }
+    }
+  }
+
+  @include media(tablet-sm) {
+    .nav-container {
+      .back-button-container {
+        a {
+          padding: 5px !important;
+        }
+      }
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 170px !important;
+        }
+      }
+    }
+    .instructions-container {
+      flex: 0 !important;
+      width: 0 !important;
+      height: 0 !important;
+      display: none;
+    }
+    .form-container {
+      width: 100%;
+    }
+  }
+  @include media(phone-lg) {
+    .nav-container {
+      .back-button-container {
+        width: 20% !important;
+      }
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 150px !important;
+        }
+      }
+    }
+
+    .content-container {
+      margin-top: 30px;
+      .form-container {
+        width: 70% !important;
+      }
+    }
+  }
+  @include media(phone-md) {
+    .login-container {
+      padding: 30px 20px !important;
+    }
+    .nav-container {
+      .back-button-container {
+        width: 30% !important;
+        height: 35px;
+      }
+    }
+    .content-container {
+      width: 100% !important;
+
+      .form-container {
+        width: 100% !important;
+      }
+    }
+  }
+  @include media(phone-sm) {
+    .nav-container {
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 120px !important;
+        }
+      }
+      .back-button-container {
+        height: 25px;
+        a {
+          font-size: 9px !important;
+        }
+      }
+    }
+
+    .content-container {
+      width: 100% !important;
+      .form-container {
+        width: 100% !important;
+        .sign-up-btn-container {
+          text-align: center;
+          .text {
+            h4 {
+              font-size: 13px;
+            }
+          }
+          .btn {
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

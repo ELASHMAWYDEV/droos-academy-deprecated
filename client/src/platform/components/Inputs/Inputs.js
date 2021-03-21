@@ -31,11 +31,20 @@ function Inputs({ title, inputs, btnName, signup }) {
                 <div className="input-feild-container">
                   {" "}
                   <select {...input.props}>
-                    <option value="">{input.selectTitle}</option>
+                    <option
+                      value=""
+                      disabled
+                      selected
+                      unselectable
+                      id="selsectTitle"
+                    >
+                      {input.selectTitle}
+                    </option>
                     {input.options.map((option) => (
                       <option value={option.value}>{option.label}</option>
                     ))}
                   </select>
+                  <span class=""></span>
                 </div>
               </div>
             ) : null

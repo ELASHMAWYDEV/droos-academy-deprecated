@@ -66,14 +66,20 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+.landing-page-container {
+  width: 100%;
+  height: 100vh;
+}
+
 .landing-page-container .pink-color {
   background-image: url(../../../assets/img/pink-bg-right.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -80px;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .landing-page-container .flex-wrapper {
@@ -96,21 +102,21 @@ body {
 }
 
 .landing-page-container .flex-wrapper .content-container h1 {
-  font-size: 31px !important;
+  font-size: 31px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #305f72;
 }
 
 .landing-page-container .flex-wrapper .content-container h2 {
-  font-size: 31px !important;
+  font-size: 31px;
   font-weight: 400;
   color: #305f72;
   width: 60%;
 }
 
 .landing-page-container .flex-wrapper .content-container h5 {
-  font-size: 31px !important;
+  font-size: 31px;
   color: #305f72;
   font-weight: 400;
 }
@@ -158,7 +164,7 @@ body {
 }
 
 .landing-page-container .who-are-you-container .btns-container a {
-  padding: 5px 0px !important;
+  padding: 5px 0px;
   width: 23%;
   text-align: center;
   background-color: #305f72;
@@ -200,5 +206,233 @@ body {
   font-size: 18;
   font-weight: 500;
   padding: 0px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing-page-container .shape-container {
+    width: 40%;
+  }
+  .landing-page-container .shape-container .landing-page-shape {
+    width: 400px;
+    height: 400px;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 28px !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .landing-page-container .pink-color {
+    background-position-y: 0px;
+  }
+  .landing-page-container .shape-container {
+    width: 40%;
+  }
+  .landing-page-container .shape-container .landing-page-shape {
+    width: 350px;
+    height: 350px;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 24px !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 55%;
+  }
+  .landing-page-container .who-are-you-container a {
+    padding: 4px 0 !important;
+    font-size: 22px !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landing-page-container .pink-color {
+    background-position-y: 0px;
+    overflow-y: hidden !important;
+  }
+  .landing-page-container .shape-container {
+    width: 40%;
+  }
+  .landing-page-container .shape-container .landing-page-shape {
+    width: 320px;
+    height: 320px;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 22px !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 55%;
+  }
+  .landing-page-container .who-are-you-container a {
+    padding: 3px 0 !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .landing-page-container .pink-color {
+    background-position-x: -80px;
+  }
+  .landing-page-container .shape-container {
+    width: 40% !important;
+  }
+  .landing-page-container .shape-container .landing-page-shape {
+    width: 250px;
+    height: 250px;
+  }
+  .landing-page-container .flex-wrapper {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 20px !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 55%;
+  }
+  .landing-page-container .who-are-you-container .text-container {
+    font-size: 25px !important;
+  }
+  .landing-page-container .who-are-you-container a {
+    font-size: 20px !important;
+    padding: 2px 0 !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .landing-page-container .pink-color {
+    background-position-x: -300px !important;
+  }
+  .landing-page-container .shape-container {
+    width: 100% !important;
+  }
+  .landing-page-container .shape-container .landing-page-shape {
+    width: 100%;
+    height: 70%;
+  }
+  .landing-page-container .flex-wrapper {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .landing-page-container .content-container {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 20px !important;
+    width: 100%;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 100%;
+    bottom: 1% !important;
+  }
+  .landing-page-container .who-are-you-container .text-container {
+    font-size: 25px !important;
+  }
+  .landing-page-container .who-are-you-container a {
+    font-size: 15px !important;
+    padding: 5px 0 !important;
+  }
+  .landing-page-container .terms-of-use-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .landing-page-container .content-container {
+    width: 100%;
+  }
+  .landing-page-container .content-container h1,
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 17px !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 100%;
+    bottom: 2% !important;
+  }
+  .landing-page-container .who-are-you-container .text-container {
+    font-size: 25px !important;
+  }
+  .landing-page-container .who-are-you-container a {
+    font-size: 15px !important;
+    padding: 5px 0 !important;
+  }
+  .landing-page-container .terms-of-use-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .landing-page-container .content-container {
+    width: 100%;
+  }
+  .landing-page-container .content-container h1 {
+    font-size: 20px !important;
+  }
+  .landing-page-container .content-container h2,
+  .landing-page-container .content-container h5 {
+    font-size: 16px !important;
+    width: 95% !important;
+  }
+  .landing-page-container .who-are-you-container {
+    width: 100%;
+    bottom: 2% !important;
+  }
+  .landing-page-container .who-are-you-container .text-container {
+    font-size: 25px !important;
+  }
+  .landing-page-container .who-are-you-container a {
+    font-size: 15px !important;
+    padding: 5px 0 !important;
+  }
+  .landing-page-container .terms-of-use-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2px !important;
+  }
+  .landing-page-container .terms-of-use-container a {
+    font-size: 10px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
