@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.lecture-details-container {
+  background: url(../../../assets/img/lecture-details-pink-shape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.lecture-details-container .lecture-content {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info .lecture-title h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2e5361;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info .lecture-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  white-space: nowrap;
+  border-radius: 50px;
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-shadow: 0px 2px 5px rgba(46, 83, 97, 0.2);
+          box-shadow: 0px 2px 5px rgba(46, 83, 97, 0.2);
+  background-color: #3498db;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info .lecture-info div div {
+  width: 16%;
+  position: relative;
+  right: 0;
+}
+
+.lecture-details-container .lecture-content .lecture-main-info .lecture-info div div svg {
+  width: 50%;
+}
+
+.lecture-details-container .teacher-info {
+  padding: 0px;
+  padding-right: 0;
+  padding-left: 20px;
+  margin: 30px -10px;
+  z-index: 3;
+}
+
+.lecture-details-container .teacher-info img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+.lecture-details-container .teacher-info > div {
+  width: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-details-container .teacher-info p {
+  font-size: 18px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@import "../../../assets/styles/global";
+
+.lecture-extras-container {
+  margin: 30px 40px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  .extras-navs {
+    display: flex;
+    justify-content: center;
+    background-color: $lightGray;
+    width: 100%;
+    div {
+      width: 12%;
+      padding: 20px 15px;
+      cursor: pointer;
+      color: $black;
+    }
+    .active {
+      color: $white;
+      background-color: $gray;
+    }
+  }
+  .navs-content {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+}
