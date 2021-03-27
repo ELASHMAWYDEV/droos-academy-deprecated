@@ -66,82 +66,12 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.landing-page-container .pink-color {
-  background-image: url(../../../assets/img/pink-bg-right.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -80px;
-  min-height: 100vh;
-  width: 100%;
-  position: absolute;
-}
-
-.landing-page-container .flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 40px;
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.landing-page-container .flex-wrapper .content-container .bold-span {
-  font-weight: bold;
-  color: #305f72;
-}
-
-.landing-page-container .flex-wrapper .content-container h1 {
-  font-size: 31px !important;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #305f72;
-}
-
-.landing-page-container .flex-wrapper .content-container h2 {
-  font-size: 31px !important;
-  font-weight: 400;
-  color: #305f72;
-  width: 60%;
-}
-
-.landing-page-container .flex-wrapper .content-container h5 {
-  font-size: 31px !important;
-  color: #305f72;
-  font-weight: 400;
-}
-
-.landing-page-container .flex-wrapper .content-container h5 span {
-  color: #ec8689;
-}
-
-.landing-page-container .flex-wrapper .shape-container {
-  width: 50%;
-}
-
-.landing-page-container .flex-wrapper .landing-page-shape {
-  width: 500px;
-  height: 500px;
-}
-
-.landing-page-container .who-are-you-container {
-  width: 65%;
-  position: absolute;
-  bottom: 0 !important;
-}
-
-.landing-page-container .who-are-you-container .text-container {
-  font-size: 31px !important;
-  color: #305f72;
-  font-weight: 300;
-  text-align: center;
-}
-
-.landing-page-container .who-are-you-container .btns-container {
+.lecture-nav-bar-container {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  max-height: 80px;
+  padding: 30px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,35 +81,51 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.landing-page-container .who-are-you-container .btns-container a {
-  padding: 5px 0px !important;
-  width: 23%;
-  text-align: center;
-  background-color: #305f72;
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+.lecture-nav-bar-container .logo-container img {
+  width: 200px;
+}
+
+.lecture-nav-bar-container .navs-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lecture-nav-bar-container .navs-btns-container div {
+  margin: 10px;
+}
+
+.lecture-nav-bar-container .navs-btns-container div a {
+  background: linear-gradient(-45deg, #ffc850 0%, #ec8689 100%);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-weight: 400;
-  border-radius: 10px;
-  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 30px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-.landing-page-container .who-are-you-container .btns-container a:hover {
+.lecture-nav-bar-container .navs-btns-container div a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-box-shadow: -2px 5px 8px rgba(0, 0, 0, 0.3);
           box-shadow: -2px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
-.landing-page-container .who-are-you-container .btns-container a:active {
+.lecture-nav-bar-container .navs-btns-container div a:active {
   -webkit-transition: none;
   transition: none;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -188,17 +134,47 @@ body {
           transform: scale(0.95);
 }
 
-.landing-page-container .terms-of-use-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 20px 10px;
+.lecture-nav-bar-container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  width: 16%;
 }
 
-.landing-page-container .terms-of-use-container a {
-  color: #305f72;
-  font-size: 18;
-  font-weight: 500;
-  padding: 0px 10px;
+.lecture-nav-bar-container .info-container div {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.lecture-nav-bar-container .info-container div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ec8689;
+  padding-left: 15px;
+}
+
+.lecture-nav-bar-container .info-container div div div {
+  background-color: #ffc850;
+  padding: 5px 8px !important;
+  margin-left: 10px;
+  border: 2px solid #ffdc64;
 }
 /*# sourceMappingURL=style.css.map */

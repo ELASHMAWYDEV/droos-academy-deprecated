@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
 //Routes
-import { Home as TeacherHome } from "./teacher/routes";
+import { Home as TeacherHome, Lecture } from "./teacher/routes";
 import {
   LandingPage,
   StudentLandingPage,
@@ -33,7 +33,8 @@ const App = () => {
         )}
         {subdomain != "" && subdomain != "admin" && (
           <Switch>
-            <Route path="/" component={TeacherHome} />
+            <Route exact path="/" component={TeacherHome} />
+            <Route path="/Lecture" component={Lecture} />
           </Switch>
         )}
       </Router>

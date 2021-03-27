@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
 body {
   margin: 0;
   padding: 0;
@@ -107,6 +133,20 @@ body {
           column-gap: 50px;
   row-gap: 60px;
   padding: 10px 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .courses-slider-container .courses-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .courses-slider-container .courses-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .courses-slider-container .nav-btns {

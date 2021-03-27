@@ -66,4 +66,59 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+.blue-shapes-container {
+  width: 311px;
+  height: 161px;
+  background-image: url(../../../assets/img/teacher-landing-page-small-shapes/blue-shape.svg);
+  background-size: cover;
+}
+
+.blue-shapes-container .icon-container {
+  position: relative;
+  text-align: center;
+  top: 8%;
+  right: 3%;
+}
+
+.blue-shapes-container .main-text-container {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: #ffffff;
+}
+
+.blue-shapes-container .main-text-container .main-text {
+  font-size: 18px !important;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue-shapes-container .secondary-text-container {
+  width: 58%;
+  position: relative;
+  top: 5%;
+  right: 26%;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+}
+
+.blue-shapes-container .secondary-text-container .secondary-text {
+  font-size: 13px !important;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue-shapes-container:hover .icon,
+.blue-shapes-container:hover .main-text-container {
+  visibility: hidden;
+}
+
+.blue-shapes-container:hover .secondary-text-container {
+  visibility: visible;
+}
 /*# sourceMappingURL=style.css.map */
