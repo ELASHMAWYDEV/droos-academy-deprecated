@@ -35,6 +35,14 @@ const LectureVideos = () => {
           </div>
         </div>
         <div className="video-container"></div>
+        <div className="lecture-tests-btn-hidden">
+            <div>
+              <button>اختبار الجز ء الأول</button>
+            </div>
+            <div>
+              <button>اختبار الجز ء الثاني</button>
+            </div>
+          </div>
       </div>
     </div>
   );

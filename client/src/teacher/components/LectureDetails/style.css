@@ -70,13 +70,14 @@ body {
   background: url(../../../assets/img/lecture-details-pink-shape.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
+  margin-bottom: 20px;
+  height: 50vh;
 }
 
 .lecture-details-container .lecture-content {
@@ -214,5 +215,121 @@ body {
 .lecture-details-container .teacher-info p {
   font-size: 18px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .lecture-details-container .lecture-content {
+    width: 55%;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-title h1 {
+    font-size: 30px !important;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .lecture-details-container {
+    height: 40vh !important;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info {
+    display: block !important;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+    width: 50%;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .lecture-details-container {
+    height: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .lecture-details-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: auto;
+    background-position-y: -50px;
+    background-position-x: -50px;
+  }
+  .lecture-details-container .lecture-content {
+    width: 90% !important;
+    margin: 20px;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+    width: 40%;
+    margin: 5px;
+  }
+  .lecture-details-container .lecture-content .lecture-details {
+    font-size: 16px;
+    width: 70%;
+  }
+  .lecture-details-container .teacher-info {
+    margin: 20px;
+  }
+  .lecture-details-container .teacher-info p {
+    color: #2e5361;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .lecture-details-container .lecture-content {
+    width: 90% !important;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info {
+    display: block !important;
+    width: 100%;
+    margin: auto;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-title h1 {
+    text-align: center;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+    width: 50%;
+    margin: auto;
+  }
+  .lecture-details-container .lecture-content .lecture-details {
+    font-size: 16px;
+    width: 100%;
+  }
+  .lecture-details-container .teacher-info {
+    margin: 20px auto;
+  }
+  .lecture-details-container .teacher-info p {
+    color: #2e5361;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-title h1 {
+    font-size: 22px !important;
+  }
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .lecture-details-container .lecture-content .lecture-main-info .lecture-title h1 {
+    font-size: 19px !important;
+  }
+  .lecture-details-container .lecture-content .lecture-details {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,7 +84,6 @@ body {
 }
 
 .lecture-extras-container .extras-navs a {
-  width: 12%;
   padding: 20px 15px;
   cursor: pointer;
   color: #2e5361;
@@ -117,5 +116,23 @@ body {
 
 .lecture-extras-container .navs-content .files-container div {
   margin: 5px;
+}
+
+@media only screen and (max-width: 798px) {
+  .lecture-extras-container .navs-content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .lecture-extras-container .navs-content p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .lecture-extras-container .extras-navs {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
