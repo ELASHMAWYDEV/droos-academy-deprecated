@@ -1,0 +1,24 @@
+@import "../../../../../assets/styles/global";
+
+.file-container {
+  background: linear-gradient(
+    -45deg,
+    $light-purple 0%,
+    $darkYellow 50%,
+    $lightYellow 100%
+  );
+  //   max-width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+
+  a {
+    width: 100%;
+    color: $white;
+    text-align: center;
+    svg {
+      path {
+        stroke: $white;
+      }
+    }
+  }
+}

@@ -3,3 +3,7 @@ export { default as CoursesSlider } from "./CoursesSlider/CoursesSlider";
 export { default as CourseItem } from "./CourseItem/CourseItem";
 export { default as StudentsReview } from "./StudentsReview/StudentsReview";
 export { default as Footer } from "./Footer/Footer";
+export { default as LectureNavBr } from "./LectureNavBar/LectureNavBar";
+export { default as LectureDetails } from "./LectureDetails/LectureDetails";
+export { default as LectureVideos } from "./LectureVideos/LectureVideos";
+export { default as LectureExtras } from "./LectureExtras/LectureExtras";

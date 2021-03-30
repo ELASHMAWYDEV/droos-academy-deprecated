@@ -1,0 +1,62 @@
+@import "../../../assets/styles/global";
+
+.lecture-nav-bar-container {
+  background-color: $white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  max-height: 80px;
+  padding: 30px 40px;
+  @include flex;
+  justify-content: space-between;
+  width: 100%;
+  .logo-container {
+    img {
+      width: 200px;
+    }
+  }
+  .navs-btns-container {
+    @include flex;
+    div {
+      margin: 10px;
+      a {
+        background: linear-gradient(-45deg, $darkYellow 0%, $midPrimary 100%);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        color: $white;
+        border-radius: 5px;
+        padding: 5px 30px;
+        transition: 0.2s ease;
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: -2px 5px 8px rgba(0, 0, 0, 0.3);
+        }
+        &:active {
+          transition: none;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+  .info-container {
+    @include flex;
+    justify-content: space-between !important;
+    width: 16%;
+    div {
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      border-radius: 30px;
+      color: $white;
+      div {
+        @include flex;
+
+        background-color: $midPrimary;
+        padding-left: 15px;
+
+        div {
+          background-color: $darkYellow;
+          padding: 5px 8px !important;
+          margin-left: 10px;
+          border: 2px solid $lightYellow;
+        }
+      }
+    }
+  }
+}

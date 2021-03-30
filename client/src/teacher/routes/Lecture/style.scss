@@ -1,0 +1,8 @@
+@import "../../../assets/styles/global";
+
+.lecture-container {
+  .dashed-line {
+    @include dashLine;
+    margin-top: 0 !important;
+  }
+}
