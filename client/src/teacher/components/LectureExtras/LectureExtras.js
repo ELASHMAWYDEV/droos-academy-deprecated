@@ -1,6 +1,9 @@
 import React from "react";
 import { Route, NavLink, useRouteMatch } from "react-router-dom";
 
+import File from "./components/File/File";
+import Chat from "./components/Q&A/Q&A";
+
 //Styles
 import "./style.scss";
 
@@ -24,7 +27,7 @@ const LectureExtras = () => {
       </div>
 
       <div className="navs-content">
-        <Route exact path={`${path}/teacher's-notes`}>
+        <Route path={`${path}/teacher's-notes`}>
           <p>
             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
             النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
@@ -36,13 +39,13 @@ const LectureExtras = () => {
           </p>
         </Route>
         <Route exact path={`${path}/lecture-files`}>
-          <p>
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
-            النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
-            من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا
-            كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
-            الفقرات كما تريد، النص لن يبدو مقسما ولا يحو
-          </p>
+          <div className="files-container">
+            <File name="ملف النحو" />
+            <File name="ملف البلاغة" />
+          </div>
+        </Route>
+        <Route exact path={`${path}/Q&A`}>
+          <Chat />
         </Route>
       </div>
     </div>

@@ -66,15 +66,19 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.lecture-container .dashed-line {
-  margin: 50px auto;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #a5b1c2), color-stop(50%, rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to right, #a5b1c2 55%, rgba(255, 255, 255, 0) 50%);
-  background-position: bottom;
-  background-size: 8% 2px;
-  background-repeat: repeat-x;
+.file-container {
+  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdc64 100%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.file-container a {
   width: 100%;
-  height: 2px;
-  margin-top: 0 !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.file-container a svg path {
+  stroke: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

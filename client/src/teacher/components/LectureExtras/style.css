@@ -66,15 +66,56 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.lecture-container .dashed-line {
-  margin: 50px auto;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #a5b1c2), color-stop(50%, rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to right, #a5b1c2 55%, rgba(255, 255, 255, 0) 50%);
-  background-position: bottom;
-  background-size: 8% 2px;
-  background-repeat: repeat-x;
+.lecture-extras-container {
+  margin: 30px 40px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.lecture-extras-container .extras-navs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f2f6;
   width: 100%;
-  height: 2px;
-  margin-top: 0 !important;
+}
+
+.lecture-extras-container .extras-navs a {
+  width: 12%;
+  padding: 20px 15px;
+  cursor: pointer;
+  color: #2e5361;
+}
+
+.lecture-extras-container .extras-navs .active {
+  color: #ffffff;
+  background-color: #a5b1c2;
+}
+
+.lecture-extras-container .navs-content {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.lecture-extras-container .navs-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2e5361;
+}
+
+.lecture-extras-container .navs-content .files-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lecture-extras-container .navs-content .files-container div {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,6 @@ import {
 import "./style.scss";
 
 const Lecture = () => {
-
   return (
     <div className="lecture-container">
       <LectureNavBr />
@@ -20,6 +19,7 @@ const Lecture = () => {
       <div className="dashed-line"></div>
       <LectureVideos />
       <LectureExtras />
+      <Footer />
     </div>
   );
 };
