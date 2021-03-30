@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Link, useRouteMatch } from "react-router-dom";
 
 import {
   Footer,
@@ -11,6 +12,7 @@ import {
 import "./style.scss";
 
 const Lecture = () => {
+
   return (
     <div className="lecture-container">
       <LectureNavBr />
