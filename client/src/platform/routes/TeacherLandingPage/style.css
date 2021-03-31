@@ -160,7 +160,6 @@ body {
 }
 
 .teacher-landing-page-container .auth-btns-container {
-<<<<<<< HEAD
   height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,14 +172,6 @@ body {
           justify-content: flex-start;
   position: relative;
   z-index: 2;
-=======
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 15px;
-  padding-right: 40px;
->>>>>>> teacher
 }
 
 .teacher-landing-page-container .img-container {
@@ -238,7 +229,6 @@ body {
   left: 25%;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
   .teacher-landing-page-container .content-container {
     width: 50%;
@@ -684,9 +674,5 @@ body {
     color: #12699e;
     text-decoration: underline;
   }
-=======
-.teacher-landing-page-container .shapes-container .fifth-shape-container .secondary-text-container {
-  top: 5% !important;
->>>>>>> teacher
 }
 /*# sourceMappingURL=style.css.map */

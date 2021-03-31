@@ -77,12 +77,8 @@ body {
   position: relative;
   text-align: center;
   top: 8%;
-<<<<<<< HEAD
   right: 2%;
   margin: 0 auto;
-=======
-  right: 3%;
->>>>>>> teacher
 }
 
 .blue-shapes-container .main-text-container {
@@ -93,11 +89,7 @@ body {
 }
 
 .blue-shapes-container .main-text-container .main-text {
-<<<<<<< HEAD
   font-size: 18px;
-=======
-  font-size: 18px !important;
->>>>>>> teacher
   font-weight: 400;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -105,7 +97,6 @@ body {
 }
 
 .blue-shapes-container .secondary-text-container {
-<<<<<<< HEAD
   width: 100%;
   position: relative;
   bottom: 5%;
@@ -120,43 +111,23 @@ body {
   width: 60%;
   margin: 0 auto;
   font-size: 13px;
-=======
-  width: 58%;
-  position: relative;
-  top: 5%;
-  right: 26%;
-  color: white;
-  text-align: center;
-  visibility: hidden;
-}
-
-.blue-shapes-container .secondary-text-container .secondary-text {
-  font-size: 13px !important;
->>>>>>> teacher
   font-weight: 400;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   -webkit-transition: all 0.01s;
   transition: all 0.01s;
-=======
->>>>>>> teacher
 }
 
 .blue-shapes-container:hover .icon,
 .blue-shapes-container:hover .main-text-container {
   visibility: hidden;
-<<<<<<< HEAD
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-=======
->>>>>>> teacher
 }
 
 .blue-shapes-container:hover .secondary-text-container {
   visibility: visible;
-<<<<<<< HEAD
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -235,7 +206,5 @@ body {
   .blue-shapes-container .icon-container img {
     width: 40px !important;
   }
-=======
->>>>>>> teacher
 }
 /*# sourceMappingURL=style.css.map */

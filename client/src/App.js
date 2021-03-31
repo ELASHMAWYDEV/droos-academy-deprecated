@@ -12,6 +12,10 @@ import {
   SignUp,
 } from "./platform/routes";
 
+import {
+  Statistics
+} from "./teacher-dashboard/routes";
+
 //Style
 import "./style.scss";
 
@@ -35,7 +39,13 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
-        {subdomain != "" && subdomain != "admin" && (
+         {subdomain == "teacher" && (
+          <Switch>
+            <Route exact path="/" component={Statistics} />
+            
+          </Switch>
+        )}
+        {subdomain != "" && subdomain != "admin" && subdomain != "teacher" &&(
           <Switch>
             <Route exact path="/" component={TeacherHome} />
             <Route path="/Lecture" component={Lecture} />
