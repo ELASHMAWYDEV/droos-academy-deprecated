@@ -35,6 +35,9 @@
         }
       }
     }
+    .humburger-menu {
+      display: none;
+    }
   }
   .flex-wrapper {
     display: flex;
@@ -132,6 +135,70 @@
     @include dashLine;
     @include media(desktop-sm) {
       margin-top: 0;
+    }
+  }
+
+  @include media(tablet-lg) {
+    .dash-line {
+      margin-top: 10px;
+    }
+  }
+
+  @include media(tablet-sm) {
+    .header-container {
+      .auth-btns-container {
+        display: none;
+      }
+      .logo-container {
+        img {
+          width: 130px !important;
+        }
+      }
+      .humburger-menu {
+        display: block;
+        height: fit-content;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        span {
+          margin: 2px auto;
+          border-top: 3px solid $black;
+          width: 25px;
+          border-radius: 20%;
+        }
+        .mid-burger {
+          border-top: 4px solid $black;
+          width: 100%;
+        }
+      }
+    }
+
+    .flex-wrapper {
+      flex-direction: column-reverse;
+      padding: 0;
+      .shapes-container {
+        width: 100% !important;
+        padding-left: 0;
+        padding-top: 0;
+        min-height: 50vh;
+        align-items: center;
+        .teacher-container {
+          h1 {
+            color: $black;
+          }
+        }
+      }
+      .illustration-container {
+        display: none;
+      }
+      .content-container {
+        width: 90%;
+        margin: auto;
+        .second-div {
+          display: none;
+        }
+      }
     }
   }
 }

@@ -107,5 +107,19 @@
   .dash-line {
     @include dashLine;
   }
-}
 
+  @include media(tablet-sm) {
+    .year-btns-container {
+      flex-wrap: wrap;
+      button {
+        margin: 10px;
+      }
+    }
+  }
+
+  @include media(phone-lg) {
+    .courses-grid {
+      padding: 0 20px !important;
+    }
+  }
+}

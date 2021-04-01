@@ -19,6 +19,11 @@ const HomeIntro = () => {
           <Link to="">تسجيل الدخول</Link>
           <Link to="">حساب جديد</Link>
         </div>
+        <div className="humburger-menu">
+          <span></span>
+          <span className="mid-burger"></span>
+          <span></span>
+        </div>
       </div>
       <div className="flex-wrapper">
         <div className="content-container">
@@ -35,7 +40,7 @@ const HomeIntro = () => {
               الموقع.
             </h5>
           </div>
-          <div>
+          <div className="second-div">
             <h1>معلم اللغة العربية</h1>
             <h5>
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد

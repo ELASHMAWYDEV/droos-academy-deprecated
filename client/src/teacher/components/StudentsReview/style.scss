@@ -15,4 +15,10 @@
       height: 10px;
     }
   }
+
+  @include media(phone-lg) {
+    .reviews-slider {
+      padding: 10px 5px;
+    }
+  }
 }
