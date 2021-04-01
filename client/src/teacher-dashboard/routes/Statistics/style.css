@@ -66,6 +66,22 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+.blue-bg {
+  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
+}
+
+.pink-bg {
+  background: radial-gradient(#f19895 0%, #ff5b61 100%);
+}
+
+.yellow-bg {
+  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+}
+
+.purple-bg {
+  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
+}
+
 .statistics-container {
   background-color: #f1f2f6;
   height: 100vh;
@@ -91,6 +107,7 @@ body {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  color: #2e5361;
 }
 
 .statistics-container .stat-header-container .navs .right {
@@ -105,5 +122,26 @@ body {
 
 .statistics-container .stat-header-container .navs .active {
   background: radial-gradient(#ff5b61 0%, #f19895 100%);
+  color: #ffffff;
+}
+
+.statistics-container .row {
+  margin: 0 !important;
+}
+
+.statistics-container .boxes {
+  max-width: 35%;
+}
+
+.statistics-container .graph {
+  height: 100%;
+  max-width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.statistics-container .graph svg {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

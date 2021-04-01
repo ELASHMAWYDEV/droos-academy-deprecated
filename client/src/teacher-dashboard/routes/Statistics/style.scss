@@ -20,6 +20,7 @@
         border: none;
         background-color: $white;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+        color: $black;
       }
       .right {
         border-bottom-right-radius: 20px;
@@ -31,7 +32,24 @@
       }
       .active {
         background: radial-gradient($mid-red 0%, $light-purple 100%);
+        color: $white;
       }
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+  .boxes {
+    max-width: 35%;
+  }
+  .graph {
+    height: 100%;
+    max-width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+    svg {
+      height: 100%;
+      width: 100%;
     }
   }
 }

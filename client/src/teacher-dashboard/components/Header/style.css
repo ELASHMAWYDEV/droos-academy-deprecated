@@ -66,6 +66,22 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+.blue-bg {
+  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
+}
+
+.pink-bg {
+  background: radial-gradient(#f19895 0%, #ff5b61 100%);
+}
+
+.yellow-bg {
+  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+}
+
+.purple-bg {
+  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
+}
+
 .header-container .nav-bar-conatiner {
   background-color: #ffffff;
   z-index: 1;
@@ -138,7 +154,7 @@ body {
   margin-top: 35%;
   background: linear-gradient(-45deg, #ffdc64 0%, #ffc850 50%, #f19895 100%);
   border-radius: 10px;
-  padding: 3px 10px;
+  padding: 3px 15px;
 }
 
 .header-container .side-bar-container .new-lecture-btn button {
@@ -148,14 +164,14 @@ body {
   width: 100%;
   color: #ffffff;
   font-size: 15pt;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
 }
 
 .header-container .side-bar-container .new-lecture-btn button svg {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   color: #ffffff;
+  font-size: 26px;
+  text-align: center;
 }
 
 .header-container .side-bar-container .side-bar-btns {
@@ -179,11 +195,18 @@ body {
   font-size: 15pt;
   text-align: right;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-container .side-bar-container .side-bar-btns div.active button svg {
   margin: 0 10px;
-  color: #ffffff;
+  width: 25px;
+}
+
+.header-container .side-bar-container .side-bar-btns div.active button svg g g {
+  fill: #ffffff;
 }
 
 .header-container .side-bar-container .side-bar-btns div {
@@ -203,10 +226,22 @@ body {
   font-size: 15pt;
   text-align: right;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-container .side-bar-container .side-bar-btns div button svg {
   margin: 0 10px;
-  color: #2e5361;
+  width: 25px;
+  height: 25px;
+}
+
+.header-container .side-bar-container .side-bar-btns div button svg g {
+  fill: #2e5361;
+}
+
+.header-container .side-bar-container .side-bar-btns div button svg g g {
+  fill: #2e5361;
 }
 /*# sourceMappingURL=style.css.map */

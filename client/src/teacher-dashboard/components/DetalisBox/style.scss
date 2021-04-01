@@ -1,1 +1,43 @@
 @import "../../../assets/styles/global";
+
+.details-box-container {
+  max-width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  color: $white;
+  .number {
+    background-color: rgba($white, 0.1);
+    border-radius: 50%;
+    position: relative;
+    right: 246px;
+    top: -50px;
+    width: 59px;
+    padding: 10px;
+    height: 60px;
+
+    padding: 10px;
+    span {
+      position: relative;
+      top: 15px;
+      font-size: 15pt;
+      font-weight: bold;
+      left: 5px;
+    }
+  }
+  .title-container {
+    position: relative;
+    text-align: right;
+    top: 0;
+    padding: 5pt;
+  }
+  .sub-title-container {
+    padding: 5pt;
+    justify-content: flex-end;
+    .subtitle {
+      font-size: 10pt;
+    }
+    .percentage {
+      color: $green;
+    }
+  }
+}

@@ -9,8 +9,11 @@ import "./style.scss";
 //Assets
 import Logo from "../../../assets/img/logo.png";
 import ProfilePic from "../../../assets/img/profile-pic.jpg";
-import Statistics from "../../../assets/img/analytics.png";
-// import { ReactComponent as Statistics } from "../../../assets/img/analytics.svg";
+//import Statistics from "../../../assets/img/analytics.png";
+import { ReactComponent as Statistics } from "../../../assets/img/statistics.svg";
+import { ReactComponent as Lectures } from "../../../assets/img/lectures.svg";
+import { ReactComponent as Payment } from "../../../assets/img/payment.svg";
+import { ReactComponent as Students } from "../../../assets/img/students.svg";
 
 const Header = () => {
   return (
@@ -44,19 +47,28 @@ const Header = () => {
         </div>
         <div className="side-bar-btns">
           <div className="active">
-            <button className="d-flex">
-              <img src={Statistics} alt="profile picture" />
+            <button className="">
+              <Statistics />
               الاحصائيات
             </button>
           </div>
           <div>
-            <button>المحاضرات</button>
+            <button>
+              <Lectures />
+              المحاضرات
+            </button>
           </div>
           <div>
-            <button>عمليات الدفع</button>
+            <button>
+              <Payment />
+              عمليات الدفع
+            </button>
           </div>
           <div>
-            <button>الطلبة</button>
+            <button>
+              <Students />
+              الطلبة
+            </button>
           </div>
           <div>
             <button>

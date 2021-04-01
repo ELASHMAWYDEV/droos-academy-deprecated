@@ -16,8 +16,11 @@ $darkGray: #a7a6a6;
 $lightGray: #f1f2f6;
 $light-pink: #fff1ef;
 $light-purple: #f19895;
+$purple: #ae94e2;
+$dark-purple: #5f179f;
 $mid-purple: #b42d76;
 $mid-red: #ff5b61;
+$dark-orange: #f9ab00;
 
 //Fonts
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"); //Tajawal => font-family: 'Tajawal', sans-serif;
@@ -156,3 +159,16 @@ body {
   height: 2px;
 }
 /******************************/
+
+.blue-bg {
+  background: radial-gradient($lightBlue 0%, #1a4c6e 100%);
+}
+.pink-bg {
+  background: radial-gradient($light-purple 0%, $mid-red 100%);
+}
+.yellow-bg {
+  background: radial-gradient($lightYellow 0%, $dark-orange 100%);
+}
+.purple-bg {
+  background: radial-gradient($purple 0%, $dark-purple 100%);
+}
