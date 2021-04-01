@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.blue-bg {
+  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
+}
+
+.pink-bg {
+  background: radial-gradient(#f19895 0%, #ff5b61 100%);
+}
+
+.yellow-bg {
+  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+}
+
+.purple-bg {
+  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
+}
+
+.details-box-container {
+  max-width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.details-box-container .number {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+  right: 246px;
+  top: -50px;
+  width: 59px;
+  padding: 10px;
+  height: 60px;
+  padding: 10px;
+}
+
+.details-box-container .number span {
+  position: relative;
+  top: 15px;
+  font-size: 15pt;
+  font-weight: bold;
+  left: 5px;
+}
+
+.details-box-container .title-container {
+  position: relative;
+  text-align: right;
+  top: 0;
+  padding: 5pt;
+}
+
+.details-box-container .sub-title-container {
+  padding: 5pt;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.details-box-container .sub-title-container .subtitle {
+  font-size: 10pt;
+}
+
+.details-box-container .sub-title-container .percentage {
+  color: #2ecc71;
+}
+/*# sourceMappingURL=style.css.map */

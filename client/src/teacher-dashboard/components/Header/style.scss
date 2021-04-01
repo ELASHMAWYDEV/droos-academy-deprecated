@@ -1,0 +1,159 @@
+@import "../../../assets/styles/global";
+
+.header-container {
+  .nav-bar-conatiner {
+    background-color: $white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    .logo-container {
+      img {
+        width: 200px;
+      }
+    }
+    .info-container {
+      .notifications-icon {
+        cursor: pointer;
+        svg {
+          color: $darkGray;
+          font-size: 30px;
+        }
+        div {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          position: relative;
+          background-color: $midPrimary;
+          top: -30px;
+          right: 5px;
+          color: $white;
+        }
+      }
+      .account-info {
+        cursor: pointer;
+
+        .account-img {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+        .account-name {
+          font-size: 13px;
+          font-weight: 500;
+          color: #a7a6a6;
+          text-align: center;
+        }
+        .arrow-icon {
+          svg {
+            color: $darkGray;
+          }
+        }
+      }
+    }
+  }
+  .side-bar-container {
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: $white;
+    z-index: 0;
+    .new-lecture-btn {
+      margin-top: 35%;
+      background: linear-gradient(
+        -45deg,
+        $lightYellow 0%,
+        $darkYellow 50%,
+        $light-purple 100%
+      );
+      border-radius: 10px;
+      padding: 3px 15px;
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        color: $white;
+        font-size: 15pt;
+        text-align: center;
+        svg {
+          margin: 0 10px 0 0;
+          color: $white;
+          font-size: 26px;
+          text-align: center;
+        }
+      }
+    }
+    .side-bar-btns {
+      margin-top: 20%;
+      div.active {
+        width: 75%;
+        margin: 8px auto;
+        background: linear-gradient(
+          -45deg,
+          $lightYellow 0%,
+          $darkYellow 50%,
+          $light-purple 100%
+        );
+        border-radius: 10px;
+        padding: 3px 10px;
+        button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+          color: $white;
+          font-size: 15pt;
+          text-align: right;
+          font-weight: 500;
+          display: flex;
+          svg {
+            margin: 0 10px;
+            width: 25px;
+            g {
+              g {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+      div {
+        width: 75%;
+        margin: 8px auto;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+        button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          width: 100%;
+          color: $black;
+          font-size: 15pt;
+          text-align: right;
+          font-weight: 500;
+          display: flex;
+          svg {
+            margin: 0 10px;
+            width: 25px;
+            height: 25px;
+            g {
+              fill: $black;
+              g {
+                fill: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
