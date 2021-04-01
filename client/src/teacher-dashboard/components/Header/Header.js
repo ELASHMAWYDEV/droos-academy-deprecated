@@ -9,6 +9,8 @@ import "./style.scss";
 //Assets
 import Logo from "../../../assets/img/logo.png";
 import ProfilePic from "../../../assets/img/profile-pic.jpg";
+import Statistics from "../../../assets/img/analytics.png";
+// import { ReactComponent as Statistics } from "../../../assets/img/analytics.svg";
 
 const Header = () => {
   return (
@@ -42,7 +44,10 @@ const Header = () => {
         </div>
         <div className="side-bar-btns">
           <div className="active">
-            <button>الاحصائيات</button>
+            <button className="d-flex">
+              <img src={Statistics} alt="profile picture" />
+              الاحصائيات
+            </button>
           </div>
           <div>
             <button>المحاضرات</button>

@@ -66,44 +66,4 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.statistics-container {
-  background-color: #f1f2f6;
-  height: 100vh;
-  width: 100%;
-  padding: 100px 300px 0 0;
-}
-
-.statistics-container .stat-header-container {
-  padding: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.statistics-container .stat-header-container .title span {
-  color: #2e5361;
-  font-size: 17pt;
-  font-weight: bold;
-}
-
-.statistics-container .stat-header-container .navs button {
-  border: none;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
-}
-
-.statistics-container .stat-header-container .navs .right {
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.statistics-container .stat-header-container .navs .left {
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.statistics-container .stat-header-container .navs .active {
-  background: radial-gradient(#ff5b61 0%, #f19895 100%);
-}
 /*# sourceMappingURL=style.css.map */

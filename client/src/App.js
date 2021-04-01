@@ -12,12 +12,12 @@ import {
   SignUp,
 } from "./platform/routes";
 
-import {
-  Statistics
-} from "./teacher-dashboard/routes";
+import { Statistics } from "./teacher-dashboard/routes";
 
 //Style
 import "./style.scss";
+import { Header } from "./teacher-dashboard/components";
+import React from "react";
 
 const App = () => {
   const { subdomain } = useBootstrap();
@@ -39,13 +39,15 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
-         {subdomain == "teacher" && (
-          <Switch>
-            <Route exact path="/" component={Statistics} />
-            
-          </Switch>
+        {subdomain == "teacher" && (
+          <React.Fragment>
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Statistics} />
+            </Switch>
+          </React.Fragment>
         )}
-        {subdomain != "" && subdomain != "admin" && subdomain != "teacher" &&(
+        {subdomain != "" && subdomain != "admin" && subdomain != "teacher" && (
           <Switch>
             <Route exact path="/" component={TeacherHome} />
             <Route path="/Lecture" component={Lecture} />
