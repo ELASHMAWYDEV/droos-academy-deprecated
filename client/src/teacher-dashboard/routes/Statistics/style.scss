@@ -1,0 +1,55 @@
+@import "../../../assets/styles/global";
+
+.statistics-container {
+  background-color: $lightGray;
+  height: 100vh;
+  width: 100%;
+  padding: 100px 300px 0 0;
+  .stat-header-container {
+    padding: 20px;
+    justify-content: space-between;
+    .title {
+      span {
+        color: $black;
+        font-size: 17pt;
+        font-weight: bold;
+      }
+    }
+    .navs {
+      button {
+        border: none;
+        background-color: $white;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+        color: $black;
+      }
+      .right {
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .left {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .active {
+        background: radial-gradient($mid-red 0%, $light-purple 100%);
+        color: $white;
+      }
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+  .boxes {
+    max-width: 35%;
+  }
+  .graph {
+    height: 100%;
+    max-width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
