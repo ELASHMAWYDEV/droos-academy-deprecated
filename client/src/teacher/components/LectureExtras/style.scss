@@ -9,7 +9,6 @@
     background-color: $lightGray;
     width: 100%;
     a {
-      width: 12%;
       padding: 20px 15px;
       cursor: pointer;
       color: $black;
@@ -35,6 +34,27 @@
       div {
         margin: 5px;
       }
+    }
+  }
+
+  @include media(tablet-sm){
+    .navs-content{
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+
+  @include media(phone-lg){
+    .navs-content{
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+  @include media(phone-md){
+    .extras-navs{
+      font-size: 10px ;
     }
   }
 }

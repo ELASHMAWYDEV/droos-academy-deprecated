@@ -97,5 +97,13 @@
     }
   }
 
-  
+  @include media(phone-lg) {
+    .course-footer {
+      .teacher-name {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

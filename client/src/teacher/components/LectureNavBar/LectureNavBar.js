@@ -35,6 +35,11 @@ const LectureNavBr = () => {
           </div>
         </div>
       </div>
+      <div className="humburger-menu">
+        <span></span>
+        <span className="mid-burger"></span>
+        <span></span>
+      </div>
     </div>
   );
 };

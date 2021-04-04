@@ -139,4 +139,19 @@ body {
 .review-item-container .stars svg.not-active {
   color: #a5b1c2;
 }
+
+@media only screen and (max-width: 1024px) {
+  .review-item-container {
+    width: 100% !important;
+  }
+  .review-item-container .info-container h3 {
+    font-size: 9pt;
+  }
+  .review-item-container .content {
+    font-size: 10pt;
+  }
+  .review-item-container .stars {
+    gap: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

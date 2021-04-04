@@ -221,4 +221,10 @@ body {
 .course-item-container .course-info .time p {
   direction: ltr;
 }
+
+@media only screen and (max-width: 576px) {
+  .course-item-container .course-footer .teacher-name p {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

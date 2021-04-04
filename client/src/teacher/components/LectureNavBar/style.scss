@@ -13,6 +13,9 @@
       width: 200px;
     }
   }
+  .humburger-menu {
+    display: none;
+  }
   .navs-btns-container {
     @include flex;
     div {
@@ -35,6 +38,7 @@
         }
       }
     }
+
   }
   .info-container {
     @include flex;
@@ -56,6 +60,47 @@
           margin-left: 10px;
           border: 2px solid $lightYellow;
         }
+      }
+    }
+
+  }
+
+  @include media(desktop-sm){
+    .info-container{
+      width: 18% !important;
+    }
+  }
+
+  @include media(tablet-lg){
+    .info-container{
+      width: 20% !important;
+    }
+  }
+
+  @include media(tablet-md){
+    .info-container{
+      width: 25% !important;
+    }
+  }
+  @include media(tablet-sm){
+    .navs-btns-container, .info-container{
+      display: none;
+    }
+    .humburger-menu {
+      display: block;
+      height: fit-content;
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin: 2px auto;
+        border-top: 3px solid $midPrimary;
+        width: 25px;
+        border-radius: 20%;
+      }
+      .mid-burger {
+        border-top: 4px solid $midPrimary;
+        width: 100%;
       }
     }
   }
