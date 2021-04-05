@@ -149,15 +149,18 @@ body {
 
 .home-intro-container .flex-wrapper .content-container > div {
   margin-bottom: 50px;
+  direction: rtl;
 }
 
 .home-intro-container .flex-wrapper .content-container h1 {
   margin-bottom: 10px;
+  direction: rtl;
 }
 
 .home-intro-container .flex-wrapper .content-container h5 {
   line-height: 24px;
   font-weight: 500;
+  direction: rtl;
 }
 
 .home-intro-container .flex-wrapper .shapes-container {

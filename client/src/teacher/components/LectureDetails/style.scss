@@ -1,20 +1,18 @@
 @import "../../../assets/styles/global";
 
 .lecture-details-container {
-  background: url(../../../assets/img/lecture-details-pink-shape.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 20px;
-  height: 50vh;
   .lecture-content {
-    width: 60%;
+    width: 70%;
     margin-top: 30px;
+    padding-right: 50px;
     .lecture-main-info {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding-right: 5%;
       .lecture-title {
         h1 {
           font-size: 40px;
@@ -73,156 +71,110 @@
     }
   }
   .teacher-info {
-    padding: 0px;
-    padding-right: 0;
-    padding-left: 20px;
-    margin: 30px -10px;
+    padding: 50px 80px;
+    width: 30%;
     z-index: 3;
+    background: url(../../../assets/img/lecture-details-pink-shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 50vh;
     img {
-      height: 100%;
-      width: 100%;
       object-fit: cover;
       transform: translateX(1px);
-    }
-    & > div {
       width: 115px;
       border-radius: 50%;
       overflow: hidden;
       margin-inline-end: 8px;
       border: 1px solid $white;
-      @include flex;
     }
+
     p {
       font-size: 18px;
       color: $white;
     }
   }
 
-  @include media(desktop-sm){
-    .lecture-content{
-      width: 55%;
-      .lecture-main-info{
-        
-      
-      .lecture-title{
-        h1{
-          font-size: 30px !important;
+  @include media(desktop-sm) {
+    .lecture-content {
+      .lecture-main-info {
+        .lecture-title {
+          h1 {
+            font-size: 30px !important;
+          }
         }
       }
-      .lecture-info{
-        width: 35%;
-      }
     }
-    }
-
   }
-  @include media(tablet-lg){
-    height: 40vh !important;
-
-    
-      .lecture-content{
-        .lecture-main-info{
-          display: block !important;
-        .lecture-info{
+  @include media(tablet-lg) {
+    .lecture-content {
+      width: 66%;
+      .lecture-main-info {
+        display: block !important;
+        .lecture-info {
           width: 50%;
-          margin: 5px;
+          max-width: 90%;
+          margin: 5px auto;
+          div {
+            width: 100%;
+          }
         }
       }
-      }
-    
-   
+    }
+    .teacher-info {
+      width: 34%;
+    }
   }
 
-  @include media(tablet-md){
-     height: 100% !important;
+  @include media(tablet-md) {
+    flex-direction: column-reverse;
+    .lecture-content {
+      width: 100%;
+      padding: 25px;
+      .lecture-title {
+        h1 {
+          text-align: center;
+        }
+      }
     }
+    .teacher-info {
+      width: 100%;
+    }
+  }
 
-    @include media(tablet-sm){
-      display: flex;
-      flex-direction: column-reverse;
-      margin: auto;
-      background-position-y: -50px;
-      background-position-x: -50px;
-      .lecture-content{
-        width: 90% !important;
-        margin: 20px;
-        .lecture-main-info{
-          display: flex !important;
-          width: 100%;
-          .lecture-info{
-            width: 40%;
-            margin: 5px;
-          }
-        }
-        .lecture-details{
-          font-size: 16px;
-          width: 70%;
-        }
-      }
-      .teacher-info{
-        margin: 20px;
-        p{
-          color: $black;
-        }
+  @include media(tablet-sm) {
+    .lecture-content {
+      .lecture-details {
+        font-size: 16px;
       }
     }
+  }
 
-    @include media(phone-lg){
-      .lecture-content{
-        width: 90% !important;
-        .lecture-main-info{
-          display: block !important;
-          width: 100%;
-          margin: auto;
-          .lecture-title{
-            h1{
-              text-align: center;
-            }
-          }
-          .lecture-info{
-            width: 50%;
-            margin: auto;
-          }
-        }
-        .lecture-details{
-          font-size: 16px;
-          width: 100%;
-        }
-      }
-      .teacher-info{
-        margin: 20px auto;
-        p{
-          color: $black;
-        }
-      }
-    }
-
-    @include media(phone-md){
-      .lecture-content{
-        .lecture-main-info{
-          .lecture-title{
-            h1{
-              font-size: 22px !important;
-            }
-          }
-          .lecture-info{
-            width: 80%;
+  @include media(phone-md) {
+    .lecture-content {
+      .lecture-main-info {
+        .lecture-title {
+          h1 {
+            font-size: 22px !important;
           }
         }
       }
     }
-    @include media(phone-sm){
-      .lecture-content{
-        .lecture-main-info{
-          .lecture-title{
-            h1{
-              font-size: 19px !important;
-            }
+  }
+  @include media(phone-sm) {
+    .lecture-content {
+      .lecture-main-info {
+        .lecture-title {
+          h1 {
+            font-size: 19px !important;
           }
         }
-        .lecture-details{
-          font-size: 15px;
-        }
+      }
+      .lecture-details {
+        font-size: 15px;
       }
     }
+  }
 }
