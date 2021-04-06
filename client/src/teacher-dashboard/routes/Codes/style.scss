@@ -1,0 +1,49 @@
+@import "../../../assets/styles/global";
+
+.codes-container {
+  background-color: $lightGray;
+  min-height: 100vh;
+  padding: 100px 300px 0 0;
+  padding-bottom: 20px;
+  .details-boxes {
+    display: flex;
+    justify-content: center;
+    @include details-box;
+    .details-box {
+      min-width: 25%;
+      border-radius: 15px;
+      padding: 10px 15px 10px 0;
+      margin: 20px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .code-genertion-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+    margin: 20px 0;
+    button {
+      border: none;
+      outline: none;
+      background: linear-gradient(
+        -45deg,
+        $light-purple 0%,
+        $darkYellow 50%,
+        $lightYellow 100%
+      );
+      padding: 6px 20px;
+      border-radius: 10px;
+      color: $white;
+    }
+  }
+
+  .table-container {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    @include table-container;
+  }
+}

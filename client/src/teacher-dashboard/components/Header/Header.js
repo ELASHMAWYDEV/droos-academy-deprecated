@@ -1,8 +1,8 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { IoIosNotifications, IoIosArrowDown, IoIosAdd } from "react-icons/io";
 import { FiSettings } from "react-icons/fi";
-
+import { Link, NavLink } from "react-router-dom";
 //Styles
 import "./style.scss";
 
@@ -12,8 +12,9 @@ import ProfilePic from "../../../assets/img/profile-pic.jpg";
 //import Statistics from "../../../assets/img/analytics.png";
 import { ReactComponent as Statistics } from "../../../assets/img/statistics.svg";
 import { ReactComponent as Lectures } from "../../../assets/img/lectures.svg";
-import { ReactComponent as Payment } from "../../../assets/img/payment.svg";
+import { ReactComponent as Codes } from "../../../assets/img/payment.svg";
 import { ReactComponent as Students } from "../../../assets/img/students.svg";
+import { ReactComponent as Payment } from "../../../assets/img/payment-method.svg";
 
 const Header = () => {
   return (
@@ -46,35 +47,41 @@ const Header = () => {
           </button>
         </div>
         <div className="side-bar-btns">
-          <div className="active">
-            <button className="">
+          <div>
+            <NavLink exact activeClassName="active" to="/">
               <Statistics />
               الاحصائيات
-            </button>
+            </NavLink>
           </div>
           <div>
-            <button>
+            <NavLink activeClassName="active" to="/lectures">
               <Lectures />
               المحاضرات
-            </button>
+            </NavLink>
           </div>
           <div>
-            <button>
+            <NavLink activeClassName="active" to="/sa">
               <Payment />
               عمليات الدفع
-            </button>
+            </NavLink>
           </div>
           <div>
-            <button>
+            <NavLink activeClassName="active" to="/codes">
+              <Codes />
+              الأكواد
+            </NavLink>
+          </div>
+          <div>
+            <NavLink activeClassName="active" to="/lecftures">
               <Students />
               الطلبة
-            </button>
+            </NavLink>
           </div>
           <div>
-            <button>
+            <NavLink activeClassName="active" to="/lectfsures">
               <FiSettings />
               الاعدادات
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

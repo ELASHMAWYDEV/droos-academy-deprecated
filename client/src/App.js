@@ -12,7 +12,7 @@ import {
   SignUp,
 } from "./platform/routes";
 
-import { Statistics } from "./teacher-dashboard/routes";
+import { Codes, Lectures, Statistics } from "./teacher-dashboard/routes";
 
 //Style
 import "./style.scss";
@@ -44,6 +44,8 @@ const App = () => {
             <Header />
             <Switch>
               <Route exact path="/" component={Statistics} />
+              <Route exact path="/lectures" component={Lectures} />
+              <Route exact path="/codes" component={Codes} />
             </Switch>
           </React.Fragment>
         )}

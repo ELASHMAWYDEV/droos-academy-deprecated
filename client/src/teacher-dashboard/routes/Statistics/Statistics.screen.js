@@ -7,6 +7,7 @@ import "./style.scss";
 
 //Assets
 import { ReactComponent as Graph3 } from "../../../assets/img/graph3.svg";
+import { ReactComponent as Percentage } from "../../../assets/img/percetage.svg";
 
 const Statistics = () => {
   return (
@@ -20,38 +21,90 @@ const Statistics = () => {
           <button className="left px-4">الفريدة</button>
         </div>
       </div>
-      <div className="row">
-        <div className="col boxes">
-          <DetailsBox
-            colorClass="blue-bg"
-            title="اليوم حتي الأن"
-            number="560"
-            subtitle="مقارنة بالأمس"
-            percentage="24"
-          />
-          <DetailsBox
-            colorClass="pink-bg"
-            title="الأمس"
-            number="886"
-            subtitle="مقارنة بأول أمس"
-            percentage="24"
-          />
-          <DetailsBox
-            colorClass="yellow-bg"
-            title="هذا الشهر"
-            number="3540"
-            subtitle="مقارنة بالشهر الماضي"
-            percentage="24"
-          />
-          <DetailsBox
-            colorClass="purple-bg"
-            title="الشهر الماضي"
-            number="900"
-            subtitle="مقارنة بالشهر السابق"
-            percentage="24"
-          />
+      <div className="data">
+        <div className="details-boxes">
+          <div className="details-box blue-bg">
+            <div className="top">
+              <div className="top-right-title">
+                <span>اليوم حتي الأن</span>
+              </div>
+              <div className="top-left-circle">
+                <span>500</span>
+              </div>
+            </div>
+
+            <div className="bottom-left-subtitle">
+              <div className="subtitle">
+                <span>مقارنة بالأمس</span>
+              </div>
+              <div className="percentage">
+                <Percentage />
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+          <div className="details-box pink-bg">
+            <div className="top">
+              <div className="top-right-title">
+                <span>الأمس</span>
+              </div>
+              <div className="top-left-circle">
+                <span>3500</span>
+              </div>
+            </div>
+
+            <div className="bottom-left-subtitle">
+              <div className="subtitle">
+                <span>مقارنة بأول أمس</span>
+              </div>
+              <div className="percentage">
+                <Percentage />
+                <span>24%</span>
+              </div>
+            </div>
+          </div>
+          <div className="details-box yellow-bg">
+            <div className="top">
+              <div className="top-right-title">
+                <span>هذا الشهر</span>
+              </div>
+              <div className="top-left-circle">
+                <span>3500</span>
+              </div>
+            </div>
+
+            <div className="bottom-left-subtitle">
+              <div className="subtitle">
+                <span>مقارنة بالشهر الماضي</span>
+              </div>
+              <div className="percentage">
+                <Percentage />
+                <span>24%</span>
+              </div>
+            </div>
+          </div>
+          <div className="details-box purple-bg">
+            <div className="top">
+              <div className="top-right-title">
+                <span>الشهر الماضي</span>
+              </div>
+              <div className="top-left-circle">
+                <span>3500</span>
+              </div>
+            </div>
+
+            <div className="bottom-left-subtitle">
+              <div className="subtitle">
+                <span>مقارنة بالشهر السابق</span>
+              </div>
+              <div className="percentage">
+                <Percentage />
+                <span>24%</span>
+              </div>
+            </div>
+          </div>{" "}
         </div>
-        <div className="col graph">
+        <div className=" graph">
           <Graph3 />
         </div>
       </div>

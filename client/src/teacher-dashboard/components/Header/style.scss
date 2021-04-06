@@ -41,6 +41,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
+            object-fit: cover;
           }
         }
         .account-name {
@@ -65,17 +66,19 @@
     top: 0;
     background-color: $white;
     z-index: 0;
+
     .new-lecture-btn {
-      margin-top: 35%;
-      background: linear-gradient(
-        -45deg,
-        $lightYellow 0%,
-        $darkYellow 50%,
-        $light-purple 100%
-      );
       border-radius: 10px;
-      padding: 3px 15px;
+      margin-top: 35%;
       button {
+        border-radius: 10px;
+        padding: 5px 15px;
+        background: linear-gradient(
+          -45deg,
+          $lightYellow 0%,
+          $darkYellow 50%,
+          $light-purple 100%
+        );
         background-color: transparent;
         border: none;
         outline: none;
@@ -93,18 +96,21 @@
     }
     .side-bar-btns {
       margin-top: 20%;
-      div.active {
+      div {
         width: 75%;
         margin: 8px auto;
-        background: linear-gradient(
-          -45deg,
-          $lightYellow 0%,
-          $darkYellow 50%,
-          $light-purple 100%
-        );
         border-radius: 10px;
-        padding: 3px 10px;
-        button {
+
+        a.active {
+          border-radius: 10px;
+          padding: 7px 10px;
+          text-decoration: none;
+          background: linear-gradient(
+            -45deg,
+            $lightYellow 0%,
+            $darkYellow 50%,
+            $light-purple 100%
+          );
           background-color: transparent;
           border: none;
           outline: none;
@@ -118,6 +124,7 @@
             margin: 0 10px;
             width: 25px;
             g {
+              fill: $white;
               g {
                 fill: $white;
               }
@@ -128,11 +135,13 @@
       div {
         width: 75%;
         margin: 8px auto;
-        background-color: transparent;
         border-radius: 10px;
-        padding: 10px;
-        button {
+        a {
+          border-radius: 10px;
+          padding: 10px;
           background-color: transparent;
+          text-decoration: none;
+
           border: none;
           outline: none;
           width: 100%;

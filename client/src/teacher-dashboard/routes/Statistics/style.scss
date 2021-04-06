@@ -2,7 +2,7 @@
 
 .statistics-container {
   background-color: $lightGray;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 100px 300px 0 0;
   .stat-header-container {
@@ -36,20 +36,36 @@
       }
     }
   }
-  .row {
-    margin: 0 !important;
-  }
-  .boxes {
-    max-width: 35%;
-  }
-  .graph {
-    height: 100%;
-    max-width: 100%;
-    margin-left: 50px;
-    margin-top: 20px;
-    svg {
+
+  .data {
+    display: flex;
+    .details-boxes {
+      display: flex;
+      flex-direction: column;
+      min-width: 25%;
+      @include details-box;
+      .details-box {
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 10px 5px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .graph {
       height: 100%;
-      width: 100%;
+      min-width: 65%;
+      margin-left: 50px;
+      margin-top: 20px;
+      flex-basis: 100%;
+      svg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
