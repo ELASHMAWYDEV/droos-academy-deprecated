@@ -12,7 +12,14 @@ import {
   SignUp,
 } from "./platform/routes";
 
-import { Codes, Lectures, Statistics } from "./teacher-dashboard/routes";
+import {
+  AddLecture,
+  Codes,
+  Lectures,
+  Payments,
+  Settings,
+  Statistics,
+} from "./teacher-dashboard/routes";
 
 //Style
 import "./style.scss";
@@ -46,6 +53,9 @@ const App = () => {
               <Route exact path="/" component={Statistics} />
               <Route exact path="/lectures" component={Lectures} />
               <Route exact path="/codes" component={Codes} />
+              <Route exact path="/add-lecture" component={AddLecture} />
+              <Route exact path="/payments" component={Payments} />
+              <Route exact path="/settings" component={Settings} />
             </Switch>
           </React.Fragment>
         )}

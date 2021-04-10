@@ -1,0 +1,270 @@
+@import "../../../assets/styles/global";
+
+.add-lecture-container {
+  background-color: $lightGray;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 300px 0 0;
+  .title {
+    text-align: center;
+    margin: 50px 00;
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+  .form-container {
+    width: 95%;
+    margin: auto;
+    background-color: $white;
+    box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+    border-radius: 10px;
+    padding: 20px;
+    .lecture-type {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      span {
+        margin: 0 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+      }
+      .select-item {
+        select {
+          border-radius: 10px;
+          box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+          padding: 10px 30px;
+          background-color: $darkBlue;
+          text-align-last: center;
+          color: $white;
+          border: none;
+          outline: none;
+          width: 90%;
+          -webkit-appearance: none;
+        }
+        span {
+          position: relative;
+          left: 45px;
+          top: 17px;
+
+          //   display: flex;
+          transform: translateY(-5px) rotate(0deg);
+          border: 6px solid transparent;
+          border-top: 8px solid $white;
+          transition: 0.3s ease;
+          transform-origin: 6px 4px;
+        }
+      }
+    }
+    .lecture-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 20px 0;
+      label {
+        display: block;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+      }
+      input,
+      textarea {
+        display: block;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+        padding: 10px 20px;
+        width: 98%;
+      }
+      .lecture-title {
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+      }
+      .lecture-info {
+        display: flex;
+        width: 100%;
+        margin: 20px 0;
+        .lecture-time {
+          display: flex;
+          //   justify-content: ;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 35%;
+          span {
+            font-size: 18px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 8px;
+          }
+          .select-item {
+            select {
+              border-radius: 10px;
+              box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+              padding: 10px 35px;
+              background-color: $darkBlue;
+              text-align-last: center;
+              color: $white;
+              border: none;
+              outline: none;
+              width: 100%;
+              -webkit-appearance: none;
+            }
+            span {
+              position: relative;
+              left: 27px;
+              top: 17px;
+              //   display: flex;
+              transform: translateY(-5px) rotate(0deg);
+              border: 6px solid transparent;
+              border-top: 8px solid $white;
+              transition: 0.3s ease;
+              transform-origin: 6px 4px;
+            }
+          }
+        }
+        .lecture-price {
+          width: 65%;
+        }
+      }
+    }
+    .dash-line {
+      @include smallDashLine;
+    }
+    .files {
+      display: flex;
+      flex-wrap: wrap;
+      .upload-new-file {
+        text-align: center;
+        margin: 20px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: $gray;
+        box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+        cursor: pointer;
+
+        div {
+          display: block;
+        }
+        .icon {
+          svg {
+            color: $white;
+            width: 45px;
+            height: 45px;
+          }
+          margin-bottom: 10px;
+        }
+        .name {
+          color: $white;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .lecture-parts {
+      text-align: center;
+      .lec-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+        width: 100%;
+        border-radius: 10px;
+        .lec-navs {
+          display: flex;
+          div {
+            color: $black;
+            background-color: $lightGray;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+          .first {
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+          .active {
+            background-color: $darkGray;
+            color: $white;
+          }
+        }
+        .add-nav {
+          margin-left: 5px;
+          svg {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+      .nav-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 20px 0;
+        label {
+          display: block;
+          text-align: right;
+          font-size: 18px;
+          font-weight: 500;
+          color: $black;
+        }
+        input,
+        textarea {
+          display: block;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+          padding: 10px 20px;
+          width: 98%;
+        }
+        .lecture-title {
+          width: 100%;
+          display: block;
+          margin: 20px 0;
+        }
+      }
+    }
+    .upload-btn {
+      display: flex;
+      justify-content: center;
+      button {
+        border: none;
+        outline: none;
+        text-align: center;
+        margin: 20px auto;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: $gray;
+        box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+        cursor: pointer;
+        width: 60%;
+      }
+
+      div {
+        display: block;
+      }
+      .icon {
+        svg {
+          color: $white;
+          width: 45px;
+          height: 45px;
+        }
+        margin-bottom: 10px;
+      }
+      .name {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}

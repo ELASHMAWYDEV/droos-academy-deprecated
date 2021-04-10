@@ -97,7 +97,7 @@ body {
 }
 
 .lecture-videos-contanier .videos-container .btns-container div .active {
-  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdc64 100%);
+  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdb64 100%);
 }
 
 .lecture-videos-contanier .videos-container .btns-container div .active button {

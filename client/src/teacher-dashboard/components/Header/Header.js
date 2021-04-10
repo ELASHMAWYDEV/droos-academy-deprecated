@@ -41,10 +41,10 @@ const Header = () => {
       </div>
       <div className="side-bar-container">
         <div className="new-lecture-btn mx-5">
-          <button>
+          <NavLink exact to="/add-lecture">
             محاضرة جديدة
             <IoIosAdd />
-          </button>
+          </NavLink>
         </div>
         <div className="side-bar-btns">
           <div>
@@ -60,7 +60,7 @@ const Header = () => {
             </NavLink>
           </div>
           <div>
-            <NavLink activeClassName="active" to="/sa">
+            <NavLink activeClassName="active" to="/payments">
               <Payment />
               عمليات الدفع
             </NavLink>
@@ -71,14 +71,14 @@ const Header = () => {
               الأكواد
             </NavLink>
           </div>
-          <div>
+          {/* <div>
             <NavLink activeClassName="active" to="/lecftures">
               <Students />
               الطلبة
             </NavLink>
-          </div>
+          </div> */}
           <div>
-            <NavLink activeClassName="active" to="/lectfsures">
+            <NavLink activeClassName="active" to="/settings">
               <FiSettings />
               الاعدادات
             </NavLink>

@@ -115,7 +115,7 @@ body {
 }
 
 .courses-slider-container .year-btns-container button.active {
-  background: linear-gradient(45deg, #ffc850 20%, #ffdc64 100%);
+  background: linear-gradient(45deg, #ffc850 20%, #ffdb64 100%);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   color: #ffffff;

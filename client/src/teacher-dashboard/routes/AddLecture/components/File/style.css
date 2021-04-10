@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+/**********************************/
+/**********************************/
+.file-container {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+          box-shadow: 0px 3px 6px rgba(61, 28, 28, 0.16);
+}
+
+.file-container div {
+  display: block;
+}
+
+.file-container .icon {
+  margin-bottom: 10px;
+}
+
+.file-container .icon svg {
+  color: red;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.file-container .name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

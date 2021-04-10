@@ -95,7 +95,7 @@ body {
 }
 
 .codes-container .details-boxes .yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+  background: radial-gradient(#ffdb64 0%, #f9ab00 100%);
 }
 
 .codes-container .details-boxes .purple-bg {
@@ -231,7 +231,7 @@ body {
 .codes-container .code-genertion-btn button {
   border: none;
   outline: none;
-  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdc64 100%);
+  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdb64 100%);
   padding: 6px 20px;
   border-radius: 10px;
   color: #ffffff;
@@ -290,12 +290,72 @@ body {
   padding-left: 20px;
 }
 
+.codes-container .table-container .action div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.codes-container .table-container .action div button {
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right top, left top, from(#ffdb64), color-stop(50%, #ffc850), to(#f19895));
+  background: linear-gradient(-90deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.codes-container .table-container .action div button svg {
+  color: #ffffff;
+}
+
+.codes-container .table-container .select-item select {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 3px 20px;
+  -webkit-appearance: none;
+}
+
+.codes-container .table-container .select-item span {
+  position: relative;
+  left: 15px;
+  top: 14px;
+  /* top: 133%; */
+  /* display: block; */
+  -webkit-transform: translateY(-5px) rotate(0deg);
+          transform: translateY(-5px) rotate(0deg);
+  border: 5px solid transparent;
+  border-top: 6px solid #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: 6px 4px;
+          transform-origin: 6px 4px;
+}
+
 .codes-container .table-container .is-used {
   text-align: center;
 }
 
 .codes-container .table-container .is-used span {
   background-color: #2ecc71;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.codes-container .table-container .is-confirmed {
+  text-align: center;
+}
+
+.codes-container .table-container .is-confirmed span {
+  background-color: #ec8689;
   border-radius: 30px;
   padding: 5px 15px;
   color: #ffffff;
