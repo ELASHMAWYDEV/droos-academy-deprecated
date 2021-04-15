@@ -12,6 +12,9 @@ import {
   SignUp,
 } from "./platform/routes";
 
+import { Header as StudentHeader } from "./student-dashboard/components";
+import { MyLectures } from "./student-dashboard/routes";
+
 import { Statistics } from "./teacher-dashboard/routes";
 
 //Style
@@ -39,6 +42,14 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
+        {subdomain == "student" && (
+          <React.Fragment>
+            <StudentHeader />
+            <Switch>
+              <Route exact path="/" component={MyLectures} />
+            </Switch>
+          </React.Fragment>
+        )}
         {subdomain == "teacher" && (
           <React.Fragment>
             <Header />
@@ -47,12 +58,15 @@ const App = () => {
             </Switch>
           </React.Fragment>
         )}
-        {subdomain != "" && subdomain != "admin" && subdomain != "teacher" && (
-          <Switch>
-            <Route exact path="/" component={TeacherHome} />
-            <Route path="/Lecture" component={Lecture} />
-          </Switch>
-        )}
+        {subdomain != "" &&
+          subdomain != "admin" &&
+          subdomain != "teacher" &&
+          subdomain != "student" && (
+            <Switch>
+              <Route exact path="/" component={TeacherHome} />
+              <Route path="/Lecture" component={Lecture} />
+            </Switch>
+          )}
       </Router>
     </div>
   );
