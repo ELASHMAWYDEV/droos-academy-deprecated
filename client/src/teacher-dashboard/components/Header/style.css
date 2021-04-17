@@ -66,22 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.blue-bg {
-  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
-}
-
-.pink-bg {
-  background: radial-gradient(#f19895 0%, #ff5b61 100%);
-}
-
-.yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
-}
-
-.purple-bg {
-  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
-}
-
+/**********************************/
+/**********************************/
 .header-container .nav-bar-conatiner {
   background-color: #ffffff;
   z-index: 1;
@@ -127,6 +113,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-container .nav-bar-conatiner .info-container .account-info .account-name {
@@ -151,13 +139,15 @@ body {
 }
 
 .header-container .side-bar-container .new-lecture-btn {
-  margin-top: 35%;
-  background: linear-gradient(-45deg, #ffdc64 0%, #ffc850 50%, #f19895 100%);
   border-radius: 10px;
-  padding: 3px 15px;
+  margin-top: 35%;
 }
 
-.header-container .side-bar-container .new-lecture-btn button {
+.header-container .side-bar-container .new-lecture-btn a {
+  border-radius: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  background: linear-gradient(-45deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
   background-color: transparent;
   border: none;
   outline: none;
@@ -167,7 +157,7 @@ body {
   text-align: center;
 }
 
-.header-container .side-bar-container .new-lecture-btn button svg {
+.header-container .side-bar-container .new-lecture-btn a svg {
   margin: 0 10px 0 0;
   color: #ffffff;
   font-size: 26px;
@@ -178,15 +168,17 @@ body {
   margin-top: 20%;
 }
 
-.header-container .side-bar-container .side-bar-btns div.active {
+.header-container .side-bar-container .side-bar-btns div {
   width: 75%;
   margin: 8px auto;
-  background: linear-gradient(-45deg, #ffdc64 0%, #ffc850 50%, #f19895 100%);
   border-radius: 10px;
-  padding: 3px 10px;
 }
 
-.header-container .side-bar-container .side-bar-btns div.active button {
+.header-container .side-bar-container .side-bar-btns div a.active {
+  border-radius: 10px;
+  padding: 7px 10px;
+  text-decoration: none;
+  background: linear-gradient(-45deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
   background-color: transparent;
   border: none;
   outline: none;
@@ -200,25 +192,30 @@ body {
   display: flex;
 }
 
-.header-container .side-bar-container .side-bar-btns div.active button svg {
+.header-container .side-bar-container .side-bar-btns div a.active svg {
   margin: 0 10px;
   width: 25px;
 }
 
-.header-container .side-bar-container .side-bar-btns div.active button svg g g {
+.header-container .side-bar-container .side-bar-btns div a.active svg g {
+  fill: #ffffff;
+}
+
+.header-container .side-bar-container .side-bar-btns div a.active svg g g {
   fill: #ffffff;
 }
 
 .header-container .side-bar-container .side-bar-btns div {
   width: 75%;
   margin: 8px auto;
-  background-color: transparent;
   border-radius: 10px;
-  padding: 10px;
 }
 
-.header-container .side-bar-container .side-bar-btns div button {
+.header-container .side-bar-container .side-bar-btns div a {
+  border-radius: 10px;
+  padding: 10px;
   background-color: transparent;
+  text-decoration: none;
   border: none;
   outline: none;
   width: 100%;
@@ -231,17 +228,17 @@ body {
   display: flex;
 }
 
-.header-container .side-bar-container .side-bar-btns div button svg {
+.header-container .side-bar-container .side-bar-btns div a svg {
   margin: 0 10px;
   width: 25px;
   height: 25px;
 }
 
-.header-container .side-bar-container .side-bar-btns div button svg g {
+.header-container .side-bar-container .side-bar-btns div a svg g {
   fill: #2e5361;
 }
 
-.header-container .side-bar-container .side-bar-btns div button svg g g {
+.header-container .side-bar-container .side-bar-btns div a svg g g {
   fill: #2e5361;
 }
 /*# sourceMappingURL=style.css.map */

@@ -66,22 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.blue-bg {
-  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
-}
-
-.pink-bg {
-  background: radial-gradient(#f19895 0%, #ff5b61 100%);
-}
-
-.yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
-}
-
-.purple-bg {
-  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
-}
-
+/**********************************/
+/**********************************/
 .nav-bar-container {
   max-height: 80px;
   padding: 30px 40px;
