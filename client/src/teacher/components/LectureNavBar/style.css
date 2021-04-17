@@ -93,6 +93,10 @@ body {
   width: 200px;
 }
 
+.lecture-nav-bar-container .humburger-menu {
+  display: none;
+}
+
 .lecture-nav-bar-container .navs-btns-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,5 +182,53 @@ body {
   padding: 5px 8px !important;
   margin-left: 10px;
   border: 2px solid #ffdb64;
+}
+
+@media only screen and (max-width: 1200px) {
+  .lecture-nav-bar-container .info-container {
+    width: 18% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .lecture-nav-bar-container .info-container {
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .lecture-nav-bar-container .info-container {
+    width: 25% !important;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .lecture-nav-bar-container .navs-btns-container, .lecture-nav-bar-container .info-container {
+    display: none;
+  }
+  .lecture-nav-bar-container .humburger-menu {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lecture-nav-bar-container .humburger-menu span {
+    margin: 2px auto;
+    border-top: 3px solid #ec8689;
+    width: 25px;
+    border-radius: 20%;
+  }
+  .lecture-nav-bar-container .humburger-menu .mid-burger {
+    border-top: 4px solid #ec8689;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

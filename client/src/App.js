@@ -12,6 +12,7 @@ import {
   SignUp,
 } from "./platform/routes";
 
+
 import {
   AddLecture,
   Codes,
@@ -21,10 +22,17 @@ import {
   Statistics,
 } from "./teacher-dashboard/routes";
 
+import { Header as StudentHeader } from "./student-dashboard/components";
+import { MyAccount, MyLectures, Teachers } from "./student-dashboard/routes";
+
+import { Statistics } from "./teacher-dashboard/routes";
+
+
 //Style
 import "./style.scss";
 import { Header } from "./teacher-dashboard/components";
 import React from "react";
+import { Footer } from "./teacher/components";
 
 const App = () => {
   const { subdomain } = useBootstrap();
@@ -46,6 +54,17 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
+        {subdomain == "student" && (
+          <React.Fragment>
+            <StudentHeader />
+            <Switch>
+              <Route exact path="/" component={MyLectures} />
+              <Route exact path="/teachers" component={Teachers} />
+              <Route exact path="/my-account" component={MyAccount} />
+            </Switch>
+            <Footer />
+          </React.Fragment>
+        )}
         {subdomain == "teacher" && (
           <React.Fragment>
             <Header />
@@ -59,12 +78,15 @@ const App = () => {
             </Switch>
           </React.Fragment>
         )}
-        {subdomain != "" && subdomain != "admin" && subdomain != "teacher" && (
-          <Switch>
-            <Route exact path="/" component={TeacherHome} />
-            <Route path="/Lecture" component={Lecture} />
-          </Switch>
-        )}
+        {subdomain != "" &&
+          subdomain != "admin" &&
+          subdomain != "teacher" &&
+          subdomain != "student" && (
+            <Switch>
+              <Route exact path="/" component={TeacherHome} />
+              <Route path="/Lecture" component={Lecture} />
+            </Switch>
+          )}
       </Router>
     </div>
   );

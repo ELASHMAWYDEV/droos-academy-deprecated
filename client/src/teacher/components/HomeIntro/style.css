@@ -132,6 +132,10 @@ body {
           transform: scale(0.95);
 }
 
+.home-intro-container .header-container .humburger-menu {
+  display: none;
+}
+
 .home-intro-container .flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +286,75 @@ body {
 @media only screen and (max-width: 1200px) {
   .home-intro-container .dash-line {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-intro-container .dash-line {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .home-intro-container .header-container .auth-btns-container {
+    display: none;
+  }
+  .home-intro-container .header-container .logo-container img {
+    width: 130px !important;
+  }
+  .home-intro-container .header-container .humburger-menu {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 15px;
+  }
+  .home-intro-container .header-container .humburger-menu span {
+    margin: 2px auto;
+    border-top: 3px solid #2e5361;
+    width: 25px;
+    border-radius: 20%;
+  }
+  .home-intro-container .header-container .humburger-menu .mid-burger {
+    border-top: 4px solid #2e5361;
+    width: 100%;
+  }
+  .home-intro-container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0;
+  }
+  .home-intro-container .flex-wrapper .shapes-container {
+    width: 100% !important;
+    padding-left: 0;
+    padding-top: 0;
+    min-height: 50vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-intro-container .flex-wrapper .shapes-container .teacher-container h1 {
+    color: #2e5361;
+  }
+  .home-intro-container .flex-wrapper .illustration-container {
+    display: none;
+  }
+  .home-intro-container .flex-wrapper .content-container {
+    width: 90%;
+    margin: auto;
+  }
+  .home-intro-container .flex-wrapper .content-container .second-div {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

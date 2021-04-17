@@ -1,0 +1,124 @@
+@import "../../../../../assets/styles/global";
+
+.teachers-slider-container {
+  padding: 100px 0;
+  & > h2 {
+    color: $black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .year-btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 50px auto;
+    button {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 5px 50px;
+      background: $white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: $darkYellow;
+        color: $white;
+        transform: scale(1.05);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+      &.active {
+        background: linear-gradient(45deg, $darkYellow 20%, $lightYellow 100%);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        color: $white;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+  .teachers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
+    padding: 10px 60px;
+    @include media(desktop-sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media(tablet-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .nav-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+
+    button {
+      display: block;
+      width: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: $white;
+      background-color: $lightBlue;
+      border: none;
+      font-size: 22px;
+      padding: 5px 15px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+      transform: 0.2s ease;
+
+      &:active {
+        transform: scale(0.96);
+      }
+      &.next-btn {
+        border-radius: 7px 50px 50px 7px;
+      }
+      &.prev-btn {
+        border-radius: 50px 7px 7px 50px;
+      }
+      &.not-active {
+        background-color: $gray;
+        cursor: default;
+        &:active {
+          transform: none;
+        }
+      }
+    }
+    svg {
+      width: 60px;
+      height: 30px;
+    }
+  }
+  .dash-line {
+    @include dashLine;
+  }
+
+  @include media(tablet-sm) {
+    .year-btns-container {
+      flex-wrap: wrap;
+      button {
+        margin: 10px;
+      }
+    }
+  }
+
+  @include media(phone-lg) {
+    .courses-grid {
+      padding: 0 20px !important;
+    }
+  }
+}

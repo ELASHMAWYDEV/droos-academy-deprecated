@@ -84,4 +84,10 @@ body {
   width: 10px;
   height: 10px;
 }
+
+@media only screen and (max-width: 576px) {
+  .students-review-container .reviews-slider {
+    padding: 10px 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

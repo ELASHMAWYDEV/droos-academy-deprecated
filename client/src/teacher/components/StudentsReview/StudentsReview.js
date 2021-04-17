@@ -17,11 +17,18 @@ const StudentsReview = () => {
       <Swiper
         className="reviews-slider"
         spaceBetween={150}
-        slidesPerView={2}
+        slidesPerView={1}
         grabCursor
         pagination={{ clickable: true }}
         autoplay={{ delay: 1000, stopOnLastSlide: false }}
         effect="slide"
+        breakpoints={{
+          // when window width is >= 640px
+          1025: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 768px
+        }}
       >
         <SwiperSlide>
           <ReviewItem />
