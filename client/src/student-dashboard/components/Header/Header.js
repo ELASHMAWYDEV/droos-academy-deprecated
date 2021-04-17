@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosNotifications, IoIosArrowDown } from "react-icons/io";
-import { NavLink } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 //Styles
 import "./style.scss";
@@ -26,13 +26,13 @@ const Header = () => {
           </NavLink>
         </div>
         <div>
-          <NavLink activeClassName="active" to="/lectures">
+          <NavLink activeClassName="active" to="/teachers">
             <Teachers />
             المعلمين
           </NavLink>
         </div>
         <div>
-          <NavLink activeClassName="active" to="/payments">
+          <NavLink activeClassName="active" to="/my-account">
             <GraducationCap />
             حسابي
           </NavLink>

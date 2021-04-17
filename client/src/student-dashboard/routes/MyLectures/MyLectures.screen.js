@@ -1,5 +1,7 @@
 import React from "react";
 
+import { LecturesSlider } from "./components";
+
 //Styles
 import "./style.scss";
 
@@ -7,8 +9,8 @@ import "./style.scss";
 
 const MyLectures = () => {
   return (
-    <div>
-      <div></div>
+    <div className="my-lectures-container">
+      <LecturesSlider />
     </div>
   );
 };

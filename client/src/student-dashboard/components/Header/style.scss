@@ -4,32 +4,54 @@
   background-color: $white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 20px 30px;
   .logo-container {
     img {
       width: 200px;
     }
   }
   .navs-container {
-    // display: flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
     div {
       a {
+        border-radius: 10px;
+        background-color: $darkGray;
+        text-align: right;
+        color: $white;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500;
         svg {
           margin: 0 10px;
           width: 25px;
+          height: 25px;
+          fill: $white;
+
           g {
+            fill: $white;
             g {
               fill: $white;
             }
           }
         }
       }
+      .active {
+        background: linear-gradient(
+          -45deg,
+          $lightPrimary 0%,
+          $darkYellow 50%,
+          $lightYellow 100%
+        );
+      }
     }
   }
   .info-container {
     display: flex;
     align-items: center;
+    cursor: pointer;
     .notifications-icon {
       svg {
         color: $darkGray;
