@@ -12,7 +12,6 @@ import {
   SignUp,
 } from "./platform/routes";
 
-
 import {
   AddLecture,
   Codes,
@@ -25,8 +24,7 @@ import {
 import { Header as StudentHeader } from "./student-dashboard/components";
 import { MyAccount, MyLectures, Teachers } from "./student-dashboard/routes";
 
-import { Statistics } from "./teacher-dashboard/routes";
-
+// import { Statistics } from "./teacher-dashboard/routes";
 
 //Style
 import "./style.scss";

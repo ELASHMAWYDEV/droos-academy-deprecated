@@ -145,7 +145,7 @@ body {
 
 .header-container .side-bar-container .new-lecture-btn a {
   border-radius: 10px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   text-decoration: none;
   background: linear-gradient(-45deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
   background-color: transparent;
