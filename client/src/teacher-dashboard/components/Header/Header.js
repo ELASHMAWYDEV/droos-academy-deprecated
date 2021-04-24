@@ -23,18 +23,28 @@ const Header = () => {
         <div className="logo-container mx-4">
           <img src={Logo} alt="Droos Academy Logo" />
         </div>
+        <div className="burger-menu">
+          <span></span>
+          <span className="mid">
+            <span className="right"></span>
+            <span></span>
+          </span>
+          <span></span>
+        </div>
         <div className="info-container d-flex">
-          <div className="notifications-icon py-1">
-            <IoIosNotifications />
-            <div></div>
-          </div>
-          <div className="account-info d-flex ">
-            <div className="account-img px-3">
-              <img src={ProfilePic} alt="profile picture" />
+          <div className="info-container ">
+            <div className="notifications-icon">
+              <IoIosNotifications />
+              <span>0</span>
             </div>
-            <div className="account-name px-3 py-2">محمود العشماوي</div>
-            <div className="arrow-icon py-1">
-              <IoIosArrowDown />
+            <div className="account-info  ">
+              <div className="account-img ">
+                <img src={ProfilePic} alt="profile picture" />
+              </div>
+              <div className="account-name ">محمود العشماوي</div>
+              <div className="arrow-icon ">
+                <IoIosArrowDown />
+              </div>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Settings = () => {
     <div className="settings-container">
       <div className="employee-table">
         <div className="table-title">
-          <div className="name">الوظفين</div>
+          <div className="name">الموظفين</div>
           <div className="add-employee">
             <button>إضافة موظف</button>
           </div>
@@ -41,7 +41,7 @@ const Settings = () => {
       <div className="dash-line"></div>
       <div className="employee-table">
         <div className="table-title">
-          <div className="name">الوظفين</div>
+          <div className="name">الموزعين</div>
           <div className="add-employee">
             <button>إضافة موزع</button>
           </div>
