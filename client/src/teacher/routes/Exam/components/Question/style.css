@@ -160,6 +160,7 @@ body {
 
 .question-container form .questions-container .input-item .answer {
   margin: 0 35px;
+  color: #2e5361;
 }
 
 .question-container form .questions-container .input-item .checkmark {
@@ -170,6 +171,8 @@ body {
   width: 25px;
   background-color: #12699e;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 6px #a7a6a6;
+          box-shadow: 0px 3px 6px #a7a6a6;
 }
 
 .question-container form .questions-container .input-item .container:hover input ~ .checkmark {
@@ -218,5 +221,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px #a7a6a6;
+          box-shadow: 0px 3px 6px #a7a6a6;
 }
 /*# sourceMappingURL=style.css.map */

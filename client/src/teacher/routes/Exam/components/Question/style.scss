@@ -75,6 +75,7 @@
         }
         .answer {
           margin: 0 35px;
+          color: $black;
         }
         /* Create a custom radio button */
         .checkmark {
@@ -85,6 +86,7 @@
           width: 25px;
           background-color: $darkBlue;
           border-radius: 50%;
+          box-shadow: 0px 3px 6px $darkGray;
         }
 
         /* On mouse-over, add a grey background color */
@@ -133,6 +135,7 @@
         color: $white;
         font-weight: bold;
         cursor: pointer;
+        box-shadow: 0px 3px 6px $darkGray;
       }
     }
   }

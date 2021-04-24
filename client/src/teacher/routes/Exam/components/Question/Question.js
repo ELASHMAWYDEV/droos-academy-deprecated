@@ -9,7 +9,7 @@ const Question = ({ questions }) => {
   return (
     <div className="question-container">
       <div className="form-container">
-        <form>
+        <form method="POST">
           <div className="questions-container">
             {questions.length !== 0 &&
               questions.map((question, i) =>

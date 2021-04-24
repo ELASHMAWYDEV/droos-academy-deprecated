@@ -67,7 +67,7 @@ const Exam = () => {
               props: {
                 type: "radio",
               },
-              choises: ["one", "two", "one", "two", "one", "two"],
+              choises: ["one", "two", "one", "two"],
             },
             {
               type: "radio",
@@ -75,7 +75,7 @@ const Exam = () => {
               props: {
                 type: "radio",
               },
-              choises: ["one", "two", "one", "two", "one", "two"],
+              choises: ["one", "two", "one", "two"],
             },
             {
               type: "radio",
@@ -83,7 +83,7 @@ const Exam = () => {
               props: {
                 type: "radio",
               },
-              choises: ["one", "two", "one", "two", "one", "two"],
+              choises: ["one", "two", "one", "two"],
             },
             {
               type: "radio",
@@ -91,7 +91,7 @@ const Exam = () => {
               props: {
                 type: "radio",
               },
-              choises: ["one", "two", "one", "two", "one", "two"],
+              choises: ["one", "two", "one", "two"],
             },
             {
               type: "textarea",
@@ -99,7 +99,7 @@ const Exam = () => {
               props: {
                 type: "textarea",
               },
-              choises: ["one", "two", "one", "two", "one", "two"],
+              choises: ["one", "two", "one", "two"],
             },
           ]}
         />
