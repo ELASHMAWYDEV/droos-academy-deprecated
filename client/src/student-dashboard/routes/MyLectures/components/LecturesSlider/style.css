@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.blue-bg {
+  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
+}
+
+.pink-bg {
+  background: radial-gradient(#f19895 0%, #ff5b61 100%);
+}
+
+.yellow-bg {
+  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+}
+
+.purple-bg {
+  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
+}
+
+.lectures-slider-container {
+  padding: 80px 0;
+}
+
+.lectures-slider-container > h2 {
+  color: #2e5361;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.lectures-slider-container .year-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+  margin: 50px auto;
+}
+
+.lectures-slider-container .year-btns-container button {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.lectures-slider-container .year-btns-container button:hover {
+  background-color: #ffc850;
+  color: #ffffff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lectures-slider-container .year-btns-container button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.lectures-slider-container .year-btns-container button.active {
+  background: linear-gradient(45deg, #ffc850 20%, #ffdc64 100%);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.lectures-slider-container .year-btns-container button.active:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.lectures-slider-container .lectures-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 60px;
+  padding: 10px 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .lectures-slider-container .lectures-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .lectures-slider-container .lectures-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.lectures-slider-container .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.lectures-slider-container .nav-btns button {
+  display: block;
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  background-color: #f18c8e;
+  border: none;
+  font-size: 22px;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  -webkit-transform: 0.2s ease;
+          transform: 0.2s ease;
+}
+
+.lectures-slider-container .nav-btns button:hover {
+  background-color: #f19895;
+}
+
+.lectures-slider-container .nav-btns button:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.lectures-slider-container .nav-btns button.next-btn {
+  border-radius: 7px 50px 50px 7px;
+}
+
+.lectures-slider-container .nav-btns button.prev-btn {
+  border-radius: 50px 7px 7px 50px;
+}
+
+.lectures-slider-container .nav-btns button.not-active {
+  background-color: #a5b1c2;
+  cursor: default;
+}
+
+.lectures-slider-container .nav-btns button.not-active:active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.lectures-slider-container .nav-btns svg {
+  width: 60px;
+  height: 30px;
+}
+
+.lectures-slider-container .dash-line {
+  margin: 50px auto;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #a5b1c2), color-stop(50%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #a5b1c2 55%, rgba(255, 255, 255, 0) 50%);
+  background-position: bottom;
+  background-size: 8% 2px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 2px;
+}
+
+@media only screen and (max-width: 798px) {
+  .lectures-slider-container .year-btns-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .lectures-slider-container .year-btns-container button {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .lectures-slider-container .courses-grid {
+    padding: 0 20px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

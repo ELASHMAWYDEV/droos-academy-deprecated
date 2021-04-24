@@ -105,9 +105,9 @@ body {
 .lecture-videos-contanier .videos-container .btns-container div div {
   background-color: #f1f2f6;
   width: 90%;
-  border-radius: 5px;
   margin: 20px 0;
   padding: 5px;
+  border-radius: 5px;
 }
 
 .lecture-videos-contanier .videos-container .btns-container div div button {
@@ -120,12 +120,22 @@ body {
   font-weight: 500;
 }
 
-.lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn div {
-  background: linear-gradient(-45deg, #f19895 0%, #b42d76 100%);
+.lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn a {
+  text-decoration: none;
 }
 
-.lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn div button {
+.lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn a button {
+  background: linear-gradient(-45deg, #f19895 0%, #b42d76 100%);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  width: 90%;
   color: #ffffff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .lecture-videos-contanier .videos-container .video-container {
@@ -139,19 +149,23 @@ body {
   display: none;
 }
 
-.lecture-videos-contanier .videos-container .lecture-tests-btn-hidden div {
-  background: linear-gradient(-45deg, #f19895 0%, #b42d76 100%);
-  border-radius: 5px;
-  margin: 0 10px;
+.lecture-videos-contanier .videos-container .lecture-tests-btn-hidden a {
+  margin: 0 5px;
+  text-decoration: none;
 }
 
-.lecture-videos-contanier .videos-container .lecture-tests-btn-hidden div button {
+.lecture-videos-contanier .videos-container .lecture-tests-btn-hidden a button {
+  background: linear-gradient(-45deg, #f19895 0%, #b42d76 100%);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
   color: #ffffff;
   background-color: transparent;
   border: none;
   outline: none;
   width: 100%;
-  padding: 5px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 576px) {

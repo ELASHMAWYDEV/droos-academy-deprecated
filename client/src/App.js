@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
 //Routes
-import { Home as TeacherHome, Lecture } from "./teacher/routes";
+import { Exam, Home as TeacherHome, Lecture } from "./teacher/routes";
 import {
   LandingPage,
   StudentLandingPage,
@@ -35,6 +35,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={TeacherHome} />
             <Route path="/Lecture" component={Lecture} />
+            <Route path="/exam" component={Exam} />
           </Switch>
         )}
       </Router>
