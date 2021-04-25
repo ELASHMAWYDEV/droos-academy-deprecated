@@ -73,7 +73,7 @@ body {
           box-shadow: 0px 3px 10px rgba(46, 83, 97, 0.4);
   height: 120px;
   width: 500px;
-  line-height: 13rem;
+  line-height: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +117,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
