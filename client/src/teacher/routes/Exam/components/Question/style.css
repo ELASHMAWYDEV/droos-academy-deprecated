@@ -116,15 +116,18 @@ body {
 }
 
 .question-container form .questions-container .input-item .choises-container {
-  margin: 0 30px;
+  margin: 30px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .question-container form .questions-container .input-item textarea {
-  margin: 0 30px;
+  margin: 20px 0px;
+  margin-bottom: 60px;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
@@ -133,7 +136,9 @@ body {
           box-shadow: 0px 3px 6px #a7a6a6;
   color: #2e5361;
   width: 97%;
-  min-height: 60px;
+  min-height: 80px;
+  direction: rtl;
+  text-align: right;
 }
 
 .question-container form .questions-container .input-item .container {

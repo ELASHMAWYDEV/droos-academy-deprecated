@@ -43,7 +43,7 @@ const Question = ({ questions }) => {
                         <span>{question.label}</span>
                       </label>
                     )}
-                    <textarea></textarea>
+                    <textarea placeholder="اكتب الإجابة هنا..."></textarea>
                   </div>
                 ) : null
               )}

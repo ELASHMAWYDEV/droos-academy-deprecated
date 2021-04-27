@@ -29,15 +29,17 @@
           }
         }
         .choises-container {
-          margin: 0 30px;
+          margin: 30px 40px;
           display: flex;
-          gap: 50px;
+          justify-content: space-between;
+          // gap: 50px;
           .container {
             // padding: 5px 10px;
           }
         }
         textarea {
-          margin: 0 30px;
+          margin: 20px 0px;
+          margin-bottom: 60px;
           padding: 10px 20px;
           border-radius: 5px;
           border: none;
@@ -45,7 +47,9 @@
           box-shadow: 0px 3px 6px $darkGray;
           color: $black;
           width: 97%;
-          min-height: 60px;
+          min-height: 80px;
+          direction: rtl;
+          text-align: right;
         }
         .container {
           //   display: flex;
@@ -127,7 +131,7 @@
       justify-content: flex-end;
       margin: 10px 0;
       button {
-        background: linear-gradient(45deg, $darkYellow 0%, $midPrimary 100%);
+        @include linearButton(right);
         border: none;
         outline: none;
         padding: 5px 30px;
