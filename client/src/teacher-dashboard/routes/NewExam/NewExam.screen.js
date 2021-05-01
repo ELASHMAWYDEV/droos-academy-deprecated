@@ -2,6 +2,8 @@ import React from "react";
 
 import Datetime from "react-datetime";
 
+import { Choice, Navigation } from "./components";
+
 //Styles
 import "./style.scss";
 import "react-datetime/css/react-datetime.css";
@@ -90,6 +92,50 @@ const NewExam = () => {
               </div>
             </div>
             <div className="dash-line"></div>
+          </div>
+          <div className="questions-container">
+            <div className="title">
+              <h3>الأسئلة</h3>
+            </div>
+            <div className="question-number">
+              <div className="number">سؤال رقم #15</div>
+              <div className="delete-question-btn">
+                <button type="button">حذف السؤال</button>
+              </div>
+            </div>
+            <div className="type">
+              <div className="title">نوع السؤال</div>
+              <div className="radio-container">
+                <div className="choices-container">
+                  <label className="container">
+                    <input type="radio" name="type" />
+                    <div>اختيار من متعدد</div>
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="container">
+                    <input type="radio" name="type" />
+                    <div>مقالي</div>
+                    <span className="checkmark"></span>
+                  </label>
+                </div>
+                <div />
+              </div>
+            </div>
+            <div className="question-container">
+              <div className="title">السؤال</div>
+              <div className="input">
+                <input type="text" name="question" placeholder="السؤال" />
+              </div>
+            </div>
+            <div className="choices-container">
+              <div className="title">الإختيارات</div>
+              <div className="choices">
+                {[1, 2, 3, 4].map((item, index) => (
+                  <Choice number={index} />
+                ))}
+              </div>
+            </div>
+            <Navigation />
           </div>
         </form>
       </div>

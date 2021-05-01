@@ -1,0 +1,25 @@
+@import "../../../../../assets/styles/global";
+
+.choice-container {
+  margin: 15px 0;
+  width: 45%;
+  .choice-number {
+    text-align: right;
+    color: $black;
+    font-weight: bold;
+  }
+  .choice-input {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: $white;
+      box-shadow: 0px 3px 6px $darkGray;
+      border-radius: 10px;
+      padding: 10px 25px;
+    }
+  }
+}
