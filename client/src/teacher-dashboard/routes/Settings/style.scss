@@ -1,0 +1,39 @@
+@import "../../../assets/styles/global";
+
+.settings-container {
+  background-color: $lightGray;
+  min-height: 100vh;
+  padding: 100px 300px 0 0;
+  padding-bottom: 20px;
+  .table-container {
+    @include table-container;
+  }
+  .dash-line {
+    @include smallDashLine;
+  }
+  .table-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    .name {
+      color: $black;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .add-employee {
+      button {
+        border: none;
+        outline: none;
+        background: linear-gradient(
+          -90deg,
+          $lightYellow 0%,
+          $darkYellow 50%,
+          $light-purple 100%
+        );
+        padding: 6px 20px;
+        border-radius: 10px;
+        color: $white;
+      }
+    }
+  }
+}

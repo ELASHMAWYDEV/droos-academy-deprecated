@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+/**********************************/
+/**********************************/
+.settings-container {
+  background-color: #f1f2f6;
+  min-height: 100vh;
+  padding: 100px 300px 0 0;
+  padding-bottom: 20px;
+}
+
+.settings-container .table-container {
+  margin: 0 auto;
+  overflow-x: auto;
+  width: 95%;
+}
+
+.settings-container .table-container table {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-collapse: collapse;
+  text-align: right;
+  width: 100%;
+}
+
+.settings-container .table-container th {
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 8px 0 8px 30px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #a7a6a6;
+  border-bottom: 1px solid #a7a6a6;
+  max-width: 300px;
+}
+
+.settings-container .table-container th:nth-child(1) {
+  padding-right: 20px;
+}
+
+.settings-container .table-container th:nth-last-child() {
+  padding-left: 20px;
+}
+
+.settings-container .table-container td {
+  white-space: nowrap;
+  text-overflow: clip;
+  padding: 15px 0px 15px 35px;
+  color: #2e5361;
+  max-width: 50%;
+}
+
+.settings-container .table-container td:nth-child(1) {
+  padding-right: 20px;
+}
+
+.settings-container .table-container td:nth-last-child() {
+  padding-left: 20px;
+}
+
+.settings-container .table-container .action div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settings-container .table-container .action div button {
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right top, left top, from(#ffdb64), color-stop(50%, #ffc850), to(#f19895));
+  background: linear-gradient(-90deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.settings-container .table-container .action div button svg {
+  color: #ffffff;
+}
+
+.settings-container .table-container .select-item select {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 3px 20px;
+  -webkit-appearance: none;
+}
+
+.settings-container .table-container .select-item span {
+  position: relative;
+  left: 15px;
+  top: 14px;
+  /* top: 133%; */
+  /* display: block; */
+  -webkit-transform: translateY(-5px) rotate(0deg);
+          transform: translateY(-5px) rotate(0deg);
+  border: 5px solid transparent;
+  border-top: 6px solid #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform-origin: 6px 4px;
+          transform-origin: 6px 4px;
+}
+
+.settings-container .table-container .is-used {
+  text-align: center;
+}
+
+.settings-container .table-container .is-used span {
+  background-color: #2ecc71;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.settings-container .table-container .is-confirmed {
+  text-align: center;
+}
+
+.settings-container .table-container .is-confirmed span {
+  background-color: #ec8689;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.settings-container .table-container .thumbnail img {
+  width: 100%;
+}
+
+.settings-container .table-container tr {
+  background-color: #ffffff;
+}
+
+.settings-container .table-container tr:hover {
+  background-color: #f1f2f6;
+}
+
+.settings-container .dash-line {
+  margin: 50px auto;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #a5b1c2), color-stop(50%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #a5b1c2 55%, rgba(255, 255, 255, 0) 50%);
+  background-position: bottom;
+  background-size: 5% 2px;
+  width: 50%;
+  height: 2px;
+}
+
+.settings-container .table-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.settings-container .table-title .name {
+  color: #2e5361;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.settings-container .table-title .add-employee button {
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right top, left top, from(#ffdb64), color-stop(50%, #ffc850), to(#f19895));
+  background: linear-gradient(-90deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
+  padding: 6px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
