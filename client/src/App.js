@@ -2,7 +2,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useBootstrap } from "./hooks";
 
 //Routes
+
+//teacher-routes
 import { Home as TeacherHome, Lecture } from "./teacher/routes";
+import { Footer } from "./teacher/components";
+
+//platform-routes
 import {
   LandingPage,
   StudentLandingPage,
@@ -12,16 +17,19 @@ import {
   SignUp,
 } from "./platform/routes";
 
-
+//teacher-dashboard-routes
 import {
   AddLecture,
   Codes,
   Lectures,
+  NewExam,
   Payments,
   Settings,
   Statistics,
 } from "./teacher-dashboard/routes";
+import { Header } from "./teacher-dashboard/components";
 
+//student-dashboard-routes
 import { Header as StudentHeader } from "./student-dashboard/components";
 import {
   MyAccount,
@@ -30,14 +38,9 @@ import {
   Teachers,
 } from "./student-dashboard/routes";
 
-import { Statistics } from "./teacher-dashboard/routes";
-
-
 //Style
 import "./style.scss";
-import { Header } from "./teacher-dashboard/components";
 import React from "react";
-import { Footer } from "./teacher/components";
 
 const App = () => {
   const { subdomain } = useBootstrap();
@@ -81,6 +84,7 @@ const App = () => {
               <Route exact path="/add-lecture" component={AddLecture} />
               <Route exact path="/payments" component={Payments} />
               <Route exact path="/settings" component={Settings} />
+              <Route exact path="/new-exam" component={NewExam} />
             </Switch>
           </React.Fragment>
         )}
