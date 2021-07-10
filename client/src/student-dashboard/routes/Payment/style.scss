@@ -1,0 +1,164 @@
+@import "../../../assets/styles/global";
+
+.payment-container {
+  background-color: $lightGray;
+  padding: 60px 0;
+  .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: $black;
+  }
+  .by-code-container {
+    background-color: $white;
+    box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.3);
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px 25px;
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .form-container {
+      form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+
+        .code {
+          //   display: flex;
+          //   justify-content: flex-start;
+          width: 65%;
+          input {
+            width: 100%;
+            background-color: $lightGray;
+            box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.3);
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+          }
+        }
+        .btn {
+          min-width: 25%;
+          button {
+            width: 100%;
+            background-color: $primary;
+            border: none;
+            outline: none;
+            box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.3);
+            border-radius: 10px;
+            padding: 10px 25px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .other-payments-container {
+    background-color: $white;
+    box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.3);
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 10px 25px;
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .select-way {
+      form {
+        margin: 20px 0;
+        .select-container {
+          display: flex;
+          justify-content: center;
+          select {
+            background-color: $darkBlue;
+            padding: 8px 30px;
+            color: $white;
+            -webkit-appearance: none;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+          }
+          span {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            -webkit-transform: translateY(-5px) rotate(0deg);
+            transform: translateY(-5px) rotate(0deg);
+            border: 6px solid transparent;
+            border-top: 8px solid $white;
+            -webkit-transition: 0.3s ease;
+            transition: 0.3s ease;
+            -webkit-transform-origin: 6px 4px;
+            transform-origin: 6px 4px;
+          }
+        }
+        .how-to-pay {
+          margin: 20px;
+          text-align: center;
+          div,
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+          }
+        }
+        .dash-line {
+          @include dashLine;
+          margin: 40px auto;
+          width: 65%;
+        }
+        .value-container {
+          display: flex;
+          justify-content: center;
+          input {
+            background-color: $lightGray;
+            box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.3);
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+            border-radius: 10px;
+          }
+        }
+        .adding-transaction-img {
+          background-color: $gray;
+          width: fit-content;
+          margin: 20px auto;
+          padding: 10px 20px;
+          border-radius: 15px;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+          div {
+            text-align: center;
+            color: $white;
+            font-weight: bold;
+            margin: 5px;
+            span {
+              svg {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+        .submit-btn {
+          text-align: center;
+          button {
+            border: none;
+            outline: none;
+            background-color: $primary;
+            color: $white;
+            padding: 10px 50px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}

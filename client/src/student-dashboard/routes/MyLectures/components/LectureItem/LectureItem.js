@@ -28,7 +28,6 @@ const LectureItem = () => {
           <div>
             <PriceImage />
           </div>
-          <div></div>
           <span>50 EGP </span>
         </div>
         <div className="time">
@@ -51,9 +50,9 @@ const LectureItem = () => {
         </div>
         <div className="watch-btn">
           <Link to="">
-            <span>
+            <div>
               <TiMediaPlayReverse />
-            </span>
+            </div>
             مشاهدة
           </Link>
         </div>
