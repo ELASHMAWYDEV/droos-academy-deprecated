@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosNotifications, IoIosArrowDown } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
 
@@ -13,6 +13,8 @@ import { ReactComponent as Teachers } from "../../../assets/img/teachers.svg";
 import { ReactComponent as GraducationCap } from "../../../assets/img/graducation-cap.svg";
 
 const Header = () => {
+  const [sidebarActive, setSidebarActive] = useState(false);
+  // const [visible, setVisible] = useState(false);
   return (
     <div className="header-container">
       <div className="logo-container">
@@ -43,7 +45,10 @@ const Header = () => {
           <IoIosNotifications />
           <span>0</span>
         </div>
-        <div className="account-info  ">
+        <div
+          className="account-info  "
+          onClick={() => setSidebarActive(!sidebarActive)}
+        >
           <div className="account-img ">
             <img src={ProfilePic} alt="profile picture" />
           </div>
@@ -53,6 +58,36 @@ const Header = () => {
           </div>
         </div>
       </div>{" "}
+      <div
+        className="menu"
+        style={{ display: sidebarActive ? "block" : "none" }}
+      >
+        <div class="triangle-up"></div>
+        <div onClick={() => setSidebarActive(!sidebarActive)}>
+          <NavLink exact className="res" activeClassName="active" to="/">
+            <Lectures />
+            محاضراتي
+          </NavLink>
+        </div>
+        <div onClick={() => setSidebarActive(!sidebarActive)}>
+          <NavLink className="res" activeClassName="active" to="/teachers">
+            <Teachers />
+            المعلمين
+          </NavLink>
+        </div>
+        <div onClick={() => setSidebarActive(!sidebarActive)}>
+          <NavLink className="res" activeClassName="active" to="/my-account">
+            <GraducationCap />
+            حسابي
+          </NavLink>
+        </div>
+        <div
+          className="delete-btn"
+          onClick={() => setSidebarActive(!sidebarActive)}
+        >
+          <Link>تسجيل الخروج</Link>
+        </div>
+      </div>
     </div>
   );
 };

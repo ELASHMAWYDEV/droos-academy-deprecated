@@ -31,7 +31,12 @@ import { Header } from "./teacher-dashboard/components";
 
 //student-dashboard-routes
 import { Header as StudentHeader } from "./student-dashboard/components";
-import { MyAccount, MyLectures, Teachers } from "./student-dashboard/routes";
+import {
+  MyAccount,
+  MyLectures,
+  Payment,
+  Teachers,
+} from "./student-dashboard/routes";
 
 //Style
 import "./style.scss";
@@ -64,6 +69,7 @@ const App = () => {
               <Route exact path="/" component={MyLectures} />
               <Route exact path="/teachers" component={Teachers} />
               <Route exact path="/my-account" component={MyAccount} />
+              <Route exact path="/payment" component={Payment} />
             </Switch>
             <Footer />
           </React.Fragment>

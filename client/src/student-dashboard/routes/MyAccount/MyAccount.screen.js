@@ -88,10 +88,7 @@ const MyAccount = () => {
         <div className="bottom-part">
           <div>
             <div className="title">عدد المحاضرات التي تم شرائها</div>
-            <div className="number">
-              12
-              {/* <span></span> */}
-            </div>
+            <div className="number">12</div>
           </div>
           <div>
             <div className="title">عدد المعلمين</div>
