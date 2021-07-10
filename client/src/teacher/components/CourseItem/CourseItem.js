@@ -19,7 +19,9 @@ const CourseItem = () => {
         <h1 className="course-title">المحاضرة الثانية - الوحدة الأولي</h1>
         <div className="course-info">
           <div className="price">
-            <PriceImage />
+            <div>
+              <PriceImage />
+            </div>
             <p>50 EGP </p>
           </div>
           <div className="teacher-name">

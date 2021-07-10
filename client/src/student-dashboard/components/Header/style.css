@@ -66,22 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.blue-bg {
-  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
-}
-
-.pink-bg {
-  background: radial-gradient(#f19895 0%, #ff5b61 100%);
-}
-
-.yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
-}
-
-.purple-bg {
-  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
-}
-
+/**********************************/
+/**********************************/
 .header-container {
   background-color: #ffffff;
   display: -webkit-box;
@@ -134,7 +120,7 @@ body {
 }
 
 .header-container .navs-container div .active {
-  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdc64 100%);
+  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdb64 100%);
 }
 
 .header-container .info-container {
@@ -188,5 +174,103 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.header-container .info-container .account-name {
+  color: #a7a6a6;
+}
+
+.header-container .info-container .arrow-icon svg {
+  color: #a7a6a6;
+}
+
+.header-container .menu {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  background-color: #ffffff;
+  z-index: 500;
+  padding: 15px;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0px 2px 10px rgba(46, 83, 97, 0.3);
+          box-shadow: 0px 2px 10px rgba(46, 83, 97, 0.3);
+}
+
+.header-container .menu .triangle-up {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 15px solid #2e5361;
+  position: relative;
+  top: -30px;
+  left: -85%;
+  margin: 0;
+}
+
+.header-container .menu div {
+  margin: 30px 0;
+  text-align: right;
+}
+
+.header-container .menu div a {
+  border-radius: 10px;
+  background-color: #a7a6a6;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.header-container .menu div a svg {
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
+}
+
+.header-container .menu div a svg g {
+  fill: #ffffff;
+}
+
+.header-container .menu div a svg g g {
+  fill: #ffffff;
+}
+
+.header-container .menu div .res {
+  display: none;
+}
+
+.header-container .menu div .active {
+  background: linear-gradient(-45deg, #f19895 0%, #ffc850 50%, #ffdb64 100%);
+}
+
+.header-container .menu .delete-btn a {
+  background-color: #ff5b61;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-container .menu div .res {
+    display: inline;
+  }
+  .header-container .navs-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-container .logo-container img {
+    width: 150px;
+  }
+  .header-container .info-container .account-name {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

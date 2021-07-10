@@ -3,7 +3,7 @@ import { useBootstrap } from "./hooks";
 
 //Routes
 //teacher-routes
-import {Exam, Home as TeacherHome, Lecture } from "./teacher/routes";
+import { Exam, Home as TeacherHome, Lecture } from "./teacher/routes";
 import { Footer } from "./teacher/components";
 
 //platform-routes
@@ -61,12 +61,6 @@ const App = () => {
             <div>admin</div>
           </Switch>
         )}
-        {subdomain != "" && subdomain != "admin" && (
-          <Switch>
-            <Route exact path="/" component={TeacherHome} />
-            <Route path="/Lecture" component={Lecture} />
-            <Route path="/exam" component={Exam} />
-          </Switch>
         {subdomain == "student" && (
           <React.Fragment>
             <StudentHeader />
@@ -100,6 +94,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={TeacherHome} />
               <Route path="/Lecture" component={Lecture} />
+              <Route path="/exam" component={Exam} />
             </Switch>
           )}
       </Router>

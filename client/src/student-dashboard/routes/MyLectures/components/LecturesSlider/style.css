@@ -66,22 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.blue-bg {
-  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
-}
-
-.pink-bg {
-  background: radial-gradient(#f19895 0%, #ff5b61 100%);
-}
-
-.yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
-}
-
-.purple-bg {
-  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
-}
-
+/**********************************/
+/**********************************/
 .lectures-slider-container {
   padding: 80px 0;
 }
@@ -133,7 +119,7 @@ body {
 }
 
 .lectures-slider-container .year-btns-container button.active {
-  background: linear-gradient(45deg, #ffc850 20%, #ffdc64 100%);
+  background: linear-gradient(45deg, #ffc850 20%, #ffdb64 100%);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   color: #ffffff;

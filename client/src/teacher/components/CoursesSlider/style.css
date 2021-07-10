@@ -177,7 +177,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
   color: #ffffff;
   background-color: #f18c8e;
   border: none;
@@ -190,6 +189,11 @@ body {
   font-weight: 600;
   -webkit-transform: 0.2s ease;
           transform: 0.2s ease;
+  text-decoration: none;
+}
+
+.courses-slider-container .nav-btns button p {
+  margin-bottom: 0;
 }
 
 .courses-slider-container .nav-btns button:hover {

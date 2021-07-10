@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 
 //Components
 import ReviewItem from "../ReviewItem/ReviewItem";
@@ -8,7 +8,7 @@ import ReviewItem from "../ReviewItem/ReviewItem";
 import "./style.scss";
 import "swiper/swiper.scss";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const StudentsReview = () => {
   return (
@@ -20,7 +20,7 @@ const StudentsReview = () => {
         slidesPerView={1}
         grabCursor
         pagination={{ clickable: true }}
-        autoplay={{ delay: 1000, stopOnLastSlide: false }}
+        autoplay={{ delay: 1500, stopOnLastSlide: false }}
         effect="slide"
         breakpoints={{
           // when window width is >= 640px

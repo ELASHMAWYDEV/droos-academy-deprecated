@@ -66,22 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
-.blue-bg {
-  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
-}
-
-.pink-bg {
-  background: radial-gradient(#f19895 0%, #ff5b61 100%);
-}
-
-.yellow-bg {
-  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
-}
-
-.purple-bg {
-  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
-}
-
+/**********************************/
+/**********************************/
 .my-account-container {
   background-color: #f1f2f6;
   padding: 60px 0;
@@ -147,7 +133,7 @@ body {
 
 .my-account-container .content-container .top-part div div .number span {
   border-radius: 50%;
-  background-color: #ffdc64;
+  background-color: #ffdb64;
   padding: 5px;
   margin: 0 0 0 10px;
 }
@@ -203,7 +189,7 @@ body {
   position: relative;
   top: -40px;
   right: 40px;
-  background: linear-gradient(45deg, #f19895 0%, #ffc850 50%, #ffdc64 100%);
+  background: linear-gradient(45deg, #f19895 0%, #ffc850 50%, #ffdb64 100%);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -317,7 +303,7 @@ body {
 
 .my-account-container .content-container .bottom-part div .number {
   border-radius: 50%;
-  background-color: #ffdc64;
+  background-color: #ffdb64;
   padding: 10px;
   min-width: 35px;
   color: #ffffff;
