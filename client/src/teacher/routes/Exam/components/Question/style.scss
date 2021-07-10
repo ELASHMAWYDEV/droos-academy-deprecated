@@ -1,0 +1,146 @@
+@import "../../../../../assets/styles/global";
+
+.question-container {
+  padding: 10px 20px;
+  form {
+    .questions-container {
+      background-color: $lightGray;
+      border-radius: 10px;
+      padding: 10px 15px;
+      .input-item {
+        .question-label {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin: 15px 0;
+          div {
+            margin: 0 5px;
+            background-color: $primary;
+            padding: 5px 10px;
+            border-radius: 50%;
+            text-align: center;
+            color: $white;
+            min-width: 30px;
+          }
+          span {
+            color: $black;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+        .choises-container {
+          margin: 30px 40px;
+          display: flex;
+          justify-content: space-between;
+          // gap: 50px;
+          .container {
+            // padding: 5px 10px;
+          }
+        }
+        textarea {
+          margin: 20px 0px;
+          margin-bottom: 60px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          box-shadow: 0px 3px 6px $darkGray;
+          color: $black;
+          width: 97%;
+          min-height: 80px;
+          direction: rtl;
+          text-align: right;
+        }
+        .container {
+          //   display: flex;
+          //   flex-direction: row;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          color: $black;
+          font-size: 18px;
+          font-weight: 400;
+          //   font-size: 22px;
+          //   direction: ltr;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        .answer {
+          margin: 0 35px;
+          color: $black;
+        }
+        /* Create a custom radio button */
+        .checkmark {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 25px;
+          width: 25px;
+          background-color: $darkBlue;
+          border-radius: 50%;
+          box-shadow: 0px 3px 6px $darkGray;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+          background-color: $darkBlue;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+          top: 5px;
+          left: 5px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: $green;
+        }
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+      button {
+        @include linearButton(right);
+        border: none;
+        outline: none;
+        padding: 5px 30px;
+        border-radius: 7px;
+        color: $white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px $darkGray;
+      }
+    }
+  }
+}

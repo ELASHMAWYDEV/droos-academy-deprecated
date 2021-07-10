@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.blue-bg {
+  background: radial-gradient(#3498db 0%, #1a4c6e 100%);
+}
+
+.pink-bg {
+  background: radial-gradient(#f19895 0%, #ff5b61 100%);
+}
+
+.yellow-bg {
+  background: radial-gradient(#ffdc64 0%, #f9ab00 100%);
+}
+
+.purple-bg {
+  background: radial-gradient(#ae94e2 0%, #5f179f 100%);
+}
+
+.teacher-item-container {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 10px rgba(46, 83, 97, 0.3);
+          box-shadow: 0px 2px 10px rgba(46, 83, 97, 0.3);
+  border-radius: 12px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  min-width: 300px;
+  padding: 0 0 20px 0;
+}
+
+.teacher-item-container .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -40px;
+  z-index: 100;
+  border-radius: 50%;
+}
+
+.teacher-item-container .img-container img {
+  border: 2px solid #2e5361;
+  border-radius: 50%;
+  width: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 3px 6px rgba(46, 83, 97, 0.3);
+          box-shadow: 0px 3px 6px rgba(46, 83, 97, 0.3);
+}
+
+.teacher-item-container .teacher-name {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.teacher-item-container .teacher-name span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e5361;
+}
+
+.teacher-item-container .subject-name {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.teacher-item-container .subject-name span {
+  background-color: #ffc850;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.teacher-item-container .lecture-details {
+  text-align: center;
+}
+
+.teacher-item-container .lecture-details span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e5361;
+}
+
+.teacher-item-container .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teacher-item-container .nav-btns div a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.teacher-item-container .nav-btns .first a {
+  background-color: #f19895;
+}
+
+.teacher-item-container .nav-btns .second a {
+  background-color: #3498db;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+@import "../../../assets/styles/global";
+
+.exam-container {
+  .top-part {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      background-color: $black;
+      padding: 5px 10px;
+      border-radius: 15px;
+      color: $white;
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .exam-info {
+        .title {
+          font-size: 28px;
+          font-weight: bold;
+          text-decoration: underline;
+          text-decoration-color: $midPrimary;
+        }
+        .info {
+          display: flex;
+          justify-content: space-between;
+          div {
+            h5 {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 5px 0;
+            }
+            span {
+              font-size: 15px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .teacher-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80px;
+          border-radius: 50%;
+          border: 2px solid $midPrimary;
+        }
+        div {
+          font-weight: bold;
+        }
+      }
+    }
+    .left {
+      padding: 10px 30px;
+      .timer {
+        background-color: $midPrimary;
+        border-radius: 30px;
+        padding: 10px 15px;
+        text-align: center;
+        margin: 10px 0;
+        font-weight: bold;
+        span {
+          margin: 0 5px;
+        }
+      }
+      .exam-details {
+        display: flex;
+        text-align: center;
+        h5 {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}

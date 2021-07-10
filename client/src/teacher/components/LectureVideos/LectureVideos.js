@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Styles
 import "./style.scss";
@@ -26,23 +27,23 @@ const LectureVideos = () => {
             </div>
           </div>
           <div className="lecture-tests-btn">
-            <div>
+            <Link to="/exam">
               <button>اختبار الجز ء الأول</button>
-            </div>
-            <div>
+            </Link>
+            <Link>
               <button>اختبار الجز ء الثاني</button>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="video-container"></div>
         <div className="lecture-tests-btn-hidden">
-            <div>
-              <button>اختبار الجز ء الأول</button>
-            </div>
-            <div>
-              <button>اختبار الجز ء الثاني</button>
-            </div>
-          </div>
+          <Link>
+            <button>اختبار الجز ء الأول</button>
+          </Link>
+          <Link>
+            <button>اختبار الجز ء الثاني</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

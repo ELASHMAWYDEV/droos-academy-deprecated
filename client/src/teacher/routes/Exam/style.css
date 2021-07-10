@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.exam-container .top-part {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.exam-container .top-part div {
+  background-color: #2e5361;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.exam-container .top-part .right {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exam-container .top-part .right .exam-info .title {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ec8689;
+          text-decoration-color: #ec8689;
+}
+
+.exam-container .top-part .right .exam-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.exam-container .top-part .right .exam-info .info div h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.exam-container .top-part .right .exam-info .info div span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.exam-container .top-part .right .teacher-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exam-container .top-part .right .teacher-info img {
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #ec8689;
+}
+
+.exam-container .top-part .right .teacher-info div {
+  font-weight: bold;
+}
+
+.exam-container .top-part .left {
+  padding: 10px 30px;
+}
+
+.exam-container .top-part .left .timer {
+  background-color: #ec8689;
+  border-radius: 30px;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.exam-container .top-part .left .timer span {
+  margin: 0 5px;
+}
+
+.exam-container .top-part .left .exam-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.exam-container .top-part .left .exam-details h5 {
+  padding: 5px 0;
+}
+/*# sourceMappingURL=style.css.map */

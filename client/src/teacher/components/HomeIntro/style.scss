@@ -50,13 +50,16 @@
 
       & > div {
         margin-bottom: 50px;
+        direction: rtl;
       }
       h1 {
         margin-bottom: 10px;
+        direction: rtl;
       }
       h5 {
         line-height: 24px;
         font-weight: 500;
+        direction: rtl;
       }
       // @include media(desktop-sm) {
       //   width: 40%;

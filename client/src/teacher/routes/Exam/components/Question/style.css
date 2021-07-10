@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+.question-container {
+  padding: 10px 20px;
+}
+
+.question-container form .questions-container {
+  background-color: #f1f2f6;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.question-container form .questions-container .input-item {
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+
+.question-container form .questions-container .input-item .question-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px 0;
+}
+
+.question-container form .questions-container .input-item .question-label div {
+  margin: 0 5px;
+  background-color: #f18c8e;
+  padding: 5px 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  min-width: 30px;
+}
+
+.question-container form .questions-container .input-item .question-label span {
+  color: #2e5361;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.question-container form .questions-container .input-item .choises-container {
+  margin: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.question-container form .questions-container .input-item textarea {
+  margin: 20px 0px;
+  margin-bottom: 60px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 3px 6px #a7a6a6;
+          box-shadow: 0px 3px 6px #a7a6a6;
+  color: #2e5361;
+  width: 97%;
+  min-height: 80px;
+  direction: rtl;
+  text-align: right;
+}
+
+.question-container form .questions-container .input-item .container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #2e5361;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.question-container form .questions-container .input-item .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.question-container form .questions-container .input-item .answer {
+  margin: 0 35px;
+  color: #2e5361;
+}
+
+.question-container form .questions-container .input-item .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #12699e;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 6px #a7a6a6;
+          box-shadow: 0px 3px 6px #a7a6a6;
+}
+
+.question-container form .questions-container .input-item .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.question-container form .questions-container .input-item .container input:checked ~ .checkmark {
+  background-color: #12699e;
+}
+
+.question-container form .questions-container .input-item .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.question-container form .questions-container .input-item .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.question-container form .questions-container .input-item .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+
+.question-container form .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.question-container form .btn-container button {
+  background: linear-gradient(45deg, #ffc850 0%, #ec8689 100%);
+  border: none;
+  outline: none;
+  padding: 5px 30px;
+  border-radius: 7px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px #a7a6a6;
+          box-shadow: 0px 3px 6px #a7a6a6;
+}
+/*# sourceMappingURL=style.css.map */
