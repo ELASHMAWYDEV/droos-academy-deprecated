@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+/*
+--------------------------
+---To use media queries---
+--------------------------
+
+@include media(desktop-lg) {
+  
+}
+@include media(desktop-sm) {
+
+}
+@include media(tablet-lg) {
+
+}
+@include media(tablet-sm) {
+
+}
+@include media(phone-lg) {
+
+}
+@include media(phone-sm) {
+
+}
+
+*/
+/*****************************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e5361;
+  border-radius: 10px;
+}
+
+/********************************************************/
+/******************************/
+/******************************/
+/**********************************/
+/**********************************/
+.header-container .nav-bar-conatiner {
+  background-color: #ffffff;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container .nav-bar-conatiner .logo-container img {
+  width: 200px;
+}
+
+.header-container .nav-bar-conatiner .burger-menu {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  left: 25%;
+  top: 10px;
+}
+
+.header-container .nav-bar-conatiner .burger-menu span {
+  margin: 1px auto;
+  border-top: 3px solid #2e5361;
+  width: 25px;
+  border-radius: 15px;
+}
+
+.header-container .nav-bar-conatiner .burger-menu .mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+}
+
+.header-container .nav-bar-conatiner .burger-menu .mid .right {
+  width: 50px !important;
+  margin-left: 2px;
+  border-radius: 30px;
+}
+
+.header-container .nav-bar-conatiner .burger-menu .mid span :last-child {
+  width: 20px !important;
+  border-radius: 30px;
+}
+
+.header-container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header-container .info-container .notifications-icon svg {
+  color: #a7a6a6;
+  font-size: 30px;
+}
+
+.header-container .info-container .notifications-icon span {
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  top: -10px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ec8689;
+  padding: 0px 4px;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.header-container .info-container .account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .info-container .account-info .account-img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.header-container .info-container .account-info .account-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.header-container .info-container .account-info .account-name {
+  color: #a7a6a6;
+}
+
+.header-container .info-container .account-info .arrow-icon svg {
+  color: #a7a6a6;
+}
+
+.header-container .side-bar-container {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 20px;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+.header-container .side-bar-container .new-lecture-btn {
+  border-radius: 10px;
+  margin-top: 35%;
+}
+
+.header-container .side-bar-container .new-lecture-btn a {
+  border-radius: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  background: linear-gradient(-45deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ffffff;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.header-container .side-bar-container .new-lecture-btn a svg {
+  margin: 0 10px 0 0;
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+}
+
+.header-container .side-bar-container .side-bar-btns {
+  margin-top: 20%;
+}
+
+.header-container .side-bar-container .side-bar-btns div {
+  width: 75%;
+  margin: 8px auto;
+  border-radius: 10px;
+}
+
+.header-container .side-bar-container .side-bar-btns div a.active {
+  border-radius: 10px;
+  padding: 7px 10px;
+  text-decoration: none;
+  background: linear-gradient(-45deg, #ffdb64 0%, #ffc850 50%, #f19895 100%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ffffff;
+  font-size: 15pt;
+  text-align: right;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container .side-bar-container .side-bar-btns div a.active svg {
+  margin: 0 10px;
+  width: 25px;
+}
+
+.header-container .side-bar-container .side-bar-btns div a.active svg g {
+  fill: #ffffff;
+}
+
+.header-container .side-bar-container .side-bar-btns div a.active svg g g {
+  fill: #ffffff;
+}
+
+.header-container .side-bar-container .side-bar-btns div {
+  width: 75%;
+  margin: 8px auto;
+  border-radius: 10px;
+}
+
+.header-container .side-bar-container .side-bar-btns div a {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #2e5361;
+  font-size: 15pt;
+  text-align: right;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container .side-bar-container .side-bar-btns div a svg {
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.header-container .side-bar-container .side-bar-btns div a svg g {
+  fill: #2e5361;
+}
+
+.header-container .side-bar-container .side-bar-btns div a svg g g {
+  fill: #2e5361;
+}
+/*# sourceMappingURL=style.css.map */

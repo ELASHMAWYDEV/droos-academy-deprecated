@@ -66,6 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+/**********************************/
+/**********************************/
 .nav-bar-container {
   max-height: 80px;
   padding: 30px 40px;
@@ -106,5 +108,87 @@ body {
 .nav-bar-container .navs-container a {
   color: #305f72;
   font-size: 18px;
+}
+
+.nav-bar-container .humburger-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-bar-container .logo-container img {
+    width: 160px;
+  }
+  .nav-bar-container .navs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+  .nav-bar-container .navs-container a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-bar-container .logo-container img {
+    width: 150px;
+  }
+  .nav-bar-container .navs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .nav-bar-container .navs-container a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-bar-container .nav-bar-container {
+    display: block !important;
+  }
+  .nav-bar-container .logo-container img {
+    width: 130px;
+  }
+  .nav-bar-container .navs-container {
+    display: none;
+  }
+  .nav-bar-container .humburger-menu {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-bar-container .humburger-menu span {
+    margin: 2px auto;
+    border-top: 3px solid #ec8689;
+    width: 25px;
+    border-radius: 5px;
+  }
+  .nav-bar-container .humburger-menu .mid-burger {
+    border-top: 4px solid #ec8689;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

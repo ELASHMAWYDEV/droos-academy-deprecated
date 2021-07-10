@@ -2,15 +2,16 @@
 
 .teacher-landing-page-container {
   padding: 30px 40px;
-
+  width: 100%;
+  height: 100vh;
   .pink-color {
     background-image: url(../../../assets/img/teacher-landing-page-pink-shape.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -213px;
-    background-position-x: -71px;
-    min-height: 100vh;
-    width: 79%;
+    background-position-y: -200px;
+    background-position-x: -60px;
+    height: 100vh;
+    width: 80%;
     position: absolute;
     top: 0;
     left: 0;
@@ -52,13 +53,35 @@
       }
     }
   }
-  .auth-btns-container {
-    position: absolute;
+  .content-container {
+    .img-container-hidden {
+      width: 0 !important;
+      height: 0 !important;
+
+      .parent-landing-page-shape {
+        width: 0%;
+        height: 0%;
+      }
+    }
+  }
+  .shapes-container-hidden {
+    display: flex !important;
+    align-items: flex-start;
+    position: relative;
     z-index: 1;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 15px;
-    padding-right: 40px;
+    visibility: hidden;
+    width: 50%;
+    height: 0;
+    overflow-x: hidden;
+  }
+  .auth-btns-container {
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    // margin: 25px;
   }
   .img-container {
     width: 85%;
@@ -104,8 +127,428 @@
       position: absolute;
       top: 70%;
       left: 25%;
+    }
+  }
+
+  @include media(desktop-sm) {
+    .content-container {
+      width: 50%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
+      }
+    }
+    .img-container {
+      width: 75%;
+      height: 200px;
+      position: absolute;
+      top: 7%;
+      right: 10%;
+      .parent-landing-page-shape {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @include media(tablet-lg) {
+    .pink-color {
+      background-position-y: -150px;
+      background-position-x: -65px;
+    }
+    .logo-container {
+      img {
+        width: 170px;
+      }
+    }
+    .content-container {
+      width: 50%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 15px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
+      }
+    }
+    .img-container {
+      width: 75%;
+      height: 200px;
+      position: absolute;
+      top: 7%;
+      right: 10%;
+      .parent-landing-page-shape {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .shapes-container {
+      .second-shape-container {
+        .secondary-text-container {
+          top: -25% !important;
+        }
+        .main-text-container {
+          top: 10%;
+        }
+      }
+    }
+    .auth-btns-container {
+      height: 3vh !important;
+    }
+  }
+
+  @include media(tablet-md) {
+    .pink-color {
+      background-position-y: -50px;
+      background-position-x: -100px;
+      height: 120vh;
+    }
+    .logo-container {
+      img {
+        width: 170px;
+      }
+    }
+    .content-container {
+      width: 50%;
+      height: 45vh;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 15px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .img-container {
+      width: 90% !important;
+
+      .parent-landing-page-shape {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        left: 5%;
+        top: 20%;
+      }
+    }
+    .shapes-container {
+      width: 0 !important;
+      height: 0 !important;
+      display: none;
+    }
+    .shapes-container-hidden {
+      visibility: visible;
+      width: 100%;
+      flex-wrap: wrap;
+      height: fit-content;
+      justify-content: center;
+      overflow-x: hidden;
+      gap: 20px;
       .secondary-text-container {
-        top: 5% !important;
+        .secondary-text {
+          margin: 0 auto;
+        }
+      }
+      .second-shape-container {
+        .secondary-text-container {
+          top: -25% !important;
+        }
+        .main-text-container {
+          top: 10% !important;
+        }
+      }
+    }
+    .auth-btns-container {
+      height: 20vh !important;
+      justify-content: center;
+    }
+  }
+
+  @include media(tablet-sm) {
+    .pink-color {
+      background-position-y: -50px;
+      background-position-x: -100px;
+      height: 150vh;
+      width: 100%;
+    }
+    .logo-container {
+      img {
+        width: 170px;
+      }
+    }
+    .content-container {
+      width: 60%;
+      height: 45vh;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 17px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .img-container {
+      width: 90% !important;
+
+      .parent-landing-page-shape {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        left: 5%;
+        top: 20%;
+      }
+    }
+    .shapes-container {
+      width: 0 !important;
+      height: 0 !important;
+      display: none;
+    }
+    .shapes-container-hidden {
+      visibility: visible;
+      width: 100%;
+      flex-wrap: wrap;
+      height: fit-content;
+      justify-content: center;
+      overflow-x: hidden;
+      gap: 20px;
+      .secondary-text-container {
+        .secondary-text {
+          margin: 0 auto;
+        }
+      }
+      .second-shape-container {
+        .secondary-text-container {
+          top: -25% !important;
+        }
+        .main-text-container {
+          top: 10% !important;
+        }
+      }
+    }
+    .auth-btns-container {
+      height: 20vh !important;
+      justify-content: center;
+    }
+  }
+
+  @include media(phone-lg) {
+    .pink-color {
+      background-position-y: -50px;
+      background-position-x: 50%;
+      height: 240vh;
+      width: 100%;
+    }
+    .logo-container {
+      img {
+        width: 150px;
+      }
+    }
+    .content-container {
+      flex-direction: column;
+      margin-top: 30px;
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+      .img-container-hidden {
+        width: 80% !important;
+        height: 70% !important;
+
+        .parent-landing-page-shape {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 17px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .img-container {
+      width: 0 !important;
+      .parent-landing-page-shape {
+        width: 0px !important;
+        visibility: hidden;
+      }
+    }
+    .shapes-container {
+      width: 0 !important;
+      height: 0 !important;
+      display: none;
+    }
+    .shapes-container-hidden {
+      visibility: visible;
+      width: 100%;
+      flex-wrap: wrap;
+      height: fit-content;
+      justify-content: center;
+      overflow-x: hidden;
+      gap: 20px;
+      .secondary-text-container {
+        .secondary-text {
+          margin: 0 auto;
+        }
+      }
+      .second-shape-container {
+        .secondary-text-container {
+          top: -25% !important;
+        }
+        .main-text-container {
+          top: 10% !important;
+        }
+      }
+    }
+    .auth-btns-container {
+      height: 20vh !important;
+      justify-content: center;
+    }
+  }
+
+  @include media(phone-sm) {
+    .content-container {
+      flex-direction: column;
+      margin-top: 20px;
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+      .img-container-hidden {
+        width: 80% !important;
+        height: 60% !important;
+
+        .parent-landing-page-shape {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: $midPrimary;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: $midPrimary;
+      }
+      h5 {
+        font-size: 14px;
+        font-weight: 400;
+        color: $lightBlack;
+        span {
+          color: $midPrimary;
+        }
+        a {
+          font-weight: bold;
+          color: $darkBlue;
+          text-decoration: underline;
+        }
       }
     }
   }

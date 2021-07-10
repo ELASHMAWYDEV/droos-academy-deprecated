@@ -66,6 +66,8 @@ body {
 /********************************************************/
 /******************************/
 /******************************/
+/**********************************/
+/**********************************/
 .lecture-container .dashed-line {
   margin: 50px auto;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #a5b1c2), color-stop(50%, rgba(255, 255, 255, 0)));

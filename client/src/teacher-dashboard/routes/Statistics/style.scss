@@ -1,0 +1,71 @@
+@import "../../../assets/styles/global";
+
+.statistics-container {
+  background-color: $lightGray;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 300px 0 0;
+  .stat-header-container {
+    padding: 20px;
+    justify-content: space-between;
+    .title {
+      span {
+        color: $black;
+        font-size: 17pt;
+        font-weight: bold;
+      }
+    }
+    .navs {
+      button {
+        border: none;
+        background-color: $white;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+        color: $black;
+      }
+      .right {
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .left {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .active {
+        background: radial-gradient($mid-red 0%, $light-purple 100%);
+        color: $white;
+      }
+    }
+  }
+
+  .data {
+    display: flex;
+    .details-boxes {
+      display: flex;
+      flex-direction: column;
+      min-width: 25%;
+      @include details-box;
+      .details-box {
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 10px 5px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .graph {
+      height: 100%;
+      min-width: 65%;
+      margin-left: 50px;
+      margin-top: 20px;
+      flex-basis: 100%;
+      svg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

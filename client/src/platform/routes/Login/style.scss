@@ -1,0 +1,221 @@
+@import "../../../assets/styles/global";
+
+.login-container {
+  width: 100%;
+  padding: 30px 40px;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    .logo-container {
+      max-height: 80px;
+      img {
+        width: 200px;
+      }
+    }
+    .back-button-container {
+      width: 10%;
+      height: 40px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: $midPrimary;
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 20px;
+        .icon {
+          svg {
+            font-size: 20px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    .img-container {
+      svg {
+        width: 90%;
+        height: 80%;
+      }
+    }
+    .form-container {
+      width: 30%;
+      background-color: $lightPrimary;
+      border-radius: 15px;
+      box-shadow: 0px 3px 10px $black;
+      .sign-up-btn-container {
+        text-align: center;
+        .text {
+          h4 {
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+          }
+        }
+        .btn {
+          margin: 5% 0;
+          a {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: $lightBlue;
+            width: 40%;
+            margin: auto;
+            border-radius: 7px;
+            padding: 6px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @include media(tablet-lg) {
+    .nav-container {
+      .back-button-container {
+        width: 15%;
+        height: 35px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: $white;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 10px !important;
+          .icon {
+            svg {
+              font-size: 20px;
+              margin: 5px 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+    .content-container {
+      .img-container {
+        svg {
+          width: 75%;
+          height: 70%;
+        }
+      }
+      .form-container {
+        width: 35% !important;
+      }
+    }
+  }
+
+  @include media(tablet-md) {
+    .content-container {
+      width: 100%;
+      justify-content: center;
+      height: 80vh;
+      .img-container {
+        svg {
+          width: 0;
+        }
+      }
+      .form-container {
+        width: 50% !important;
+      }
+    }
+  }
+
+  @include media(tablet-sm) {
+    .nav-container {
+      .back-button-container {
+        a {
+          padding: 5px !important;
+        }
+      }
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 170px !important;
+        }
+      }
+    }
+  }
+  @include media(phone-lg) {
+    .nav-container {
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 150px !important;
+        }
+      }
+    }
+    .content-container {
+      .form-container {
+        width: 70% !important;
+      }
+    }
+  }
+  @include media(phone-md) {
+    .login-container {
+      padding: 30px 20px !important;
+    }
+    .nav-container {
+      .back-button-container {
+        width: 30% !important;
+        height: 35px;
+      }
+    }
+    .content-container {
+      width: 100% !important;
+
+      .form-container {
+        width: 100% !important;
+      }
+    }
+  }
+  @include media(phone-sm) {
+    .nav-container {
+      .logo-container {
+        max-height: 80px;
+        img {
+          width: 120px !important;
+        }
+      }
+      .back-button-container {
+        width: 25%;
+        height: 25px;
+        a {
+          font-size: 9px !important;
+        }
+      }
+    }
+    .content-container {
+      width: 100% !important;
+      .form-container {
+        width: 100% !important;
+        .sign-up-btn-container {
+          text-align: center;
+          .text {
+            h4 {
+              font-size: 13px;
+            }
+          }
+          .btn {
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

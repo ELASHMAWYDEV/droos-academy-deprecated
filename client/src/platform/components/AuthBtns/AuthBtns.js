@@ -13,7 +13,7 @@ const AuthBtns = () => {
           <h3>ادخل المنصة من هنا</h3>
         </div>
         <div className="btn-container">
-          <Link to="">تسجيل الدخول</Link>
+          <Link to="/Login">تسجيل الدخول</Link>
         </div>
       </div>
       <div className="sign-up-container">
@@ -21,7 +21,7 @@ const AuthBtns = () => {
           <h3>سجل معنا الأن</h3>
         </div>
         <div className="btn-container">
-          <Link to="">حساب جديد</Link>
+          <Link to="/SignUp">حساب جديد</Link>
         </div>
       </div>
     </div>

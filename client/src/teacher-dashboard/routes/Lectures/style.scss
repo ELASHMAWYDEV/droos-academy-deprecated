@@ -1,0 +1,28 @@
+@import "../../../assets/styles/global";
+
+.lectures-container {
+  background-color: $lightGray;
+  min-height: 100vh;
+  padding: 100px 300px 0 0;
+  padding-bottom: 20px;
+  .details-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    @include details-box;
+
+    .details-box {
+      border-radius: 15px;
+      padding: 10px 5px;
+      margin: 20px;
+      .top {
+        margin: 0 60px 0 0;
+      }
+    }
+  }
+  .table-container {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    @include table-container;
+  }
+}
