@@ -89,6 +89,12 @@ body {
   padding: 20px 15px;
   cursor: pointer;
   color: #2e5361;
+  text-decoration: none;
+}
+
+.lecture-extras-container .extras-navs a:hover {
+  color: #ffffff;
+  background-color: rgba(165, 177, 194, 0.5);
 }
 
 .lecture-extras-container .extras-navs .active {
@@ -106,6 +112,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #2e5361;
+  text-align: right;
 }
 
 .lecture-extras-container .navs-content .files-container {

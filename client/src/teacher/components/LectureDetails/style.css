@@ -99,6 +99,7 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: #2e5361;
+  text-align: center;
 }
 
 .lecture-details-container .lecture-content .lecture-main-info .lecture-info {
@@ -177,6 +178,7 @@ body {
   color: #2e5361;
   font-weight: 400;
   margin-top: 20px;
+  text-align: right;
 }
 
 .lecture-details-container .teacher-info {
@@ -259,6 +261,19 @@ body {
   }
   .lecture-details-container .teacher-info {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lecture-details-container .teacher-info p {
+    color: #2e5361;
+    font-weight: bold;
   }
 }
 

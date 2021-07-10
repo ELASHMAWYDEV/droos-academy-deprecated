@@ -122,6 +122,10 @@ body {
   font-weight: 500;
 }
 
+.lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn {
+  text-align: right;
+}
+
 .lecture-videos-contanier .videos-container .btns-container .lecture-tests-btn a {
   text-decoration: none;
 }

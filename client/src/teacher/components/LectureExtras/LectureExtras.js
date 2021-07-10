@@ -21,9 +21,6 @@ const LectureExtras = () => {
         <NavLink activeClassName="active" to={`${path}/lecture-files`}>
           ملفات المحاضرة
         </NavLink>
-        <NavLink activeClassName="active" to={`${path}/Q&A`}>
-          سؤال وجواب
-        </NavLink>
       </div>
 
       <div className="navs-content">

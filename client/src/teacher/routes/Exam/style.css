@@ -69,13 +69,10 @@ body {
 /**********************************/
 /**********************************/
 .exam-container .top-part {
-  padding: 15px;
+  padding: 40px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -89,6 +86,9 @@ body {
 }
 
 .exam-container .top-part .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,12 +101,19 @@ body {
           align-items: center;
 }
 
+.exam-container .top-part .right .exam-info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .exam-container .top-part .right .exam-info .title {
   font-size: 28px;
   font-weight: bold;
   text-decoration: underline;
   -webkit-text-decoration-color: #ec8689;
           text-decoration-color: #ec8689;
+  text-align: right;
 }
 
 .exam-container .top-part .right .exam-info .info {
@@ -116,6 +123,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: right;
 }
 
 .exam-container .top-part .right .exam-info .info div h5 {
@@ -130,9 +138,13 @@ body {
 }
 
 .exam-container .top-part .right .teacher-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -156,6 +168,10 @@ body {
 }
 
 .exam-container .top-part .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
   padding: 10px 30px;
 }
 
@@ -176,10 +192,67 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 .exam-container .top-part .left .exam-details h5 {
   padding: 5px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .exam-container .top-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exam-container .top-part .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .exam-container .top-part .right .teacher-info {
+    margin-right: 0;
+  }
+  .exam-container .top-part .left .exam-details div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .exam-container .top-part .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .exam-container .top-part .right .title {
+    font-size: 23px !important;
+    text-align: center !important;
+  }
+  .exam-container .top-part .left {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .exam-container .top-part .right .title {
+    font-size: 19px !important;
+  }
+  .exam-container .top-part .right .exam-info h5 {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .exam-container .top-part .right .exam-info .info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=style.css.map */

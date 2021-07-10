@@ -26,12 +26,14 @@
             color: $black;
             font-size: 20px;
             font-weight: 500;
+            text-align: right;
           }
         }
         .choises-container {
           margin: 30px 40px;
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           // gap: 50px;
           .container {
             // padding: 5px 10px;
@@ -54,6 +56,7 @@
         .container {
           //   display: flex;
           //   flex-direction: row;
+          width: fit-content;
           position: relative;
           padding-left: 35px;
           margin-bottom: 12px;
@@ -78,8 +81,11 @@
           width: 0;
         }
         .answer {
-          margin: 0 35px;
+          margin: 0 35px 0 25px;
+          width: fit-content;
           color: $black;
+          text-align: right;
+
         }
         /* Create a custom radio button */
         .checkmark {
@@ -142,5 +148,12 @@
         box-shadow: 0px 3px 6px $darkGray;
       }
     }
+  }
+  @include media(phone-md){
+    .choises-container{
+      .container{
+        margin-right: 10px;
+      }
+    } 
   }
 }

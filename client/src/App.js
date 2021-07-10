@@ -93,7 +93,7 @@ const App = () => {
           subdomain != "student" && (
             <Switch>
               <Route exact path="/" component={TeacherHome} />
-              <Route path="/Lecture" component={Lecture} />
+              <Route path="/lecture" component={Lecture} />
               <Route path="/exam" component={Exam} />
             </Switch>
           )}

@@ -8,6 +8,7 @@ import {
   LectureNavBr,
   LectureVideos,
 } from "../../components";
+
 //Styles
 import "./style.scss";
 
