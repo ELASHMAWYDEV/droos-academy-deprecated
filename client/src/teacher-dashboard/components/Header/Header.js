@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { IoIosNotifications, IoIosArrowDown, IoIosAdd } from "react-icons/io";
 import { FiSettings } from "react-icons/fi";
@@ -13,17 +13,18 @@ import ProfilePic from "../../../assets/img/profile-pic.jpg";
 import { ReactComponent as Statistics } from "../../../assets/img/statistics.svg";
 import { ReactComponent as Lectures } from "../../../assets/img/lectures.svg";
 import { ReactComponent as Codes } from "../../../assets/img/payment.svg";
-import { ReactComponent as Students } from "../../../assets/img/students.svg";
 import { ReactComponent as Payment } from "../../../assets/img/payment-method.svg";
 
 const Header = () => {
+  const [visible, setVisible] = useState(false);
   return (
     <div className="header-container">
       <div className="nav-bar-conatiner d-flex p-4">
-        <div className="logo-container mx-4">
-          <img src={Logo} alt="Droos Academy Logo" />
-        </div>
-        <div className="burger-menu">
+        <div
+          className="burger-menu"
+          onClick={() => setVisible(!visible)}
+          style={{ marginRight: visible ? "280px" : "0" }}
+        >
           <span></span>
           <span className="mid">
             <span className="right"></span>
@@ -49,7 +50,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="side-bar-container">
+      <div className="side-bar-container" style={{ right: visible ? "0" : "-1000px" }}>
+        <div className="logo-container mx-4">
+          <img src={Logo} alt="Droos Academy Logo" />
+        </div>
         <div className="new-lecture-btn mx-5">
           <NavLink exact to="/add-lecture">
             محاضرة جديدة

@@ -9,21 +9,20 @@
     right: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    padding: 20px 25px;
     justify-content: space-between;
-    .logo-container {
-      img {
-        width: 200px;
-      }
-    }
+    align-items: center;
+    transition: all 0.5s ease;
     .burger-menu {
       height: fit-content;
       width: 30px;
       display: flex;
       flex-direction: column;
-      position: relative;
       cursor: pointer;
-      left: 25%;
-      top: 10px;
+      // left: 100%;
+      transition: all 0.5s ease;
+      margin-right: 0;
       span {
         margin: 1px auto;
         border-top: 3px solid $black;
@@ -102,16 +101,26 @@
     bottom: 0;
     top: 20px;
     background-color: $white;
-    z-index: 0;
-
+    transition: all 0.5s ease;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      img {
+        width: 200px;
+      }
+    }
     .new-lecture-btn {
       border-radius: 10px;
-      margin-top: 35%;
+      margin-top: 50px;
+      margin-inline: auto;
       a {
         border-radius: 10px;
         padding: 5px 15px;
         text-decoration: none;
-
         background: linear-gradient(
           -45deg,
           $lightYellow 0%,
@@ -125,6 +134,7 @@
         color: $white;
         font-size: 15pt;
         text-align: center;
+        display: flex;
         svg {
           margin: 0 10px 0 0;
           color: $white;
@@ -202,6 +212,11 @@
           }
         }
       }
+    }
+  }
+  @include media(phone-md){
+    .notifications-icon{
+      display: none;
     }
   }
 }

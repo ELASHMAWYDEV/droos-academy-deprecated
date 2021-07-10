@@ -76,13 +76,18 @@ body {
   right: 0;
   left: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 25px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header-container .nav-bar-conatiner .logo-container img {
-  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header-container .nav-bar-conatiner .burger-menu {
@@ -97,10 +102,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   cursor: pointer;
-  left: 25%;
-  top: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-right: 0;
 }
 
 .header-container .nav-bar-conatiner .burger-menu span {
@@ -197,12 +202,36 @@ body {
   bottom: 0;
   top: 20px;
   background-color: #ffffff;
-  z-index: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-container .side-bar-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+.header-container .side-bar-container .logo-container img {
+  width: 200px;
 }
 
 .header-container .side-bar-container .new-lecture-btn {
   border-radius: 10px;
-  margin-top: 35%;
+  margin-top: 50px;
+  margin-inline: auto;
 }
 
 .header-container .side-bar-container .new-lecture-btn a {
@@ -217,6 +246,9 @@ body {
   color: #ffffff;
   font-size: 15pt;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-container .side-bar-container .new-lecture-btn a svg {
@@ -302,5 +334,11 @@ body {
 
 .header-container .side-bar-container .side-bar-btns div a svg g g {
   fill: #2e5361;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-container .notifications-icon {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
